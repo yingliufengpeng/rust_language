@@ -1,11 +1,6 @@
-
-
-
 fn hello_world() {
     println!("Hello, World");
 }
-
-
 
 #[cfg(test)]
 mod tests {

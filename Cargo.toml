@@ -3,7 +3,7 @@
 members = [
     "ch01_getting_started",
     "ch02_guessing_game",
-    "ch031_variable_binding",
+    "ch03_syntax_and_semantics",
     "ch99_rust_learning",
 ]
 
