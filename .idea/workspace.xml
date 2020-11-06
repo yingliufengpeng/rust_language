@@ -38,11 +38,7 @@
     <cargoProject FILE="$PROJECT_DIR$/rust_learning/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24a94b34-4f4c-4998-a862-d9637d7cb7a5" name="Default Changelist" comment="3.1 Variable Binding">
-      <change afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section02_functions.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/lib.rs" afterDir="false" />
-    </list>
+    <list default="true" id="24a94b34-4f4c-4998-a862-d9637d7cb7a5" name="Default Changelist" comment="3.2 Functions" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -186,7 +182,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604626579976</updated>
-      <workItem from="1604626581067" duration="11065000" />
+      <workItem from="1604626581067" duration="16900000" />
     </task>
     <task id="LOCAL-00001" summary="初次初始化">
       <created>1604626690282</created>
@@ -251,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604667723917</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="3.2 Functions">
+      <created>1604669569481</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1604669569481</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,7 +293,8 @@
     <MESSAGE value="幸运数字添加loop循环功能" />
     <MESSAGE value="幸运数字添加数字输入校验功能" />
     <MESSAGE value="3.1 Variable Binding" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.1 Variable Binding" />
+    <MESSAGE value="3.2 Functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.2 Functions" />
   </component>
   <component name="WindowStateProjectService">
     <state x="511" y="237" key="#Scopes" timestamp="1604667540655">
@@ -310,35 +314,35 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="482" y="132" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604667323587" />
-    <state width="1482" height="262" key="GridCell.Tab.0.bottom" timestamp="1604668839285">
+    <state width="1483" height="262" key="GridCell.Tab.0.bottom" timestamp="1604669807635">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1482" height="262" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604668839285" />
+    <state width="1483" height="262" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604669807635" />
     <state width="1210" height="212" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604666315430" />
-    <state width="1482" height="262" key="GridCell.Tab.0.center" timestamp="1604668839281">
+    <state width="1483" height="262" key="GridCell.Tab.0.center" timestamp="1604669807635">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1482" height="262" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604668839281" />
+    <state width="1483" height="262" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604669807635" />
     <state width="1210" height="212" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604666315430" />
-    <state width="1482" height="262" key="GridCell.Tab.0.left" timestamp="1604668839281">
+    <state width="1483" height="262" key="GridCell.Tab.0.left" timestamp="1604669807635">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1482" height="262" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604668839281" />
+    <state width="1483" height="262" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604669807635" />
     <state width="1210" height="212" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604666315430" />
-    <state width="1482" height="262" key="GridCell.Tab.0.right" timestamp="1604668839283">
+    <state width="1483" height="262" key="GridCell.Tab.0.right" timestamp="1604669807635">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1482" height="262" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604668839283" />
+    <state width="1483" height="262" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604669807635" />
     <state width="1210" height="212" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604666315430" />
     <state x="153" y="0" key="SettingsEditor" timestamp="1604667417510">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="153" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604667417510" />
-    <state x="362" y="149" key="Vcs.Push.Dialog.v2" timestamp="1604629156644">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="453" y="188" key="Vcs.Push.Dialog.v2" timestamp="1604675374787">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="362" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604629156644" />
-    <state x="453" y="188" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604627323835" />
+    <state x="362" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604669893764" />
+    <state x="453" y="188" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604675374787" />
     <state x="543" y="307" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604629160897">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
