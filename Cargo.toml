@@ -1,8 +1,10 @@
 [workspace]
 
 members = [
-    "Getting_Started",
-    "Guessing_game",
+    "ch01_getting_started",
+    "ch02_guessing_game",
+    "ch031_variable_binding",
+    "ch99_rust_learning",
 ]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html

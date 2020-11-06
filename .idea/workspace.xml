@@ -35,10 +35,21 @@
   <component name="CargoProjects">
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/Guessing_game/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/rust_learning/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/ch031_variable_binding/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24a94b34-4f4c-4998-a862-d9637d7cb7a5" name="Default Changelist" comment="幸运数字添加loop循环功能">
-      <change beforePath="$PROJECT_DIR$/Guessing_game/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/Guessing_game/src/main.rs" afterDir="false" />
+    <list default="true" id="24a94b34-4f4c-4998-a862-d9637d7cb7a5" name="Default Changelist" comment="幸运数字添加数字输入校验功能">
+      <change afterPath="$PROJECT_DIR$/ch031_variable_binding/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch031_variable_binding/src/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch99_rust_learning/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch99_rust_learning/ReadMe.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch99_rust_learning/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Getting_Started/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/ch01_getting_started/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Getting_Started/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch01_getting_started/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Guessing_game/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/ch02_guessing_game/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Guessing_game/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch02_guessing_game/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +81,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
   </component>
-  <component name="RunManager" selected="Cargo.Run Guessing_game">
+  <component name="RunManager" selected="Cargo.Run ch031_variable_binding">
     <configuration name="Run Guessing_game" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="run --package Guessing_game --bin Guessing_game" />
@@ -78,6 +89,30 @@
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$/Guessing_game" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run ch031_variable_binding" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="run --package ch031_variable_binding --bin ch031_variable_binding" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch031_variable_binding" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run rust_learning" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="run --package rust_learning --bin rust_learning" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/rust_learning" />
       <envs />
       <method v="2">
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
@@ -102,6 +137,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Run ch031_variable_binding" />
+        <item itemvalue="Cargo.Run rust_learning" />
         <item itemvalue="Cargo.Run Guessing_game" />
         <item itemvalue="Cargo.Test lib::tests" />
       </list>
@@ -118,7 +155,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604626579976</updated>
-      <workItem from="1604626581067" duration="2512000" />
+      <workItem from="1604626581067" duration="7465000" />
     </task>
     <task id="LOCAL-00001" summary="初次初始化">
       <created>1604626690282</created>
@@ -162,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604628695136</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="幸运数字添加数字输入校验功能">
+      <created>1604629129260</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604629129260</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,32 +243,46 @@
     <MESSAGE value="添加 Guessing Game &#10;添加幸运号number" />
     <MESSAGE value="幸运数字简单功能实现" />
     <MESSAGE value="幸运数字添加loop循环功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="幸运数字添加loop循环功能" />
+    <MESSAGE value="幸运数字添加数字输入校验功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="幸运数字添加数字输入校验功能" />
   </component>
   <component name="WindowStateProjectService">
     <state x="685" y="228" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604627225193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="685" y="228" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604627225193" />
-    <state width="1483" height="280" key="GridCell.Tab.0.bottom" timestamp="1604629084769">
+    <state x="474" y="195" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604629461893">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="280" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604629084769" />
-    <state width="1483" height="280" key="GridCell.Tab.0.center" timestamp="1604629084769">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1483" height="280" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604629084769" />
-    <state width="1483" height="280" key="GridCell.Tab.0.left" timestamp="1604629084769">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1483" height="280" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604629084769" />
-    <state width="1483" height="280" key="GridCell.Tab.0.right" timestamp="1604629084769">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1483" height="280" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604629084769" />
-    <state x="453" y="188" key="Vcs.Push.Dialog.v2" timestamp="1604627323835">
+    <state x="474" y="195" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1604629461893" />
+    <state width="1210" height="179" key="GridCell.Tab.0.bottom" timestamp="1604665729021">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1483" height="175" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604630200351" />
+    <state width="1210" height="179" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604665729021" />
+    <state width="1210" height="179" key="GridCell.Tab.0.center" timestamp="1604665729021">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1483" height="175" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604630200351" />
+    <state width="1210" height="179" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604665729021" />
+    <state width="1210" height="179" key="GridCell.Tab.0.left" timestamp="1604665729021">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1483" height="175" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604630200351" />
+    <state width="1210" height="179" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604665729021" />
+    <state width="1210" height="179" key="GridCell.Tab.0.right" timestamp="1604665729021">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1483" height="175" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604630200351" />
+    <state width="1210" height="179" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604665729021" />
+    <state x="362" y="149" key="Vcs.Push.Dialog.v2" timestamp="1604629156644">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="362" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604629156644" />
     <state x="453" y="188" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604627323835" />
+    <state x="543" y="307" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604629160897">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="543" y="307" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1604629160897" />
   </component>
 </project>
