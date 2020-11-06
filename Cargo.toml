@@ -1,9 +1,10 @@
-[package]
-name = "rust_language"
-version = "0.1.0"
-authors = ["yingliufengpeng <2906631584@qq.com>"]
-edition = "2018"
+[workspace]
+
+members = [
+    "Getting_Started"
+]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[dependencies]
+
+
