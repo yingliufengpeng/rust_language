@@ -17,8 +17,16 @@ fn main() {
         io::stdin().read_line(&mut guess)
             .expect("Faild to read line");
 
-        let guess: i32 = guess.trim().parse()
-            .expect("请输入数字");
+        // let guess: i32 = guess.trim().parse()
+        //     .expect("请输入数字");
+
+        let guess: i32 = match guess.trim().parse() {
+            Ok(v) => v,
+            _ => {
+                println!("请输入数字");
+                continue;
+            },
+        };
 
         println!("You gussed: {}", guess);
 
