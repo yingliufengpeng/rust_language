@@ -39,15 +39,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24a94b34-4f4c-4998-a862-d9637d7cb7a5" name="Default Changelist" comment="3.1 Variable Binding">
-      <change afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/lib.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section01_variable_bindings.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch99_rust_learning/src/lib.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch99_rust_learning/src/test001.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section02_functions.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch01_getting_started/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch01_getting_started/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch02_guessing_game/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch02_guessing_game/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch99_rust_learning/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch99_rust_learning/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/lib.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +71,7 @@
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
@@ -97,19 +92,7 @@
       <recent name="C:\Users\Abner\CLionProjects\rust_language\ch03_syntax_and_semantics\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Test test001::test">
-    <configuration name="Run Guessing_game" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="run --package Guessing_game --bin Guessing_game" />
-      <option name="allFeatures" value="true" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Cargo.Test section02_functions::tests::test">
     <configuration name="Run ch031_variable_binding" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="run --package ch031_variable_binding --bin ch031_variable_binding" />
@@ -134,9 +117,21 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test lib::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test section02_functions::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package Getting_Started --lib tests" />
+      <option name="command" value="test --package ch031_variable_binding --lib section02_functions::tests" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test section02_functions::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ch031_variable_binding --lib section02_functions::tests::test -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -164,19 +159,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Cargo.Run Guessing_game" />
-      <item itemvalue="Cargo.Test lib::tests" />
       <item itemvalue="Cargo.Run ch031_variable_binding" />
       <item itemvalue="Cargo.Run rust_learning" />
       <item itemvalue="Cargo.Test test001::test" />
+      <item itemvalue="Cargo.Test section02_functions::tests" />
+      <item itemvalue="Cargo.Test section02_functions::tests::test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test section02_functions::tests::test" />
+        <item itemvalue="Cargo.Test section02_functions::tests" />
         <item itemvalue="Cargo.Test test001::test" />
         <item itemvalue="Cargo.Run rust_learning" />
         <item itemvalue="Cargo.Run ch031_variable_binding" />
-        <item itemvalue="Cargo.Run Guessing_game" />
-        <item itemvalue="Cargo.Test lib::tests" />
       </list>
     </recent_temporary>
   </component>
@@ -191,7 +186,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604626579976</updated>
-      <workItem from="1604626581067" duration="9125000" />
+      <workItem from="1604626581067" duration="11065000" />
     </task>
     <task id="LOCAL-00001" summary="初次初始化">
       <created>1604626690282</created>
@@ -249,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604665841552</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="3.1 Variable Binding">
+      <created>1604667723917</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1604667723917</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,6 +293,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="3.1 Variable Binding" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="511" y="237" key="#Scopes" timestamp="1604667540655">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="511" y="237" key="#Scopes/0.0.1536.824@0.0.1536.824" timestamp="1604667540655" />
     <state x="206" y="58" width="1097" height="766" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604667497019">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -304,25 +310,25 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="482" y="132" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604667323587" />
-    <state width="1483" height="222" key="GridCell.Tab.0.bottom" timestamp="1604667497328">
+    <state width="1482" height="262" key="GridCell.Tab.0.bottom" timestamp="1604668839285">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="222" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604667497328" />
+    <state width="1482" height="262" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604668839285" />
     <state width="1210" height="212" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604666315430" />
-    <state width="1483" height="222" key="GridCell.Tab.0.center" timestamp="1604667497321">
+    <state width="1482" height="262" key="GridCell.Tab.0.center" timestamp="1604668839281">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="222" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604667497321" />
+    <state width="1482" height="262" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604668839281" />
     <state width="1210" height="212" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604666315430" />
-    <state width="1483" height="222" key="GridCell.Tab.0.left" timestamp="1604667497318">
+    <state width="1482" height="262" key="GridCell.Tab.0.left" timestamp="1604668839281">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="222" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604667497318" />
+    <state width="1482" height="262" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604668839281" />
     <state width="1210" height="212" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604666315430" />
-    <state width="1483" height="222" key="GridCell.Tab.0.right" timestamp="1604667497325">
+    <state width="1482" height="262" key="GridCell.Tab.0.right" timestamp="1604668839283">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="222" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604667497325" />
+    <state width="1482" height="262" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604668839283" />
     <state width="1210" height="212" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604666315430" />
     <state x="153" y="0" key="SettingsEditor" timestamp="1604667417510">
       <screen x="0" y="0" width="1536" height="824" />
