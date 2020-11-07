@@ -9,3 +9,4 @@ mod section08_ownership;
 mod section09_references_and_borrowing;
 mod section10_lifetimes;
 mod section11_mutablity;
+mod section12_struct;
