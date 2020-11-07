@@ -3,3 +3,4 @@ mod section02_functions;
 mod section03_primitive_types;
 mod section_04_comments;
 mod section_05_if;
+mod section_05_loops;
