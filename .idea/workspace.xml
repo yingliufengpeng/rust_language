@@ -30,17 +30,10 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section_04_comments.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch99_rust_learning/src/mod1/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/rust_language.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rust_language.iml" afterDir="false" />
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="3.4 COMMENTS &#10;另外添加多个模块组织的使用的模式">
+      <change afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section_05_if.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch01_getting_started/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/ch01_getting_started/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch02_guessing_game/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/ch02_guessing_game/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch03_syntax_and_semantics/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch99_rust_learning/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/ch99_rust_learning/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch99_rust_learning/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch99_rust_learning/src/lib.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,8 +69,9 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
     <property name="org.rust.disableDetachedFileInspectionC:/Users/Abner/CLionProjects/rust_language/ch99_rust_learning/src/mod1/lib.rs" value="true" />
+    <property name="org.rust.disableDetachedFileInspectionC:/Users/Abner/CLionProjects/rust_language/ch99_rust_learning/src/mod2/mod2.rs" value="true" />
   </component>
-  <component name="RunManager" selected="Cargo.Test mod1::tests">
+  <component name="RunManager" selected="Cargo.Test section_05_if::tests">
     <configuration name="Test mod1::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package ch99_rust_learning --lib mod1::tests" />
@@ -102,6 +96,18 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test section_05_if::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ch03_syntax_and_semantics --lib section_05_if::tests" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -109,6 +115,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test section_05_if::tests" />
         <item itemvalue="Cargo.Test mod1::tests" />
         <item itemvalue="Cargo.Test section_04_comments::tests" />
       </list>
@@ -125,8 +132,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604713648766</updated>
-      <workItem from="1604713649846" duration="508000" />
+      <workItem from="1604713649846" duration="1166000" />
     </task>
+    <task id="LOCAL-00001" summary="3.4 COMMENTS &#10;另外添加多个模块组织的使用的模式">
+      <created>1604714481969</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604714481969</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,27 +158,31 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="3.4 COMMENTS &#10;另外添加多个模块组织的使用的模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.4 COMMENTS &#10;另外添加多个模块组织的使用的模式" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="219" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604713768131">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="219" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1604713768131" />
-    <state width="1483" height="338" key="GridCell.Tab.0.bottom" timestamp="1604714124953">
+    <state width="1483" height="121" key="GridCell.Tab.0.bottom" timestamp="1604714662734">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="338" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604714124953" />
-    <state width="1483" height="338" key="GridCell.Tab.0.center" timestamp="1604714124950">
+    <state width="1483" height="121" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604714662734" />
+    <state width="1483" height="121" key="GridCell.Tab.0.center" timestamp="1604714662731">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="338" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604714124950" />
-    <state width="1483" height="338" key="GridCell.Tab.0.left" timestamp="1604714124946">
+    <state width="1483" height="121" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604714662731" />
+    <state width="1483" height="121" key="GridCell.Tab.0.left" timestamp="1604714662727">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="338" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604714124946" />
-    <state width="1483" height="338" key="GridCell.Tab.0.right" timestamp="1604714124952">
+    <state width="1483" height="121" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604714662727" />
+    <state width="1483" height="121" key="GridCell.Tab.0.right" timestamp="1604714662733">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="338" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604714124952" />
+    <state width="1483" height="121" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604714662733" />
     <state width="1483" height="170" key="GridCell.Tab.1.bottom" timestamp="1604713942988">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -180,6 +199,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1483" height="170" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604713942987" />
+    <state x="261" y="80" key="Vcs.Push.Dialog.v2" timestamp="1604714524395">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="261" y="80" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604714524395" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
