@@ -6,3 +6,4 @@ mod section05_if;
 mod section06_loops;
 mod section07_vectors;
 mod section08_ownership;
+mod section09_references_and_borrowing;
