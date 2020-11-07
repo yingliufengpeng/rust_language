@@ -2,12 +2,10 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch01_getting_started/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch02_guessing_game/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ch99_rust_learning/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ch031_variable_binding/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch03_syntax_and_semantics/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch99_rust_learning/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />

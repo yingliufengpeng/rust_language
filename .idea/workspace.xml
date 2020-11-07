@@ -16,13 +16,7 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
+    <select />
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated />
@@ -34,15 +28,19 @@
   </component>
   <component name="CargoProjects">
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
-    <cargoProject FILE="$PROJECT_DIR$/Guessing_game/Cargo.toml" />
-    <cargoProject FILE="$PROJECT_DIR$/rust_learning/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24a94b34-4f4c-4998-a862-d9637d7cb7a5" name="Default Changelist" comment="3.2 Functions">
-      <change afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section03_primitive_types.rs" afterDir="false" />
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section_04_comments.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch99_rust_learning/src/mod1/mod.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/rust_language.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rust_language.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch01_getting_started/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/ch01_getting_started/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch02_guessing_game/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/ch02_guessing_game/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch03_syntax_and_semantics/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch99_rust_learning/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/ch99_rust_learning/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch99_rust_learning/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch99_rust_learning/src/lib.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,40 +61,26 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MacroExpansionManager">
-    <option name="directoryName" value="i4zl16ph" />
+    <option name="directoryName" value="jbmw1da4" />
   </component>
-  <component name="ProjectId" id="1jtbxH4BYOnweKhKQPzCHq3CuVS" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1jwSQw1PaYB4Mt0smhpLUeIwKlZ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
-    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
-    <property name="settings.editor.selected.configurable" value="language.rust.cargo" />
+    <property name="org.rust.disableDetachedFileInspectionC:/Users/Abner/CLionProjects/rust_language/ch99_rust_learning/src/mod1/lib.rs" value="true" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Abner\CLionProjects\rust_language\ch03_syntax_and_semantics\src" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Cargo.Test section03_primitive_types::tests::test">
-    <configuration name="Test section02_functions::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+  <component name="RunManager" selected="Cargo.Test mod1::tests">
+    <configuration name="Test mod1::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch031_variable_binding --lib section02_functions::tests" />
+      <option name="command" value="test --package ch99_rust_learning --lib mod1::tests" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -106,45 +90,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test section02_functions::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test section_04_comments::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch031_variable_binding --lib section02_functions::tests::test -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test section03_primitive_types::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch031_variable_binding --lib section03_primitive_types::tests" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test section03_primitive_types::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch031_variable_binding --lib section03_primitive_types::tests::test -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test test001::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package rust_learning --lib test001::test" />
+      <option name="command" value="test --package ch03_syntax_and_semantics --lib section_04_comments::tests" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -159,110 +107,26 @@
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Cargo.Test section02_functions::tests" />
-      <item itemvalue="Cargo.Test section02_functions::tests::test" />
-      <item itemvalue="Cargo.Test test001::test" />
-      <item itemvalue="Cargo.Test section03_primitive_types::tests" />
-      <item itemvalue="Cargo.Test section03_primitive_types::tests::test" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo.Test section03_primitive_types::tests::test" />
-        <item itemvalue="Cargo.Test section03_primitive_types::tests" />
-        <item itemvalue="Cargo.Test section02_functions::tests::test" />
-        <item itemvalue="Cargo.Test section02_functions::tests" />
-        <item itemvalue="Cargo.Test test001::test" />
+        <item itemvalue="Cargo.Test mod1::tests" />
+        <item itemvalue="Cargo.Test section_04_comments::tests" />
       </list>
     </recent_temporary>
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="E:/rust/cargo/bin" />
-    <option name="version" value="2" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="24a94b34-4f4c-4998-a862-d9637d7cb7a5" name="Default Changelist" comment="" />
-      <created>1604626579976</created>
+      <changelist id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="" />
+      <created>1604713648766</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1604626579976</updated>
-      <workItem from="1604626581067" duration="16900000" />
-      <workItem from="1604711649110" duration="18000" />
-      <workItem from="1604711681997" duration="997000" />
+      <updated>1604713648766</updated>
+      <workItem from="1604713649846" duration="508000" />
     </task>
-    <task id="LOCAL-00001" summary="初次初始化">
-      <created>1604626690282</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1604626690282</updated>
-    </task>
-    <task id="LOCAL-00002" summary="添加 Getting Started cargo">
-      <created>1604627289688</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1604627289688</updated>
-    </task>
-    <task id="LOCAL-00003" summary="添加 Guessing Game &#10;并初始化简单代码的提交">
-      <created>1604628127515</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1604628127515</updated>
-    </task>
-    <task id="LOCAL-00004" summary="添加 Guessing Game &#10;添加幸运号number">
-      <created>1604628258445</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1604628258445</updated>
-    </task>
-    <task id="LOCAL-00005" summary="幸运数字简单功能实现">
-      <created>1604628611364</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1604628611364</updated>
-    </task>
-    <task id="LOCAL-00006" summary="幸运数字添加loop循环功能">
-      <created>1604628695136</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1604628695136</updated>
-    </task>
-    <task id="LOCAL-00007" summary="幸运数字添加数字输入校验功能">
-      <created>1604629129260</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1604629129260</updated>
-    </task>
-    <task id="LOCAL-00008" summary="3.1 Variable Binding">
-      <created>1604665841552</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1604665841552</updated>
-    </task>
-    <task id="LOCAL-00009" summary="3.1 Variable Binding">
-      <created>1604667723917</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1604667723917</updated>
-    </task>
-    <task id="LOCAL-00010" summary="3.2 Functions">
-      <created>1604669569481</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1604669569481</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,96 +137,59 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="main" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="初次初始化" />
-    <MESSAGE value="添加 Getting Started cargo" />
-    <MESSAGE value="添加 Guessing Game &#10;并初始化简单代码的提交" />
-    <MESSAGE value="添加 Guessing Game &#10;添加幸运号number" />
-    <MESSAGE value="幸运数字简单功能实现" />
-    <MESSAGE value="幸运数字添加loop循环功能" />
-    <MESSAGE value="幸运数字添加数字输入校验功能" />
-    <MESSAGE value="3.1 Variable Binding" />
-    <MESSAGE value="3.2 Functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.2 Functions" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="470" y="194" key="#Notifications" timestamp="1604711695362">
+    <state x="219" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604713768131">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="470" y="194" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1604711695362" />
-    <state x="511" y="237" key="#Scopes" timestamp="1604667540655">
+    <state x="219" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1604713768131" />
+    <state width="1483" height="338" key="GridCell.Tab.0.bottom" timestamp="1604714124953">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="511" y="237" key="#Scopes/0.0.1536.824@0.0.1536.824" timestamp="1604667540655" />
-    <state x="206" y="58" width="1097" height="766" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604667497019">
+    <state width="1483" height="338" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604714124953" />
+    <state width="1483" height="338" key="GridCell.Tab.0.center" timestamp="1604714124950">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="206" y="58" width="1097" height="766" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1604667497019" />
-    <state x="685" y="228" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604627225193" />
-    <state x="474" y="195" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604629461893">
+    <state width="1483" height="338" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604714124950" />
+    <state width="1483" height="338" key="GridCell.Tab.0.left" timestamp="1604714124946">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="474" y="195" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1604629461893" />
-    <state x="482" y="132" key="FileChooserDialogImpl" timestamp="1604667323587">
+    <state width="1483" height="338" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604714124946" />
+    <state width="1483" height="338" key="GridCell.Tab.0.right" timestamp="1604714124952">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="482" y="132" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604667323587" />
-    <state width="1483" height="59" key="GridCell.Tab.0.bottom" timestamp="1604712599101">
+    <state width="1483" height="338" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604714124952" />
+    <state width="1483" height="170" key="GridCell.Tab.1.bottom" timestamp="1604713942988">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="59" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604712599101" />
-    <state width="1210" height="212" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604666315430" />
-    <state width="1483" height="59" key="GridCell.Tab.0.center" timestamp="1604712599101">
+    <state width="1483" height="170" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604713942988" />
+    <state width="1483" height="170" key="GridCell.Tab.1.center" timestamp="1604713942987">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="59" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604712599101" />
-    <state width="1210" height="212" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604666315430" />
-    <state width="1483" height="59" key="GridCell.Tab.0.left" timestamp="1604712599101">
+    <state width="1483" height="170" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1604713942987" />
+    <state width="1483" height="170" key="GridCell.Tab.1.left" timestamp="1604713942987">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="59" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604712599101" />
-    <state width="1210" height="212" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604666315430" />
-    <state width="1483" height="59" key="GridCell.Tab.0.right" timestamp="1604712599101">
+    <state width="1483" height="170" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1604713942987" />
+    <state width="1483" height="170" key="GridCell.Tab.1.right" timestamp="1604713942987">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="59" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604712599101" />
-    <state width="1210" height="212" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604666315430" />
-    <state x="153" y="0" key="SettingsEditor" timestamp="1604667417510">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="153" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604667417510" />
-    <state x="453" y="188" key="Vcs.Push.Dialog.v2" timestamp="1604675374787">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="362" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604669893764" />
-    <state x="453" y="188" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604675374787" />
-    <state x="543" y="307" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604629160897">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="543" y="307" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1604629160897" />
-    <state x="341" y="183" width="840" height="1034" key="run.anything.popup" timestamp="1604667423059">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="341" y="183" width="840" height="1034" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1604667423059" />
+    <state width="1483" height="170" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604713942987" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/ch03_syntax_and_semantics/src/section_04_comments.rs</url>
+          <line>37</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,5 +1,5 @@
 [package]
-name = "Getting_Started"
+name = "ch01_getting_started"
 version = "0.1.0"
 authors = ["yingliufengpeng <2906631584@qq.com>"]
 edition = "2018"

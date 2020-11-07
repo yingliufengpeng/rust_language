@@ -1,5 +1,5 @@
 [package]
-name = "rust_learning"
+name = "ch99_rust_learning"
 version = "0.1.0"
 authors = ["yingliufengpeng <2906631584@qq.com>"]
 edition = "2018"

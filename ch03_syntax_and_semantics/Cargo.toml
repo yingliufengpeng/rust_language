@@ -1,5 +1,5 @@
 [package]
-name = "ch031_variable_binding"
+name = "ch03_syntax_and_semantics"
 version = "0.1.0"
 authors = ["yingliufengpeng <2906631584@qq.com>"]
 edition = "2018"
