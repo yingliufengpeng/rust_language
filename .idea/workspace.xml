@@ -30,10 +30,11 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="3.9 References and Borrowing">
-      <change afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section10_lifetimes.rs" afterDir="false" />
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="3.10 Lifetimes">
+      <change afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section11_mutablity.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section10_lifetimes.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section10_lifetimes.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +70,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/ch03_syntax_and_semantics/src" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+    <property name="org.rust.disableDetachedFileInspectionC:/Users/Abner/CLionProjects/rust_language/ch03_syntax_and_semantics/src/section11_mutablity.rs" value="true" />
     <property name="org.rust.disableDetachedFileInspectionC:/Users/Abner/CLionProjects/rust_language/ch99_rust_learning/src/mod1/lib.rs" value="true" />
     <property name="org.rust.disableDetachedFileInspectionC:/Users/Abner/CLionProjects/rust_language/ch99_rust_learning/src/mod2/mod2.rs" value="true" />
   </component>
@@ -77,31 +79,7 @@
       <recent name="C:\Users\Abner\CLionProjects\rust_language\ch03_syntax_and_semantics\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Test section10_lifetimes::tests">
-    <configuration name="Test section07_vectors::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch03_syntax_and_semantics --lib section07_vectors::tests::test -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test section08_ownership::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch03_syntax_and_semantics --lib section08_ownership::tests::test -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Cargo.Test section11_mutablity::tests">
     <configuration name="Test section09_references_and_borrowing::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package ch03_syntax_and_semantics --lib section09_references_and_borrowing::tests" />
@@ -126,9 +104,33 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test section_05_loops::tests::test_for" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test section10_lifetimes::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch03_syntax_and_semantics --lib section_05_loops::tests::test_for -- --exact" />
+      <option name="command" value="test --package ch03_syntax_and_semantics --lib section10_lifetimes::tests::test -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test section11_mutablity::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ch03_syntax_and_semantics --lib section11_mutablity::tests" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test section11_mutablity::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ch03_syntax_and_semantics --lib section11_mutablity::tests::test -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -145,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test section11_mutablity::tests" />
+        <item itemvalue="Cargo.Test section11_mutablity::tests::test" />
+        <item itemvalue="Cargo.Test section10_lifetimes::tests::test" />
         <item itemvalue="Cargo.Test section10_lifetimes::tests" />
         <item itemvalue="Cargo.Test section09_references_and_borrowing::tests" />
-        <item itemvalue="Cargo.Test section08_ownership::tests::test" />
-        <item itemvalue="Cargo.Test section07_vectors::tests::test" />
-        <item itemvalue="Cargo.Test section_05_loops::tests::test_for" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +166,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604713648766</updated>
-      <workItem from="1604713649846" duration="8858000" />
+      <workItem from="1604713649846" duration="11022000" />
     </task>
     <task id="LOCAL-00001" summary="3.4 COMMENTS &#10;另外添加多个模块组织的使用的模式">
       <created>1604714481969</created>
@@ -208,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604736265112</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="3.10 Lifetimes">
+      <created>1604737656860</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604737656860</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,33 +241,34 @@
     <MESSAGE value="3.5 Vectors 学习部分所有权与引用等知识" />
     <MESSAGE value="3.8 Ownership" />
     <MESSAGE value="3.9 References and Borrowing" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.9 References and Borrowing" />
+    <MESSAGE value="3.10 Lifetimes" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.10 Lifetimes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="219" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604713768131">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="219" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1604713768131" />
-    <state width="1097" height="308" key="GridCell.Tab.0.bottom" timestamp="1604737368283">
+    <state width="1868" height="537" key="GridCell.Tab.0.bottom" timestamp="1604739694523">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1468" height="232" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604715332471" />
-    <state width="1097" height="308" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604737368283" />
-    <state width="1097" height="308" key="GridCell.Tab.0.center" timestamp="1604737368283">
+    <state width="1868" height="537" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604739694523" />
+    <state width="1868" height="537" key="GridCell.Tab.0.center" timestamp="1604739694523">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1468" height="232" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604715332471" />
-    <state width="1097" height="308" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604737368283" />
-    <state width="1097" height="308" key="GridCell.Tab.0.left" timestamp="1604737368283">
+    <state width="1868" height="537" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604739694523" />
+    <state width="1868" height="537" key="GridCell.Tab.0.left" timestamp="1604739694523">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1468" height="232" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604715332471" />
-    <state width="1097" height="308" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604737368283" />
-    <state width="1097" height="308" key="GridCell.Tab.0.right" timestamp="1604737368283">
+    <state width="1868" height="537" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604739694523" />
+    <state width="1868" height="537" key="GridCell.Tab.0.right" timestamp="1604739694523">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1468" height="232" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604715332471" />
-    <state width="1097" height="308" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604737368283" />
+    <state width="1868" height="537" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604739694523" />
     <state width="1483" height="170" key="GridCell.Tab.1.bottom" timestamp="1604713942988">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -280,6 +290,10 @@
     </state>
     <state x="261" y="80" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604714524395" />
     <state x="326" y="101" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604736270877" />
+    <state x="734" y="415" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604737640450">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="734" y="415" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604737640450" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

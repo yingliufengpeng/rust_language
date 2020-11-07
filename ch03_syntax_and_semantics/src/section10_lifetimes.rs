@@ -11,7 +11,7 @@ mod tests {
     }
 
     // Here are the three rules:
-    // Each elided liftime in a function's arguments becomes a distinct lifetime parameter
+    // Each elided lifetime in a function's arguments becomes a distinct lifetime parameter
 
     // If there is exactly one input lifetime, elided or not, that lifetime is assigned to all
     // elided lifetimes in the return values of that function.
