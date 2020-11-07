@@ -1,2 +1,3 @@
 mod section01_variable_bindings;
 mod section02_functions;
+mod section03_primitive_types;

@@ -38,7 +38,12 @@
     <cargoProject FILE="$PROJECT_DIR$/rust_learning/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24a94b34-4f4c-4998-a862-d9637d7cb7a5" name="Default Changelist" comment="3.2 Functions" />
+    <list default="true" id="24a94b34-4f4c-4998-a862-d9637d7cb7a5" name="Default Changelist" comment="3.2 Functions">
+      <change afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section03_primitive_types.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/rust_language.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rust_language.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/lib.rs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,31 +93,7 @@
       <recent name="C:\Users\Abner\CLionProjects\rust_language\ch03_syntax_and_semantics\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Test section02_functions::tests::test">
-    <configuration name="Run ch031_variable_binding" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="run --package ch031_variable_binding --bin ch031_variable_binding" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Run rust_learning" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="run --package rust_learning --bin rust_learning" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Cargo.Test section03_primitive_types::tests::test">
     <configuration name="Test section02_functions::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package ch031_variable_binding --lib section02_functions::tests" />
@@ -128,6 +109,30 @@
     <configuration name="Test section02_functions::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package ch031_variable_binding --lib section02_functions::tests::test -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test section03_primitive_types::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ch031_variable_binding --lib section03_primitive_types::tests" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test section03_primitive_types::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ch031_variable_binding --lib section03_primitive_types::tests::test -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -155,24 +160,25 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Cargo.Run ch031_variable_binding" />
-      <item itemvalue="Cargo.Run rust_learning" />
-      <item itemvalue="Cargo.Test test001::test" />
       <item itemvalue="Cargo.Test section02_functions::tests" />
       <item itemvalue="Cargo.Test section02_functions::tests::test" />
+      <item itemvalue="Cargo.Test test001::test" />
+      <item itemvalue="Cargo.Test section03_primitive_types::tests" />
+      <item itemvalue="Cargo.Test section03_primitive_types::tests::test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test section03_primitive_types::tests::test" />
+        <item itemvalue="Cargo.Test section03_primitive_types::tests" />
         <item itemvalue="Cargo.Test section02_functions::tests::test" />
         <item itemvalue="Cargo.Test section02_functions::tests" />
         <item itemvalue="Cargo.Test test001::test" />
-        <item itemvalue="Cargo.Run rust_learning" />
-        <item itemvalue="Cargo.Run ch031_variable_binding" />
       </list>
     </recent_temporary>
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="E:/rust/cargo/bin" />
+    <option name="version" value="2" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -183,6 +189,8 @@
       <option name="presentableId" value="Default" />
       <updated>1604626579976</updated>
       <workItem from="1604626581067" duration="16900000" />
+      <workItem from="1604711649110" duration="18000" />
+      <workItem from="1604711681997" duration="997000" />
     </task>
     <task id="LOCAL-00001" summary="初次初始化">
       <created>1604626690282</created>
@@ -282,6 +290,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -297,6 +306,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="3.2 Functions" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="470" y="194" key="#Notifications" timestamp="1604711695362">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="470" y="194" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1604711695362" />
     <state x="511" y="237" key="#Scopes" timestamp="1604667540655">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -314,25 +327,25 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="482" y="132" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604667323587" />
-    <state width="1483" height="262" key="GridCell.Tab.0.bottom" timestamp="1604669807635">
+    <state width="1483" height="59" key="GridCell.Tab.0.bottom" timestamp="1604712599101">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="262" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604669807635" />
+    <state width="1483" height="59" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604712599101" />
     <state width="1210" height="212" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604666315430" />
-    <state width="1483" height="262" key="GridCell.Tab.0.center" timestamp="1604669807635">
+    <state width="1483" height="59" key="GridCell.Tab.0.center" timestamp="1604712599101">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="262" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604669807635" />
+    <state width="1483" height="59" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604712599101" />
     <state width="1210" height="212" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604666315430" />
-    <state width="1483" height="262" key="GridCell.Tab.0.left" timestamp="1604669807635">
+    <state width="1483" height="59" key="GridCell.Tab.0.left" timestamp="1604712599101">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="262" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604669807635" />
+    <state width="1483" height="59" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604712599101" />
     <state width="1210" height="212" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604666315430" />
-    <state width="1483" height="262" key="GridCell.Tab.0.right" timestamp="1604669807635">
+    <state width="1483" height="59" key="GridCell.Tab.0.right" timestamp="1604712599101">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="262" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604669807635" />
+    <state width="1483" height="59" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604712599101" />
     <state width="1210" height="212" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604666315430" />
     <state x="153" y="0" key="SettingsEditor" timestamp="1604667417510">
       <screen x="0" y="0" width="1536" height="824" />
