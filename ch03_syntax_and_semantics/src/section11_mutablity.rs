@@ -24,6 +24,9 @@ mod tests {
     }
 
     fn test_001() {
+
+        let x = Arc::new(&5);
+
         let x = Arc::new(5);
         let y = x.clone();
 

@@ -30,11 +30,16 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="3.10 Lifetimes">
-      <change afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section11_mutablity.rs" afterDir="false" />
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="3.11 Mutability">
+      <change afterPath="$PROJECT_DIR$/ch99_rust_learning/src/mod1/mod1_utils/tests.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch99_rust_learning/src/mod1/mod1_utils/tests2.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch99_rust_learning/src/mod1/mod1_utils/xx.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch99_rust_learning/src/mod2/utils.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section10_lifetimes.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section10_lifetimes.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section11_mutablity.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section11_mutablity.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch99_rust_learning/src/mod1/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch99_rust_learning/src/mod1/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch99_rust_learning/src/mod2/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch99_rust_learning/src/mod1/mod1_utils.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch99_rust_learning/src/mod2/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch99_rust_learning/src/mod2/mod.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,10 +84,10 @@
       <recent name="C:\Users\Abner\CLionProjects\rust_language\ch03_syntax_and_semantics\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Test section11_mutablity::tests">
-    <configuration name="Test section09_references_and_borrowing::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+  <component name="RunManager" selected="Cargo.Test test_mod">
+    <configuration name="Test mod1::mod1_utils::test_mod::test_002" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch03_syntax_and_semantics --lib section09_references_and_borrowing::tests" />
+      <option name="command" value="test --package ch99_rust_learning --lib mod1::mod1_utils::test_mod::test_002 -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -92,9 +97,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test section10_lifetimes::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test mod1::mod1_utils::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch03_syntax_and_semantics --lib section10_lifetimes::tests" />
+      <option name="command" value="test --package ch99_rust_learning --lib mod1::mod1_utils::tests::test_001 -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -104,9 +109,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test section10_lifetimes::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test mod2::lib::tets::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch03_syntax_and_semantics --lib section10_lifetimes::tests::test -- --exact" />
+      <option name="command" value="test --package ch99_rust_learning --lib mod2::lib::tets::test_001 -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -116,9 +121,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test section11_mutablity::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test mod2::utils::tets::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch03_syntax_and_semantics --lib section11_mutablity::tests" />
+      <option name="command" value="test --package ch99_rust_learning --lib mod2::utils::tets::test_001 -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -128,9 +133,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test section11_mutablity::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test test_mod" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch03_syntax_and_semantics --lib section11_mutablity::tests::test -- --exact" />
+      <option name="command" value="test --package ch99_rust_learning --lib mod1::mod1_utils::test_mod" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -147,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo.Test section11_mutablity::tests" />
-        <item itemvalue="Cargo.Test section11_mutablity::tests::test" />
-        <item itemvalue="Cargo.Test section10_lifetimes::tests::test" />
-        <item itemvalue="Cargo.Test section10_lifetimes::tests" />
-        <item itemvalue="Cargo.Test section09_references_and_borrowing::tests" />
+        <item itemvalue="Cargo.Test test_mod" />
+        <item itemvalue="Cargo.Test mod1::mod1_utils::tests::test_001" />
+        <item itemvalue="Cargo.Test mod1::mod1_utils::test_mod::test_002" />
+        <item itemvalue="Cargo.Test mod2::utils::tets::test_001" />
+        <item itemvalue="Cargo.Test mod2::lib::tets::test_001" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +171,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604713648766</updated>
-      <workItem from="1604713649846" duration="11022000" />
+      <workItem from="1604713649846" duration="12366000" />
     </task>
     <task id="LOCAL-00001" summary="3.4 COMMENTS &#10;另外添加多个模块组织的使用的模式">
       <created>1604714481969</created>
@@ -217,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604737656860</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="3.11 Mutability">
+      <created>1604739750057</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1604739750057</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,33 +254,34 @@
     <MESSAGE value="3.8 Ownership" />
     <MESSAGE value="3.9 References and Borrowing" />
     <MESSAGE value="3.10 Lifetimes" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.10 Lifetimes" />
+    <MESSAGE value="3.11 Mutability" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.11 Mutability" />
   </component>
   <component name="WindowStateProjectService">
     <state x="219" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604713768131">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="219" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1604713768131" />
-    <state width="1868" height="537" key="GridCell.Tab.0.bottom" timestamp="1604739694523">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1483" height="273" key="GridCell.Tab.0.bottom" timestamp="1604741011079">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1468" height="232" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604715332471" />
-    <state width="1868" height="537" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604739694523" />
-    <state width="1868" height="537" key="GridCell.Tab.0.center" timestamp="1604739694523">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1483" height="273" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604741011079" />
+    <state width="1868" height="104" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604739902000" />
+    <state width="1483" height="273" key="GridCell.Tab.0.center" timestamp="1604741011077">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1468" height="232" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604715332471" />
-    <state width="1868" height="537" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604739694523" />
-    <state width="1868" height="537" key="GridCell.Tab.0.left" timestamp="1604739694523">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1483" height="273" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604741011077" />
+    <state width="1868" height="104" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604739902000" />
+    <state width="1483" height="273" key="GridCell.Tab.0.left" timestamp="1604741011074">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1468" height="232" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604715332471" />
-    <state width="1868" height="537" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604739694523" />
-    <state width="1868" height="537" key="GridCell.Tab.0.right" timestamp="1604739694523">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1483" height="273" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604741011074" />
+    <state width="1868" height="104" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604739901999" />
+    <state width="1483" height="273" key="GridCell.Tab.0.right" timestamp="1604741011078">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1468" height="232" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604715332471" />
-    <state width="1868" height="537" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604739694523" />
+    <state width="1483" height="273" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604741011078" />
+    <state width="1868" height="104" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604739902000" />
     <state width="1483" height="170" key="GridCell.Tab.1.bottom" timestamp="1604713942988">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
