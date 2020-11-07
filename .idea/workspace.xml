@@ -30,8 +30,8 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="暂时使用rust 测试模块编写的模式">
-      <change afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section12_struct.rs" afterDir="false" />
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="3.12 Structs">
+      <change afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section13_enums.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/lib.rs" afterDir="false" />
     </list>
@@ -78,7 +78,7 @@
       <recent name="C:\Users\Abner\CLionProjects\rust_language\ch03_syntax_and_semantics\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Test section12_struct::tests::test">
+  <component name="RunManager" selected="Cargo.Test section13_enums::tests::test">
     <configuration name="Test mod1::mod1_utils::test_mod::test_002" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package ch99_rust_learning --lib mod1::mod1_utils::test_mod::test_002 -- --exact" />
@@ -103,9 +103,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test mod2::utils::tets::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test section12_struct::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch99_rust_learning --lib mod2::utils::tets::test_001 -- --exact" />
+      <option name="command" value="test --package ch03_syntax_and_semantics --lib section12_struct::tests::test -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -115,9 +115,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test section12_struct::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test section13_enums::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch03_syntax_and_semantics --lib section12_struct::tests::test -- --exact" />
+      <option name="command" value="test --package ch03_syntax_and_semantics --lib section13_enums::tests::test -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -146,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test section13_enums::tests::test" />
         <item itemvalue="Cargo.Test section12_struct::tests::test" />
         <item itemvalue="Cargo.Test test_mod" />
         <item itemvalue="Cargo.Test mod1::mod1_utils::tests::test_001" />
         <item itemvalue="Cargo.Test mod1::mod1_utils::test_mod::test_002" />
-        <item itemvalue="Cargo.Test mod2::utils::tets::test_001" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +165,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604713648766</updated>
-      <workItem from="1604713649846" duration="14089000" />
+      <workItem from="1604713649846" duration="16456000" />
     </task>
     <task id="LOCAL-00001" summary="3.4 COMMENTS &#10;另外添加多个模块组织的使用的模式">
       <created>1604714481969</created>
@@ -230,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604741111467</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="3.12 Structs">
+      <created>1604743356303</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1604743356303</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,33 +264,34 @@
     <MESSAGE value="3.10 Lifetimes" />
     <MESSAGE value="3.11 Mutability" />
     <MESSAGE value="暂时使用rust 测试模块编写的模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="暂时使用rust 测试模块编写的模式" />
+    <MESSAGE value="3.12 Structs" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.12 Structs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="219" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604713768131">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="219" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1604713768131" />
-    <state width="1483" height="149" key="GridCell.Tab.0.bottom" timestamp="1604743332139">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="953" height="257" key="GridCell.Tab.0.bottom" timestamp="1604749319490">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="149" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604743332139" />
-    <state width="1868" height="104" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604739902000" />
-    <state width="1483" height="149" key="GridCell.Tab.0.center" timestamp="1604743332139">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="953" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604749319490" />
+    <state width="953" height="257" key="GridCell.Tab.0.center" timestamp="1604749319489">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="149" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604743332139" />
-    <state width="1868" height="104" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604739902000" />
-    <state width="1483" height="149" key="GridCell.Tab.0.left" timestamp="1604743332139">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="953" height="257" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604749319489" />
+    <state width="953" height="257" key="GridCell.Tab.0.left" timestamp="1604749319489">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="149" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604743332139" />
-    <state width="1868" height="104" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604739901999" />
-    <state width="1483" height="149" key="GridCell.Tab.0.right" timestamp="1604743332139">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="953" height="257" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604749319489" />
+    <state width="953" height="257" key="GridCell.Tab.0.right" timestamp="1604749319489">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="149" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604743332139" />
-    <state width="1868" height="104" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604739902000" />
+    <state width="953" height="257" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604749319489" />
     <state width="1483" height="170" key="GridCell.Tab.1.bottom" timestamp="1604713942988">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
