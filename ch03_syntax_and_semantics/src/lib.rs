@@ -12,3 +12,4 @@ mod section11_mutablity;
 mod section12_struct;
 mod section13_enums;
 mod section14_match;
+mod section15_patterns;
