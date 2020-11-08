@@ -30,9 +30,8 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="3.19 Traits">
-      <change afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section20_drop.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="3.20 Drop">
+      <change afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section21_if_let.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/lib.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,22 +81,10 @@
       <recent name="C:\Users\Abner\CLionProjects\rust_language\ch03_syntax_and_semantics\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Test section20_drop::tests::test">
+  <component name="RunManager" selected="Cargo.Test section21_if_let::tests::test">
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test section16_method_syntax::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch03_syntax_and_semantics --lib section16_method_syntax::tests::test -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
     <configuration name="Test section17_strings::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
@@ -148,13 +135,25 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test section21_if_let::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ch03_syntax_and_semantics --lib section21_if_let::tests::test -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test section21_if_let::tests::test" />
         <item itemvalue="Cargo.Test section20_drop::tests::test" />
         <item itemvalue="Cargo.Test section19_traits::tests" />
         <item itemvalue="Cargo.Test section18_generics::tests::test" />
         <item itemvalue="Cargo.Test section17_strings::tests::test" />
-        <item itemvalue="Cargo.Test section16_method_syntax::tests::test" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +172,7 @@
       <workItem from="1604713649846" duration="16456000" />
       <workItem from="1604796669352" duration="9000" />
       <workItem from="1604796692231" duration="967000" />
-      <workItem from="1604797669530" duration="11579000" />
+      <workItem from="1604797669530" duration="12743000" />
     </task>
     <task id="LOCAL-00001" summary="3.4 COMMENTS &#10;另外添加多个模块组织的使用的模式">
       <created>1604714481969</created>
@@ -287,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604823094235</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="3.20 Drop">
+      <created>1604823425398</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1604823425398</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +329,8 @@
     <MESSAGE value="3.17 Strings" />
     <MESSAGE value="3.18 Generics" />
     <MESSAGE value="3.19 Traits" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.19 Traits" />
+    <MESSAGE value="3.20 Drop" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.20 Drop" />
   </component>
   <component name="WindowStateProjectService">
     <state x="219" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604713768131">
@@ -334,30 +341,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="93" y="93" width="1733" height="853" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604814357339" />
-    <state x="132" y="335" key="#com.intellij.ide.util.MemberChooser" timestamp="1604823207519">
+    <state x="132" y="335" key="#com.intellij.ide.util.MemberChooser" timestamp="1604823289226">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="132" y="335" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604823207519" />
-    <state width="1119" height="199" key="GridCell.Tab.0.bottom" timestamp="1604823230174">
+    <state x="132" y="335" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604823289226" />
+    <state width="1119" height="267" key="GridCell.Tab.0.bottom" timestamp="1604846729193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="149" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604743332139" />
-    <state width="1119" height="199" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604823230174" />
-    <state width="1119" height="199" key="GridCell.Tab.0.center" timestamp="1604823230174">
+    <state width="1119" height="267" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604846729193" />
+    <state width="1119" height="267" key="GridCell.Tab.0.center" timestamp="1604846729193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="149" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604743332139" />
-    <state width="1119" height="199" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604823230174" />
-    <state width="1119" height="199" key="GridCell.Tab.0.left" timestamp="1604823230174">
+    <state width="1119" height="267" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604846729193" />
+    <state width="1119" height="267" key="GridCell.Tab.0.left" timestamp="1604846729193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="149" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604743332139" />
-    <state width="1119" height="199" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604823230174" />
-    <state width="1119" height="199" key="GridCell.Tab.0.right" timestamp="1604823230174">
+    <state width="1119" height="267" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604846729193" />
+    <state width="1119" height="267" key="GridCell.Tab.0.right" timestamp="1604846729193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="149" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604743332139" />
-    <state width="1119" height="199" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604823230174" />
+    <state width="1119" height="267" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604846729193" />
     <state width="1483" height="170" key="GridCell.Tab.1.bottom" timestamp="1604713942988">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -374,11 +381,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1483" height="170" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604713942987" />
-    <state x="326" y="101" key="Vcs.Push.Dialog.v2" timestamp="1604736270877">
+    <state x="326" y="101" key="Vcs.Push.Dialog.v2" timestamp="1604823501029">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="261" y="80" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604714524395" />
-    <state x="326" y="101" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604736270877" />
+    <state x="326" y="101" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604823501029" />
     <state x="734" y="415" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604737640450">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
