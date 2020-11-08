@@ -14,3 +14,4 @@ mod section13_enums;
 mod section14_match;
 mod section15_patterns;
 mod section16_method_syntax;
+mod section17_strings;
