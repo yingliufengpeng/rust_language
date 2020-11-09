@@ -19,3 +19,22 @@ mod section18_generics;
 mod section19_traits;
 mod section20_drop;
 mod section21_if_let;
+mod section22_trait_objects;
+
+trait Foo {
+    fn method(&self) -> String;
+}
+
+impl Foo for u8 {
+    fn method(&self) -> String {
+        println!("u8 for method");
+        format!("u8: {}", *self)
+    }
+}
+
+impl Foo for String {
+    fn method(&self) -> String {
+        println!("string for method");
+        format!("string: {}", *self)
+    }
+}

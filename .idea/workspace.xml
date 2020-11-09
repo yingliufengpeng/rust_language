@@ -30,8 +30,9 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="3.20 Drop">
-      <change afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section21_if_let.rs" afterDir="false" />
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="3.21 If let">
+      <change afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section22_trait_objects.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/lib.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,30 +76,14 @@
     <property name="org.rust.disableDetachedFileInspectionC:/Users/Abner/CLionProjects/rust_language/ch03_syntax_and_semantics/src/section11_mutablity.rs" value="true" />
     <property name="org.rust.disableDetachedFileInspectionC:/Users/Abner/CLionProjects/rust_language/ch99_rust_learning/src/mod1/lib.rs" value="true" />
     <property name="org.rust.disableDetachedFileInspectionC:/Users/Abner/CLionProjects/rust_language/ch99_rust_learning/src/mod2/mod2.rs" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Abner\CLionProjects\rust_language\ch03_syntax_and_semantics\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Test section21_if_let::tests::test">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test section17_strings::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch03_syntax_and_semantics --lib section17_strings::tests::test -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Cargo.Test section22_trait_objects::tests::test">
     <configuration name="Test section18_generics::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package ch03_syntax_and_semantics --lib section18_generics::tests::test -- --exact" />
@@ -147,13 +132,25 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test section22_trait_objects::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ch03_syntax_and_semantics --lib section22_trait_objects::tests::test -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test section22_trait_objects::tests::test" />
         <item itemvalue="Cargo.Test section21_if_let::tests::test" />
         <item itemvalue="Cargo.Test section20_drop::tests::test" />
         <item itemvalue="Cargo.Test section19_traits::tests" />
         <item itemvalue="Cargo.Test section18_generics::tests::test" />
-        <item itemvalue="Cargo.Test section17_strings::tests::test" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +169,9 @@
       <workItem from="1604713649846" duration="16456000" />
       <workItem from="1604796669352" duration="9000" />
       <workItem from="1604796692231" duration="967000" />
-      <workItem from="1604797669530" duration="12743000" />
+      <workItem from="1604797669530" duration="13714000" />
+      <workItem from="1604882887032" duration="9299000" />
+      <workItem from="1604926373766" duration="1030000" />
     </task>
     <task id="LOCAL-00001" summary="3.4 COMMENTS &#10;另外添加多个模块组织的使用的模式">
       <created>1604714481969</created>
@@ -293,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604823425398</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="3.21 If let">
+      <created>1604846755173</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1604846755174</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +336,8 @@
     <MESSAGE value="3.18 Generics" />
     <MESSAGE value="3.19 Traits" />
     <MESSAGE value="3.20 Drop" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.20 Drop" />
+    <MESSAGE value="3.21 If let" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.21 If let" />
   </component>
   <component name="WindowStateProjectService">
     <state x="219" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604713768131">
@@ -345,26 +352,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="132" y="335" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604823289226" />
-    <state width="1119" height="267" key="GridCell.Tab.0.bottom" timestamp="1604846729193">
+    <state width="1868" height="217" key="GridCell.Tab.0.bottom" timestamp="1604917749848">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1483" height="149" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604743332139" />
-    <state width="1119" height="267" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604846729193" />
-    <state width="1119" height="267" key="GridCell.Tab.0.center" timestamp="1604846729193">
+    <state width="1483" height="207" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604891786833" />
+    <state width="1868" height="217" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604917749848" />
+    <state width="1868" height="217" key="GridCell.Tab.0.center" timestamp="1604917749848">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1483" height="149" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604743332139" />
-    <state width="1119" height="267" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604846729193" />
-    <state width="1119" height="267" key="GridCell.Tab.0.left" timestamp="1604846729193">
+    <state width="1483" height="207" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604891786833" />
+    <state width="1868" height="217" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604917749848" />
+    <state width="1868" height="217" key="GridCell.Tab.0.left" timestamp="1604917749848">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1483" height="149" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604743332139" />
-    <state width="1119" height="267" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604846729193" />
-    <state width="1119" height="267" key="GridCell.Tab.0.right" timestamp="1604846729193">
+    <state width="1483" height="207" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604891786833" />
+    <state width="1868" height="217" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604917749848" />
+    <state width="1868" height="217" key="GridCell.Tab.0.right" timestamp="1604917749848">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1483" height="149" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604743332139" />
-    <state width="1119" height="267" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604846729193" />
+    <state width="1483" height="207" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604891786833" />
+    <state width="1868" height="217" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604917749848" />
     <state width="1483" height="170" key="GridCell.Tab.1.bottom" timestamp="1604713942988">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -381,6 +388,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1483" height="170" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604713942987" />
+    <state x="345" y="79" key="SettingsEditor" timestamp="1604927350683">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="345" y="79" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604927350683" />
     <state x="326" y="101" key="Vcs.Push.Dialog.v2" timestamp="1604823501029">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -390,10 +401,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="734" y="415" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604737640450" />
-    <state x="589" y="194" width="741" height="650" key="find.popup" timestamp="1604822540617">
+    <state x="589" y="194" width="741" height="650" key="find.popup" timestamp="1604892310271">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="589" y="194" width="741" height="650" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604822540617" />
+    <state x="589" y="194" width="741" height="650" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604892310271" />
+    <state x="906" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1604884126062">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="906" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604884126062" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
