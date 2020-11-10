@@ -22,6 +22,15 @@ mod section21_if_let;
 mod section22_trait_objects;
 mod section23_closures;
 mod section24_universal_function_call_syntax;
+mod section25_crates_and_modules;
+
+mod chinese;
+mod french;
+mod phrases;
+
+pub fn foo() {
+
+}
 
 trait Foo {
     fn method(&self) -> String;
