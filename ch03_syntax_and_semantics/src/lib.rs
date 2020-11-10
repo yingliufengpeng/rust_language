@@ -30,6 +30,7 @@ mod section25_crates_and_modules;
 mod section26_const_and_static;
 mod section27_attributes;
 mod section28_type_aliases;
+mod section29_casting_between_types;
 
 
 pub fn foo() {
