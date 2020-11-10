@@ -35,6 +35,7 @@ mod section30_associated_types;
 mod section31_unsized_types;
 mod section32_operators_and_overloading;
 mod section33_deref_coercions;
+mod section35_raw_pointers;
 
 
 pub fn foo() {
