@@ -33,6 +33,7 @@ mod section28_type_aliases;
 mod section29_casting_between_types;
 mod section30_associated_types;
 mod section31_unsized_types;
+mod section32_operators_and_overloading;
 
 
 pub fn foo() {
