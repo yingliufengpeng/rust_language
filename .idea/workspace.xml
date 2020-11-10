@@ -30,10 +30,9 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="3.22 Trait Objects">
-      <change afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section23_closures.rs" afterDir="false" />
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="3.23  Closures">
+      <change afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section24_universal_function_call_syntax.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/lib.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,6 +69,11 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/ch03_syntax_and_semantics/src" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -84,19 +88,7 @@
       <recent name="C:\Users\Abner\CLionProjects\rust_language\ch03_syntax_and_semantics\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Test section23_closures::tests::test">
-    <configuration name="Test section19_traits::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch03_syntax_and_semantics --lib section19_traits::tests" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Cargo.Test section24_universal_function_call_syntax::tests::test">
     <configuration name="Test section20_drop::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package ch03_syntax_and_semantics --lib section20_drop::tests::test -- --exact" />
@@ -145,6 +137,18 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test section24_universal_function_call_syntax::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ch03_syntax_and_semantics --lib section24_universal_function_call_syntax::tests::test -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -152,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test section24_universal_function_call_syntax::tests::test" />
         <item itemvalue="Cargo.Test section23_closures::tests::test" />
         <item itemvalue="Cargo.Test section22_trait_objects::tests::test" />
         <item itemvalue="Cargo.Test section21_if_let::tests::test" />
         <item itemvalue="Cargo.Test section20_drop::tests::test" />
-        <item itemvalue="Cargo.Test section19_traits::tests" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +182,9 @@
       <workItem from="1604797669530" duration="13714000" />
       <workItem from="1604882887032" duration="9299000" />
       <workItem from="1604926373766" duration="1030000" />
-      <workItem from="1604927779261" duration="4687000" />
+      <workItem from="1604927779261" duration="4981000" />
+      <workItem from="1604976810151" duration="407000" />
+      <workItem from="1604977224999" duration="1816000" />
     </task>
     <task id="LOCAL-00001" summary="3.4 COMMENTS &#10;另外添加多个模块组织的使用的模式">
       <created>1604714481969</created>
@@ -313,7 +319,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604927810527</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="3.23  Closures">
+      <created>1604932758586</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1604932758586</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,7 +365,8 @@
     <MESSAGE value="3.20 Drop" />
     <MESSAGE value="3.21 If let" />
     <MESSAGE value="3.22 Trait Objects" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.22 Trait Objects" />
+    <MESSAGE value="3.23  Closures" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.23  Closures" />
   </component>
   <component name="WindowStateProjectService">
     <state x="219" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604713768131">
@@ -363,30 +377,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="93" y="93" width="1733" height="853" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604814357339" />
-    <state x="132" y="335" key="#com.intellij.ide.util.MemberChooser" timestamp="1604823289226">
+    <state x="132" y="335" key="#com.intellij.ide.util.MemberChooser" timestamp="1604987886924">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="132" y="335" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604823289226" />
-    <state width="1278" height="289" key="GridCell.Tab.0.bottom" timestamp="1604932201692">
+    <state x="132" y="335" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604987886924" />
+    <state width="1278" height="307" key="GridCell.Tab.0.bottom" timestamp="1604988087011">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="207" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604891786833" />
-    <state width="1278" height="289" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604932201692" />
-    <state width="1278" height="289" key="GridCell.Tab.0.center" timestamp="1604932201691">
+    <state width="1278" height="307" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604988087011" />
+    <state width="1278" height="307" key="GridCell.Tab.0.center" timestamp="1604988087011">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="207" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604891786833" />
-    <state width="1278" height="289" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604932201691" />
-    <state width="1278" height="289" key="GridCell.Tab.0.left" timestamp="1604932201691">
+    <state width="1278" height="307" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604988087011" />
+    <state width="1278" height="307" key="GridCell.Tab.0.left" timestamp="1604988087011">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="207" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604891786833" />
-    <state width="1278" height="289" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604932201691" />
-    <state width="1278" height="289" key="GridCell.Tab.0.right" timestamp="1604932201691">
+    <state width="1278" height="307" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604988087011" />
+    <state width="1278" height="307" key="GridCell.Tab.0.right" timestamp="1604988087011">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="207" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604891786833" />
-    <state width="1278" height="289" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604932201691" />
+    <state width="1278" height="307" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604988087011" />
     <state width="1483" height="170" key="GridCell.Tab.1.bottom" timestamp="1604713942988">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -403,15 +417,15 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1483" height="170" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604713942987" />
-    <state x="345" y="79" key="SettingsEditor" timestamp="1604927350683">
+    <state x="345" y="79" key="SettingsEditor" timestamp="1604977289691">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="345" y="79" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604927350683" />
-    <state x="326" y="101" key="Vcs.Push.Dialog.v2" timestamp="1604823501029">
+    <state x="345" y="79" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604977289691" />
+    <state x="326" y="101" key="Vcs.Push.Dialog.v2" timestamp="1604932779178">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="261" y="80" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604714524395" />
-    <state x="326" y="101" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604823501029" />
+    <state x="326" y="101" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604932779178" />
     <state x="734" y="415" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604737640450">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -420,10 +434,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="589" y="194" width="741" height="650" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604892310271" />
-    <state x="906" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1604884126062">
+    <state x="906" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1604932693671">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="906" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604884126062" />
+    <state x="906" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604932693671" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

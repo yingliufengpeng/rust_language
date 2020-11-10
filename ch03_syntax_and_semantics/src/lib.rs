@@ -21,6 +21,7 @@ mod section20_drop;
 mod section21_if_let;
 mod section22_trait_objects;
 mod section23_closures;
+mod section24_universal_function_call_syntax;
 
 trait Foo {
     fn method(&self) -> String;
