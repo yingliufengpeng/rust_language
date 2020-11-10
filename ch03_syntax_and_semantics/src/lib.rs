@@ -1,3 +1,7 @@
+mod chinese;
+mod french;
+mod phrases;
+
 mod section01_variable_bindings;
 mod section02_functions;
 mod section03_primitive_types;
@@ -24,14 +28,7 @@ mod section23_closures;
 mod section24_universal_function_call_syntax;
 mod section25_crates_and_modules;
 mod section26_const_and_static;
-
-
-
-
-
-mod chinese;
-mod french;
-mod phrases;
+mod section27_attributes;
 
 
 pub fn foo() {

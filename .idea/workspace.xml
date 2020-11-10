@@ -30,8 +30,9 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="3.25 Creates and Modules">
-      <change afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section26_const_and_static.rs" afterDir="false" />
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="3.26 Const And Static">
+      <change afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section27_attributes.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/lib.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,46 +88,10 @@
       <recent name="C:\Users\Abner\CLionProjects\rust_language\ch03_syntax_and_semantics\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Test section26_const_and_static::tests::test">
+  <component name="RunManager" selected="Cargo.Test section27_attributes::tests">
     <configuration name="Test phrases::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package ch03_syntax_and_semantics --lib phrases::tests" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test phrases::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch03_syntax_and_semantics --lib phrases::tests::test_001 -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test section24_universal_function_call_syntax::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch03_syntax_and_semantics --lib section24_universal_function_call_syntax::tests::test -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test section25_crates_and_modules::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch03_syntax_and_semantics --lib section25_crates_and_modules::tests::test -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -148,6 +113,42 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test section27_attributes::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ch03_syntax_and_semantics --lib section27_attributes::tests" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test section27_attributes::tests::check" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ch03_syntax_and_semantics --lib section27_attributes::tests::check -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test section27_attributes::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ch03_syntax_and_semantics --lib section27_attributes::tests::test -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -155,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test section27_attributes::tests" />
+        <item itemvalue="Cargo.Test section27_attributes::tests::check" />
+        <item itemvalue="Cargo.Test section27_attributes::tests::test" />
         <item itemvalue="Cargo.Test section26_const_and_static::tests::test" />
         <item itemvalue="Cargo.Test phrases::tests" />
-        <item itemvalue="Cargo.Test phrases::tests::test_001" />
-        <item itemvalue="Cargo.Test section25_crates_and_modules::tests::test" />
-        <item itemvalue="Cargo.Test section24_universal_function_call_syntax::tests::test" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +184,7 @@
       <workItem from="1604926373766" duration="1030000" />
       <workItem from="1604927779261" duration="4981000" />
       <workItem from="1604976810151" duration="407000" />
-      <workItem from="1604977224999" duration="7370000" />
+      <workItem from="1604977224999" duration="7689000" />
     </task>
     <task id="LOCAL-00001" summary="3.4 COMMENTS &#10;另外添加多个模块组织的使用的模式">
       <created>1604714481969</created>
@@ -339,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604995942439</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="3.26 Const And Static">
+      <created>1604996556102</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1604996556102</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,7 +389,8 @@
     <MESSAGE value="3.23  Closures" />
     <MESSAGE value="3.24 Universal Function Call Syntax" />
     <MESSAGE value="3.25 Creates and Modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.25 Creates and Modules" />
+    <MESSAGE value="3.26 Const And Static" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.26 Const And Static" />
   </component>
   <component name="WindowStateProjectService">
     <state x="219" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604713768131">
@@ -396,25 +405,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="132" y="335" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604988310306" />
-    <state width="1276" height="257" key="GridCell.Tab.0.bottom" timestamp="1604996371373">
+    <state width="1276" height="245" key="GridCell.Tab.0.bottom" timestamp="1604996793485">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1276" height="257" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604996371373" />
+    <state width="1276" height="245" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604996793485" />
     <state width="1278" height="367" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604988366473" />
-    <state width="1276" height="257" key="GridCell.Tab.0.center" timestamp="1604996371373">
+    <state width="1276" height="245" key="GridCell.Tab.0.center" timestamp="1604996793484">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1276" height="257" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604996371373" />
+    <state width="1276" height="245" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604996793484" />
     <state width="1278" height="367" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604988366472" />
-    <state width="1276" height="257" key="GridCell.Tab.0.left" timestamp="1604996371373">
+    <state width="1276" height="245" key="GridCell.Tab.0.left" timestamp="1604996793484">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1276" height="257" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604996371373" />
+    <state width="1276" height="245" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604996793484" />
     <state width="1278" height="367" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604988366471" />
-    <state width="1276" height="257" key="GridCell.Tab.0.right" timestamp="1604996371373">
+    <state width="1276" height="245" key="GridCell.Tab.0.right" timestamp="1604996793484">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1276" height="257" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604996371373" />
+    <state width="1276" height="245" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604996793484" />
     <state width="1278" height="367" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604988366473" />
     <state width="1483" height="170" key="GridCell.Tab.1.bottom" timestamp="1604713942988">
       <screen x="0" y="0" width="1536" height="824" />
