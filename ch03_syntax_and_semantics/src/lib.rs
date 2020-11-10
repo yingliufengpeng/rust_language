@@ -29,6 +29,7 @@ mod section24_universal_function_call_syntax;
 mod section25_crates_and_modules;
 mod section26_const_and_static;
 mod section27_attributes;
+mod section28_type_aliases;
 
 
 pub fn foo() {

@@ -30,9 +30,8 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="3.26 Const And Static">
-      <change afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section27_attributes.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="3.27 Attribute">
+      <change afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section28_type_aliases.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/lib.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,19 +87,7 @@
       <recent name="C:\Users\Abner\CLionProjects\rust_language\ch03_syntax_and_semantics\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Test section27_attributes::tests">
-    <configuration name="Test phrases::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch03_syntax_and_semantics --lib phrases::tests" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Cargo.Test section28_type_aliases::tests::test">
     <configuration name="Test section26_const_and_static::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package ch03_syntax_and_semantics --lib section26_const_and_static::tests::test -- --exact" />
@@ -149,6 +136,18 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test section28_type_aliases::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ch03_syntax_and_semantics --lib section28_type_aliases::tests::test -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -156,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test section28_type_aliases::tests::test" />
         <item itemvalue="Cargo.Test section27_attributes::tests" />
         <item itemvalue="Cargo.Test section27_attributes::tests::check" />
         <item itemvalue="Cargo.Test section27_attributes::tests::test" />
         <item itemvalue="Cargo.Test section26_const_and_static::tests::test" />
-        <item itemvalue="Cargo.Test phrases::tests" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +183,7 @@
       <workItem from="1604926373766" duration="1030000" />
       <workItem from="1604927779261" duration="4981000" />
       <workItem from="1604976810151" duration="407000" />
-      <workItem from="1604977224999" duration="7689000" />
+      <workItem from="1604977224999" duration="7851000" />
     </task>
     <task id="LOCAL-00001" summary="3.4 COMMENTS &#10;另外添加多个模块组织的使用的模式">
       <created>1604714481969</created>
@@ -347,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604996556102</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="3.27 Attribute">
+      <created>1604996925206</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1604996925206</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,7 +396,8 @@
     <MESSAGE value="3.24 Universal Function Call Syntax" />
     <MESSAGE value="3.25 Creates and Modules" />
     <MESSAGE value="3.26 Const And Static" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.26 Const And Static" />
+    <MESSAGE value="3.27 Attribute" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.27 Attribute" />
   </component>
   <component name="WindowStateProjectService">
     <state x="219" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604713768131">
