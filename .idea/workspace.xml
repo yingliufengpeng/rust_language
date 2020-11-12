@@ -28,12 +28,33 @@
   </component>
   <component name="CargoProjects">
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/ch98_rust_macro_02/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/ch98_little_book_of_macro/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="3.36 Unsafe">
-      <change afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section34_macros.rs" afterDir="false" />
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="3.34 Macros  &#10;关于rust 宏这块的知识的确是有些吃力,需要大量的实践">
+      <change afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/src/captures.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/src/captures2.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/src/ch2_3_4_debugging.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/src/ch2_3_5_scoping.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/src/ch2_3_5_scoping1.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/src/ch2_3_5_scoping2.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/src/ch2_3_6_import_export.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/src/ch3_macros_practical_introduction.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/src/lib.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/src/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch98_macro_export_use/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch98_macro_export_use/src/lib.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch98_rust_macro_01/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch98_rust_macro_01/src/lib.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch98_rust_macro_01/src/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch98_rust_macro_02/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch98_rust_macro_02/src/lib.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch98_rust_macro_02/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/rust_language.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rust_language.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,62 +110,62 @@
       <recent name="C:\Users\Abner\CLionProjects\rust_language\ch03_syntax_and_semantics\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Test section34_macros::tests::test">
-    <configuration name="Test section32_operators_and_overloading::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+  <component name="RunManager" selected="Cargo.Test ch2_3_6_import_export::tests">
+    <configuration name="Test captures2::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch03_syntax_and_semantics --lib section32_operators_and_overloading::tests::test -- --exact" />
+      <option name="command" value="test --package ch98_little_book_of_macro --lib captures2::tests::test_001 -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch98_little_book_of_macro" />
       <envs />
       <method v="2">
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test section33_deref_coercions::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test ch2_3_4_debugging::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch03_syntax_and_semantics --lib section33_deref_coercions::tests::test -- --exact" />
+      <option name="command" value="test --package ch98_little_book_of_macro --lib ch2_3_4_debugging::tests" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch98_little_book_of_macro" />
       <envs />
       <method v="2">
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test section34_macros::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test ch2_3_4_debugging::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch03_syntax_and_semantics --lib section34_macros::tests::test -- --exact" />
+      <option name="command" value="test --package ch98_little_book_of_macro --lib ch2_3_4_debugging::tests::test_001 -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch98_little_book_of_macro" />
       <envs />
       <method v="2">
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test section35_raw_pointers::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test ch2_3_5_scoping2::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch03_syntax_and_semantics --lib section35_raw_pointers::tests::test -- --exact" />
+      <option name="command" value="test --package ch98_little_book_of_macro --lib ch2_3_5_scoping2::tests::test_001 -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch98_little_book_of_macro" />
       <envs />
       <method v="2">
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test section36_unsafe::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test ch2_3_6_import_export::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch03_syntax_and_semantics --lib section36_unsafe::tests::test -- --exact" />
+      <option name="command" value="test --package ch98_little_book_of_macro --lib ch2_3_6_import_export::tests" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch98_little_book_of_macro" />
       <envs />
       <method v="2">
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
@@ -157,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo.Test section34_macros::tests::test" />
-        <item itemvalue="Cargo.Test section36_unsafe::tests::test" />
-        <item itemvalue="Cargo.Test section35_raw_pointers::tests::test" />
-        <item itemvalue="Cargo.Test section33_deref_coercions::tests::test" />
-        <item itemvalue="Cargo.Test section32_operators_and_overloading::tests::test" />
+        <item itemvalue="Cargo.Test ch2_3_6_import_export::tests" />
+        <item itemvalue="Cargo.Test ch2_3_5_scoping2::tests::test_001" />
+        <item itemvalue="Cargo.Test ch2_3_4_debugging::tests::test_001" />
+        <item itemvalue="Cargo.Test ch2_3_4_debugging::tests" />
+        <item itemvalue="Cargo.Test captures2::tests::test_001" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +208,11 @@
       <workItem from="1604976810151" duration="407000" />
       <workItem from="1604977224999" duration="19880000" />
       <workItem from="1605056704632" duration="20000" />
-      <workItem from="1605056739007" duration="11782000" />
+      <workItem from="1605056739007" duration="25796000" />
+      <workItem from="1605143763321" duration="60000" />
+      <workItem from="1605143832324" duration="221000" />
+      <workItem from="1605144133484" duration="64000" />
+      <workItem from="1605144202351" duration="19649000" />
     </task>
     <task id="LOCAL-00001" summary="3.4 COMMENTS &#10;另外添加多个模块组织的使用的模式">
       <created>1604714481969</created>
@@ -420,7 +445,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605022296741</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="3.34 Macros">
+      <created>1605078602211</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1605078602211</updated>
+    </task>
+    <task id="LOCAL-00035" summary="3.34 Macros  &#10;关于rust 宏这块的知识的确是有些吃力,需要大量的实践">
+      <created>1605078719367</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1605078719367</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -440,8 +479,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="暂时使用rust 测试模块编写的模式" />
-    <MESSAGE value="3.12 Structs" />
     <MESSAGE value="3.14 Match" />
     <MESSAGE value="3.15 Patterns" />
     <MESSAGE value="3.16 Method Syntax" />
@@ -465,9 +502,15 @@
     <MESSAGE value="3.33 Deref Coercions" />
     <MESSAGE value="3.35 Raw Pointers" />
     <MESSAGE value="3.36 Unsafe" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.36 Unsafe" />
+    <MESSAGE value="3.34 Macros" />
+    <MESSAGE value="3.34 Macros  &#10;关于rust 宏这块的知识的确是有些吃力,需要大量的实践" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.34 Macros  &#10;关于rust 宏这块的知识的确是有些吃力,需要大量的实践" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="475" y="193" key="#Notifications" timestamp="1605183419050">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="475" y="193" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1605183419050" />
     <state x="219" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604713768131">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -480,26 +523,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="132" y="335" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605018387945" />
-    <state width="1868" height="205" key="GridCell.Tab.0.bottom" timestamp="1605078080687">
+    <state width="1868" height="352" key="GridCell.Tab.0.bottom" timestamp="1605184321643">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1483" height="266" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605063877277" />
-    <state width="1868" height="205" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605078080687" />
-    <state width="1868" height="205" key="GridCell.Tab.0.center" timestamp="1605078080687">
+    <state width="1486" height="409" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605183839159" />
+    <state width="1868" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605184321643" />
+    <state width="1868" height="352" key="GridCell.Tab.0.center" timestamp="1605184321642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1483" height="266" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605063877274" />
-    <state width="1868" height="205" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605078080687" />
-    <state width="1868" height="205" key="GridCell.Tab.0.left" timestamp="1605078080687">
+    <state width="1486" height="409" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605183839154" />
+    <state width="1868" height="352" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605184321642" />
+    <state width="1868" height="352" key="GridCell.Tab.0.left" timestamp="1605184321642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1483" height="266" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605063877268" />
-    <state width="1868" height="205" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605078080687" />
-    <state width="1868" height="205" key="GridCell.Tab.0.right" timestamp="1605078080687">
+    <state width="1486" height="409" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605183839151" />
+    <state width="1868" height="352" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605184321642" />
+    <state width="1868" height="352" key="GridCell.Tab.0.right" timestamp="1605184321643">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1483" height="266" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605063877276" />
-    <state width="1868" height="205" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605078080687" />
+    <state width="1486" height="409" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605183839157" />
+    <state width="1868" height="352" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605184321643" />
     <state width="1483" height="262" key="GridCell.Tab.1.bottom" timestamp="1605063585606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -520,11 +563,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="345" y="79" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605013453403" />
-    <state x="326" y="101" key="Vcs.Push.Dialog.v2" timestamp="1605022305738">
+    <state x="326" y="101" key="Vcs.Push.Dialog.v2" timestamp="1605078724406">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="261" y="80" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604714524395" />
-    <state x="326" y="101" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605022305738" />
+    <state x="326" y="101" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605078724406" />
     <state x="734" y="415" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604737640450">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -545,6 +588,11 @@
           <url>file://$PROJECT_DIR$/ch03_syntax_and_semantics/src/section04_comments.rs</url>
           <line>37</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/ch98_rust_macro_01/src/lib.rs</url>
+          <line>37</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
