@@ -33,6 +33,7 @@ mod ch2_3_5_scoping1;
 mod ch2_3_5_scoping2;
 mod ch2_3_6_import_export;
 mod ch3_macros_practical_introduction;
+mod ch3_macros_practical_introduction2;
 
 
 #[cfg(test)]
