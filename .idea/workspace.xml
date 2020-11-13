@@ -32,9 +32,9 @@
     <cargoProject FILE="$PROJECT_DIR$/ch98_little_book_of_macro/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch4.2Incremental TT Munchers">
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch4.3 Internal Rules">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch98_little_book_of_macro/src/ch4_3_internal_rules.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/src/ch4_3_internal_rules.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch98_little_book_of_macro/src/ch4_4_push_down_accumulation.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/src/ch4_4_push_down_accumulation.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,19 +90,7 @@
       <recent name="C:\Users\Abner\CLionProjects\rust_language\ch03_syntax_and_semantics\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Test ch4_3_internal_rules::tests::test_001">
-    <configuration name="Test ch4_1_callbacks::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch98_little_book_of_macro --lib ch4_1_callbacks::tests" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch98_little_book_of_macro" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Cargo.Test ch4_1_callbacks::tests::test_001">
     <configuration name="Test ch4_1_callbacks::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package ch98_little_book_of_macro --lib ch4_1_callbacks::tests::test_001 -- --exact" />
@@ -139,9 +127,21 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test test001::test::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test ch4_4_push_down_accumulation::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch99_rust_learning --lib test001::test::test -- --exact" />
+      <option name="command" value="test --package ch98_little_book_of_macro --lib ch4_4_push_down_accumulation::tests::test_001 -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch98_little_book_of_macro" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test ch4_4_push_down_accumulation::tests::test_002" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ch98_little_book_of_macro --lib ch4_4_push_down_accumulation::tests::test_002 -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -158,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test ch4_1_callbacks::tests::test_001" />
+        <item itemvalue="Cargo.Test ch4_4_push_down_accumulation::tests::test_002" />
+        <item itemvalue="Cargo.Test ch4_4_push_down_accumulation::tests::test_001" />
         <item itemvalue="Cargo.Test ch4_3_internal_rules::tests::test_001" />
         <item itemvalue="Cargo.Test ch4_2_incremental_tt_munchers::tests::test_001" />
-        <item itemvalue="Cargo.Test ch4_1_callbacks::tests::test_001" />
-        <item itemvalue="Cargo.Test ch4_1_callbacks::tests" />
-        <item itemvalue="Cargo.Test test001::test::test" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +200,7 @@
       <workItem from="1605230385379" duration="9000" />
       <workItem from="1605230400223" duration="11406000" />
       <workItem from="1605250315513" duration="57000" />
-      <workItem from="1605250380280" duration="4812000" />
+      <workItem from="1605250380280" duration="11486000" />
     </task>
     <task id="LOCAL-00001" summary="3.4 COMMENTS &#10;另外添加多个模块组织的使用的模式">
       <created>1604714481969</created>
@@ -489,7 +489,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605253575751</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="ch4.3 Internal Rules">
+      <created>1605255536984</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1605255536984</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,7 +516,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="3.20 Drop" />
     <MESSAGE value="3.21 If let" />
     <MESSAGE value="3.22 Trait Objects" />
     <MESSAGE value="3.23  Closures" />
@@ -534,7 +540,8 @@
     <MESSAGE value="初始化 ch4" />
     <MESSAGE value="ch4.1 Callbacks" />
     <MESSAGE value="ch4.2Incremental TT Munchers" />
-    <option name="LAST_COMMIT_MESSAGE" value="ch4.2Incremental TT Munchers" />
+    <MESSAGE value="ch4.3 Internal Rules" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch4.3 Internal Rules" />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="193" key="#Notifications" timestamp="1605183419050">
@@ -562,26 +569,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="688" y="216" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605186161158" />
-    <state width="1483" height="197" key="GridCell.Tab.0.bottom" timestamp="1605255150353">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1868" height="124" key="GridCell.Tab.0.bottom" timestamp="1605276601083">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1483" height="197" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605255150353" />
-    <state width="1868" height="168" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605251954073" />
-    <state width="1483" height="197" key="GridCell.Tab.0.center" timestamp="1605255150352">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1483" height="3" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605255247921" />
+    <state width="1868" height="124" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605276601083" />
+    <state width="1868" height="124" key="GridCell.Tab.0.center" timestamp="1605276601082">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1483" height="197" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605255150352" />
-    <state width="1868" height="168" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605251954073" />
-    <state width="1483" height="197" key="GridCell.Tab.0.left" timestamp="1605255150352">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1483" height="3" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605255247921" />
+    <state width="1868" height="124" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605276601082" />
+    <state width="1868" height="124" key="GridCell.Tab.0.left" timestamp="1605276601082">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1483" height="197" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605255150352" />
-    <state width="1868" height="168" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605251954072" />
-    <state width="1483" height="197" key="GridCell.Tab.0.right" timestamp="1605255150352">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1483" height="3" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605255247920" />
+    <state width="1868" height="124" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605276601082" />
+    <state width="1868" height="124" key="GridCell.Tab.0.right" timestamp="1605276601082">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1483" height="197" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605255150352" />
-    <state width="1868" height="168" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605251954073" />
+    <state width="1483" height="3" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605255247921" />
+    <state width="1868" height="124" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605276601082" />
     <state width="1483" height="262" key="GridCell.Tab.1.bottom" timestamp="1605063585606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
