@@ -1,3 +1,4 @@
+#![feature(default_free_fn)]
 // #![feature(trace_macros)]
 // #![feature(log_syntax)]
 
