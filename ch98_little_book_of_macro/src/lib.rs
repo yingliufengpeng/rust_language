@@ -34,6 +34,15 @@ mod ch2_3_5_scoping2;
 mod ch2_3_6_import_export;
 mod ch3_macros_practical_introduction;
 mod ch3_macros_practical_introduction2;
+mod ch4_1_callbacks;
+mod ch4_2_incremental_tt_munchers;
+mod ch4_3_internal_rules;
+mod ch4_4_push_down_accumulation;
+mod ch4_5_repetition_replacement;
+mod ch4_6_trailing_separators;
+mod ch4_7_tt_bundling;
+mod ch4_8_visibility;
+mod ch4_9_provisional;
 
 
 #[cfg(test)]
