@@ -32,29 +32,11 @@
     <cargoProject FILE="$PROJECT_DIR$/ch98_little_book_of_macro/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="3.34 Macros  &#10;关于rust 宏这块的知识的确是有些吃力,需要大量的实践">
-      <change afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/src/captures.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/src/captures2.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/src/ch2_3_4_debugging.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/src/ch2_3_5_scoping.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/src/ch2_3_5_scoping1.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/src/ch2_3_5_scoping2.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/src/ch2_3_6_import_export.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/src/ch3_macros_practical_introduction.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/src/lib.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/src/main.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch98_macro_export_use/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch98_macro_export_use/src/lib.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch98_rust_macro_01/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch98_rust_macro_01/src/lib.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch98_rust_macro_01/src/main.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch98_rust_macro_02/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch98_rust_macro_02/src/lib.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch98_rust_macro_02/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/rust_language.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rust_language.iml" afterDir="false" />
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch1-ch2 the little book of macro">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch98_little_book_of_macro/src/ch2_3_4_debugging.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/src/ch2_3_4_debugging.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch98_little_book_of_macro/src/ch3_macros_practical_introduction.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/src/ch3_macros_practical_introduction.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch98_little_book_of_macro/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/src/lib.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,65 +85,17 @@
     <property name="org.rust.disableDetachedFileInspectionC:/Users/Abner/CLionProjects/rust_language/ch03_syntax_and_semantics/src/section11_mutablity.rs" value="true" />
     <property name="org.rust.disableDetachedFileInspectionC:/Users/Abner/CLionProjects/rust_language/ch99_rust_learning/src/mod1/lib.rs" value="true" />
     <property name="org.rust.disableDetachedFileInspectionC:/Users/Abner/CLionProjects/rust_language/ch99_rust_learning/src/mod2/mod2.rs" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Abner\CLionProjects\rust_language\ch03_syntax_and_semantics\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Test ch2_3_6_import_export::tests">
-    <configuration name="Test captures2::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+  <component name="RunManager">
+    <configuration name="Test ch3_macros_practical_introduction::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch98_little_book_of_macro --lib captures2::tests::test_001 -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch98_little_book_of_macro" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test ch2_3_4_debugging::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch98_little_book_of_macro --lib ch2_3_4_debugging::tests" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch98_little_book_of_macro" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test ch2_3_4_debugging::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch98_little_book_of_macro --lib ch2_3_4_debugging::tests::test_001 -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch98_little_book_of_macro" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test ch2_3_5_scoping2::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch98_little_book_of_macro --lib ch2_3_5_scoping2::tests::test_001 -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch98_little_book_of_macro" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test ch2_3_6_import_export::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch98_little_book_of_macro --lib ch2_3_6_import_export::tests" />
+      <option name="command" value="test --package ch98_little_book_of_macro --lib ch3_macros_practical_introduction::tests::test_001 -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -178,11 +112,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo.Test ch2_3_6_import_export::tests" />
-        <item itemvalue="Cargo.Test ch2_3_5_scoping2::tests::test_001" />
-        <item itemvalue="Cargo.Test ch2_3_4_debugging::tests::test_001" />
-        <item itemvalue="Cargo.Test ch2_3_4_debugging::tests" />
-        <item itemvalue="Cargo.Test captures2::tests::test_001" />
+        <item itemvalue="Cargo.Test ch3_macros_practical_introduction::tests::test_001" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +142,13 @@
       <workItem from="1605143763321" duration="60000" />
       <workItem from="1605143832324" duration="221000" />
       <workItem from="1605144133484" duration="64000" />
-      <workItem from="1605144202351" duration="19649000" />
+      <workItem from="1605144202351" duration="27480000" />
+      <workItem from="1605229989252" duration="52000" />
+      <workItem from="1605230046559" duration="58000" />
+      <workItem from="1605230140473" duration="42000" />
+      <workItem from="1605230187243" duration="138000" />
+      <workItem from="1605230385379" duration="9000" />
+      <workItem from="1605230400223" duration="5357000" />
     </task>
     <task id="LOCAL-00001" summary="3.4 COMMENTS &#10;另外添加多个模块组织的使用的模式">
       <created>1604714481969</created>
@@ -459,7 +395,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605078719367</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="ch1-ch2 the little book of macro">
+      <created>1605185468920</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1605185468920</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -479,7 +422,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="3.14 Match" />
     <MESSAGE value="3.15 Patterns" />
     <MESSAGE value="3.16 Method Syntax" />
     <MESSAGE value="3.17 Strings" />
@@ -504,45 +446,55 @@
     <MESSAGE value="3.36 Unsafe" />
     <MESSAGE value="3.34 Macros" />
     <MESSAGE value="3.34 Macros  &#10;关于rust 宏这块的知识的确是有些吃力,需要大量的实践" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.34 Macros  &#10;关于rust 宏这块的知识的确是有些吃力,需要大量的实践" />
+    <MESSAGE value="ch1-ch2 the little book of macro" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch1-ch2 the little book of macro" />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="193" key="#Notifications" timestamp="1605183419050">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="475" y="193" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1605183419050" />
-    <state x="219" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604713768131">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="453" y="74" key="#Plugins" timestamp="1605230029685">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="453" y="74" key="#Plugins/0.0.1920.1040@0.0.1920.1040" timestamp="1605230029685" />
+    <state x="274" y="73" width="1094" height="764" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605230299284">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="219" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1604713768131" />
+    <state x="274" y="73" width="1094" height="764" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605230299284" />
     <state x="93" y="93" width="1733" height="853" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1604814357339">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="93" y="93" width="1733" height="853" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604814357339" />
-    <state x="132" y="335" key="#com.intellij.ide.util.MemberChooser" timestamp="1605018387945">
+    <state x="132" y="335" key="#com.intellij.ide.util.MemberChooser" timestamp="1605235026525">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="132" y="335" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605018387945" />
-    <state width="1868" height="352" key="GridCell.Tab.0.bottom" timestamp="1605184321643">
+    <state x="132" y="335" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605235026525" />
+    <state x="688" y="216" key="FileChooserDialogImpl" timestamp="1605186161158">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="688" y="216" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605186161158" />
+    <state width="1868" height="411" key="GridCell.Tab.0.bottom" timestamp="1605235878421">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1486" height="409" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605183839159" />
-    <state width="1868" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605184321643" />
-    <state width="1868" height="352" key="GridCell.Tab.0.center" timestamp="1605184321642">
+    <state width="1868" height="411" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605235878421" />
+    <state width="1868" height="411" key="GridCell.Tab.0.center" timestamp="1605235878421">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1486" height="409" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605183839154" />
-    <state width="1868" height="352" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605184321642" />
-    <state width="1868" height="352" key="GridCell.Tab.0.left" timestamp="1605184321642">
+    <state width="1868" height="411" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605235878421" />
+    <state width="1868" height="411" key="GridCell.Tab.0.left" timestamp="1605235878420">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1486" height="409" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605183839151" />
-    <state width="1868" height="352" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605184321642" />
-    <state width="1868" height="352" key="GridCell.Tab.0.right" timestamp="1605184321643">
+    <state width="1868" height="411" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605235878420" />
+    <state width="1868" height="411" key="GridCell.Tab.0.right" timestamp="1605235878421">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1486" height="409" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605183839157" />
-    <state width="1868" height="352" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605184321643" />
+    <state width="1868" height="411" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605235878421" />
     <state width="1483" height="262" key="GridCell.Tab.1.bottom" timestamp="1605063585606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -559,27 +511,27 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1483" height="262" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605063585605" />
-    <state x="345" y="79" key="SettingsEditor" timestamp="1605013453403">
+    <state x="179" y="45" key="SettingsEditor" timestamp="1605230320384">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="345" y="79" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605013453403" />
-    <state x="326" y="101" key="Vcs.Push.Dialog.v2" timestamp="1605078724406">
+    <state x="179" y="45" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605230320384" />
+    <state x="326" y="101" key="Vcs.Push.Dialog.v2" timestamp="1605193475809">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="261" y="80" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604714524395" />
-    <state x="326" y="101" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605078724406" />
+    <state x="326" y="101" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605193475809" />
     <state x="734" y="415" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604737640450">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="734" y="415" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604737640450" />
-    <state x="589" y="194" width="741" height="650" key="find.popup" timestamp="1604892310271">
+    <state x="669" y="267" width="741" height="650" key="find.popup" timestamp="1605233300118">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="589" y="194" width="741" height="650" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604892310271" />
-    <state x="906" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1604932693671">
+    <state x="669" y="267" width="741" height="650" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605233300118" />
+    <state x="907" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1605233721606">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="906" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604932693671" />
+    <state x="907" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605233721606" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

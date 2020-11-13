@@ -11,7 +11,7 @@ macro_rules! each_tt {
 macro_rules! sing {
     () => {};
     ($tt:tt $($rest:tt)* ) => {
-        log_syntax!($tt);
+        // log_syntax!($tt);
         println!("{:?}", $tt);
         sing!($($rest)*);
      };
@@ -24,7 +24,7 @@ mod tests {
     fn test_001() {
 
         each_tt!("boo" "bar" "baz" "quux");
-        trace_macros!(true);
+        // trace_macros!(true);
         sing!("boo" "bar" "baz" "quux");
 
 
