@@ -43,7 +43,7 @@ macro_rules! recurrence {
                 use std::num::Wrapping;
                 let index = Wrapping(index);
                 let offset = Wrapping(self.offset);
-                let window = Wrapping(2); // 滑动窗口!!!
+                let window = Wrapping(MEM_SIZE); // 滑动窗口!!!
 
                 let real_index = index - offset + window;
                 &self.slice[real_index.0]

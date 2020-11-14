@@ -90,7 +90,7 @@
       <recent name="C:\Users\Abner\CLionProjects\rust_language\ch03_syntax_and_semantics\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Test ch4_7_tt_bundling::tests::test_001">
+  <component name="RunManager" selected="Cargo.Test ch3_macros_practical_introduction2::tests::test_002">
     <configuration name="Test captures::tests::test_004" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package ch98_little_book_of_macro --lib captures::tests::test_004 -- --exact" />
@@ -158,10 +158,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test ch3_macros_practical_introduction2::tests::test_002" />
         <item itemvalue="Cargo.Test ch4_7_tt_bundling::tests::test_001" />
         <item itemvalue="Cargo.Test captures::tests::test_004" />
         <item itemvalue="Cargo.Test ch4_6_trailing_separators::tests::test_001" />
-        <item itemvalue="Cargo.Test ch3_macros_practical_introduction2::tests::test_002" />
         <item itemvalue="Cargo.Test ch4_5_repetition_replacement::tests::test_001" />
       </list>
     </recent_temporary>
