@@ -1,7 +1,7 @@
 
 
 macro_rules! struct_name {
-    ( $(pub)* struct $name:ident $($rest:tt)* ) => {  stringify!($name)};
+    ( $(pub)* struct $name:ident $($rest:tt)* ) => {  stringify!($name) };
 }
 
 // Because you cannot bind a repetition in and of itself to a variable, there is no way to store the contents

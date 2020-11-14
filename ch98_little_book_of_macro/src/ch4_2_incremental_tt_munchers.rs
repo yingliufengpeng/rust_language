@@ -25,7 +25,7 @@ macro_rules! KK {
     }
 }
 
-// It is important, howevr, to keep the macro recursion limit in mid,
+// It is important, however, to keep the macro recursion limit in mid,
 // macro_rules! does not have any form of tail recursion or optimisation. It is
 // recommended that, when writing a TT muncher, you make reasonable efforts to
 // keep recursion as limited as possible.
