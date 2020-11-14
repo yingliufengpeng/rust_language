@@ -13,7 +13,7 @@
 
 // Repetitions
 // Patterns can contain repetitions, These allow a sequence of tokens to be matched.
-// These have the general form $(...) sep rep.
+// These have the general form $(...) sep rep. eg $(e:expr), *   这种写法是默认可以做的
 //      $ is literal dollar token.
 //      (...) is the paren-grouped pattern being repeated
 //      sep is an optional separator token. Common examples are, and ;
