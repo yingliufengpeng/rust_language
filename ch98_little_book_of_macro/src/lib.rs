@@ -44,6 +44,9 @@ mod ch4_6_trailing_separators;
 mod ch4_7_tt_bundling;
 mod ch4_8_visibility;
 mod ch4_9_provisional;
+mod ch5_1_ast_coercion;
+mod ch5_2_counting;
+mod ch5_3_enum_parsing;
 
 
 #[cfg(test)]
