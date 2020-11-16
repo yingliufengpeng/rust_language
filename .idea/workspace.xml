@@ -32,9 +32,10 @@
     <cargoProject FILE="$PROJECT_DIR$/ch98_little_book_of_macro/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch5.2 Counting">
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch5.3 Enum Parsing &#10;这个例子没有跑起来,可能需要一些rust语言本身的语法树的知识">
+      <change afterPath="$PROJECT_DIR$/ch99_rust_learning/src/macro_001.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch98_little_book_of_macro/src/ch5_3_enum_parsing.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/src/ch5_3_enum_parsing.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch99_rust_learning/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch99_rust_learning/src/lib.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,26 +84,14 @@
     <property name="org.rust.disableDetachedFileInspectionC:/Users/Abner/CLionProjects/rust_language/ch03_syntax_and_semantics/src/section11_mutablity.rs" value="true" />
     <property name="org.rust.disableDetachedFileInspectionC:/Users/Abner/CLionProjects/rust_language/ch99_rust_learning/src/mod1/lib.rs" value="true" />
     <property name="org.rust.disableDetachedFileInspectionC:/Users/Abner/CLionProjects/rust_language/ch99_rust_learning/src/mod2/mod2.rs" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Abner\CLionProjects\rust_language\ch03_syntax_and_semantics\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Test ch5_3_enum_parsing::tests::test_007">
-    <configuration name="Test ch5_3_enum_parsing::tests::test_003" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch98_little_book_of_macro --lib ch5_3_enum_parsing::tests::test_003 -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch98_little_book_of_macro" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Cargo.Test macro_001::tests::test_001">
     <configuration name="Test ch5_3_enum_parsing::tests::test_004" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package ch98_little_book_of_macro --lib ch5_3_enum_parsing::tests::test_004 -- --exact" />
@@ -151,13 +140,30 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test macro_001::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ch99_rust_learning --lib macro_001::tests::test_001 -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch98_little_book_of_macro" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test macro_001::tests::test_001" />
         <item itemvalue="Cargo.Test ch5_3_enum_parsing::tests::test_007" />
         <item itemvalue="Cargo.Test ch5_3_enum_parsing::tests::test_006" />
         <item itemvalue="Cargo.Test ch5_3_enum_parsing::tests::test_005" />
         <item itemvalue="Cargo.Test ch5_3_enum_parsing::tests::test_004" />
-        <item itemvalue="Cargo.Test ch5_3_enum_parsing::tests::test_003" />
       </list>
     </recent_temporary>
   </component>
@@ -201,14 +207,7 @@
       <workItem from="1605408016543" duration="78000" />
       <workItem from="1605408099616" duration="24269000" />
       <workItem from="1605493039367" duration="1959000" />
-      <workItem from="1605495007947" duration="739000" />
-    </task>
-    <task id="LOCAL-00002" summary="3.5 IF">
-      <created>1604714838358</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1604714838358</updated>
+      <workItem from="1605495007947" duration="6671000" />
     </task>
     <task id="LOCAL-00003" summary="3.5 loops">
       <created>1604715711289</created>
@@ -546,7 +545,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605424313960</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="ch5.3 Enum Parsing &#10;这个例子没有跑起来,可能需要一些rust语言本身的语法树的知识">
+      <created>1605495810035</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1605495810035</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -566,7 +572,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="3.29 Casting Between Types" />
     <MESSAGE value="测试对rust包模块的使用" />
     <MESSAGE value="3.30 Associated Types" />
     <MESSAGE value="3.31 Unsized Types" />
@@ -591,7 +596,8 @@
     <MESSAGE value="ch4.8 Visibility" />
     <MESSAGE value="ch5.1 AST Coercion" />
     <MESSAGE value="ch5.2 Counting" />
-    <option name="LAST_COMMIT_MESSAGE" value="ch5.2 Counting" />
+    <MESSAGE value="ch5.3 Enum Parsing &#10;这个例子没有跑起来,可能需要一些rust语言本身的语法树的知识" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch5.3 Enum Parsing &#10;这个例子没有跑起来,可能需要一些rust语言本身的语法树的知识" />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="193" key="#Notifications" timestamp="1605183419050">
@@ -619,26 +625,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="688" y="216" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605186161158" />
-    <state width="1868" height="231" key="GridCell.Tab.0.bottom" timestamp="1605495679283">
+    <state width="1868" height="208" key="GridCell.Tab.0.bottom" timestamp="1605506162064">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1483" height="346" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605365274387" />
-    <state width="1868" height="231" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605495679283" />
-    <state width="1868" height="231" key="GridCell.Tab.0.center" timestamp="1605495679282">
+    <state width="1483" height="74" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605503456796" />
+    <state width="1868" height="208" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605506162064" />
+    <state width="1868" height="208" key="GridCell.Tab.0.center" timestamp="1605506162064">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1483" height="346" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605365274387" />
-    <state width="1868" height="231" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605495679282" />
-    <state width="1868" height="231" key="GridCell.Tab.0.left" timestamp="1605495679282">
+    <state width="1483" height="74" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605503456796" />
+    <state width="1868" height="208" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605506162064" />
+    <state width="1868" height="208" key="GridCell.Tab.0.left" timestamp="1605506162064">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1483" height="346" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605365274387" />
-    <state width="1868" height="231" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605495679282" />
-    <state width="1868" height="231" key="GridCell.Tab.0.right" timestamp="1605495679282">
+    <state width="1483" height="74" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605503456795" />
+    <state width="1868" height="208" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605506162064" />
+    <state width="1868" height="208" key="GridCell.Tab.0.right" timestamp="1605506162064">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1483" height="346" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605365274387" />
-    <state width="1868" height="231" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605495679282" />
+    <state width="1483" height="74" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605503456796" />
+    <state width="1868" height="208" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605506162064" />
     <state width="1483" height="262" key="GridCell.Tab.1.bottom" timestamp="1605063585606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -655,11 +661,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1483" height="262" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605063585605" />
-    <state x="143" y="0" key="SettingsEditor" timestamp="1605359604002">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="167" y="55" width="1507" height="881" key="SettingsEditor" timestamp="1605497116031">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="143" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605359604002" />
-    <state x="179" y="45" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605230320384" />
+    <state x="167" y="55" width="1507" height="881" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605497116031" />
     <state x="326" y="101" key="Vcs.Push.Dialog.v2" timestamp="1605425978427">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
