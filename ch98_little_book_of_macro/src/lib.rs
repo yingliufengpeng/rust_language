@@ -1,4 +1,5 @@
 #![feature(default_free_fn)]
+#![recursion_limit="400"]
 // #![feature(trace_macros)]
 // #![feature(log_syntax)]
 
@@ -47,6 +48,7 @@ mod ch4_9_provisional;
 mod ch5_1_ast_coercion;
 mod ch5_2_counting;
 mod ch5_3_enum_parsing;
+mod ch6_1_Ook;
 
 
 #[cfg(test)]
