@@ -33,8 +33,8 @@
     <cargoProject FILE="$PROJECT_DIR$/ch04_effective_rust/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch4.3 Conditional Compilation">
-      <change afterPath="$PROJECT_DIR$/ch04_effective_rust/src/section05_iterators.rs" afterDir="false" />
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch4.5 Iterators">
+      <change afterPath="$PROJECT_DIR$/ch04_effective_rust/src/section10_borrow_and_as_ref.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ch04_effective_rust/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch04_effective_rust/src/lib.rs" afterDir="false" />
     </list>
@@ -103,31 +103,7 @@
       <command value="cargo test" />
     </option>
   </component>
-  <component name="RunManager" selected="Cargo.Test section05_iterators::tests::test_002">
-    <configuration name="Test ch6_1_Ook::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch98_little_book_of_macro --lib ch6_1_Ook::tests::test_001 -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch04_effective_rust" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test section03_conditional_compilation::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch04_effective_rust --lib section03_conditional_compilation::tests" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch04_effective_rust" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Cargo.Test section10_borrow_and_as_ref::tests::test_002">
     <configuration name="Test section03_conditional_compilation::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package ch04_effective_rust --lib section03_conditional_compilation::tests::test_001 -- --exact" />
@@ -164,6 +140,30 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test section10_borrow_and_as_ref::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ch04_effective_rust --lib section10_borrow_and_as_ref::tests::test_001 -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch04_effective_rust" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test section10_borrow_and_as_ref::tests::test_002" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ch04_effective_rust --lib section10_borrow_and_as_ref::tests::test_002 -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch04_effective_rust" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -171,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test section10_borrow_and_as_ref::tests::test_002" />
+        <item itemvalue="Cargo.Test section10_borrow_and_as_ref::tests::test_001" />
         <item itemvalue="Cargo.Test section05_iterators::tests::test_002" />
         <item itemvalue="Cargo.Test section05_iterators::tests::test_001" />
         <item itemvalue="Cargo.Test section03_conditional_compilation::tests::test_001" />
-        <item itemvalue="Cargo.Test section03_conditional_compilation::tests" />
-        <item itemvalue="Cargo.Test ch6_1_Ook::tests::test_001" />
       </list>
     </recent_temporary>
   </component>
@@ -227,14 +227,7 @@
       <workItem from="1605534974346" duration="51000" />
       <workItem from="1605535034187" duration="8871000" />
       <workItem from="1605575121443" duration="604000" />
-      <workItem from="1605575744911" duration="14217000" />
-    </task>
-    <task id="LOCAL-00010" summary="3.12 Structs">
-      <created>1604743356303</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1604743356303</updated>
+      <workItem from="1605575744911" duration="15555000" />
     </task>
     <task id="LOCAL-00011" summary="3.14 Match">
       <created>1604797364870</created>
@@ -572,7 +565,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605620263138</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="ch4.5 Iterators">
+      <created>1605622030660</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1605622030660</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -592,7 +592,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="3.34 Macros" />
     <MESSAGE value="3.34 Macros  &#10;关于rust 宏这块的知识的确是有些吃力,需要大量的实践" />
     <MESSAGE value="ch1-ch2 the little book of macro" />
     <MESSAGE value="macro practical 第一版" />
@@ -617,7 +616,8 @@
     <MESSAGE value="ch4.2 Testing" />
     <MESSAGE value="ch4.2 Testing update" />
     <MESSAGE value="ch4.3 Conditional Compilation" />
-    <option name="LAST_COMMIT_MESSAGE" value="ch4.3 Conditional Compilation" />
+    <MESSAGE value="ch4.5 Iterators" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch4.5 Iterators" />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="193" key="#Notifications" timestamp="1605183419050">
@@ -645,26 +645,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="688" y="216" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605186161158" />
-    <state width="1445" height="184" key="GridCell.Tab.0.bottom" timestamp="1605621997005">
+    <state width="1445" height="185" key="GridCell.Tab.0.bottom" timestamp="1605623721174">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="397" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605599661247" />
-    <state width="1445" height="184" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605621997005" />
-    <state width="1445" height="184" key="GridCell.Tab.0.center" timestamp="1605621997005">
+    <state width="1445" height="185" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605623721174" />
+    <state width="1445" height="185" key="GridCell.Tab.0.center" timestamp="1605623721174">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="397" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605599661246" />
-    <state width="1445" height="184" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605621997005" />
-    <state width="1445" height="184" key="GridCell.Tab.0.left" timestamp="1605621997004">
+    <state width="1445" height="185" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605623721174" />
+    <state width="1445" height="185" key="GridCell.Tab.0.left" timestamp="1605623721174">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="397" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605599661246" />
-    <state width="1445" height="184" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605621997004" />
-    <state width="1445" height="184" key="GridCell.Tab.0.right" timestamp="1605621997005">
+    <state width="1445" height="185" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605623721174" />
+    <state width="1445" height="185" key="GridCell.Tab.0.right" timestamp="1605623721174">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="397" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605599661246" />
-    <state width="1445" height="184" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605621997005" />
+    <state width="1445" height="185" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605623721174" />
     <state width="1483" height="262" key="GridCell.Tab.1.bottom" timestamp="1605063585606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
