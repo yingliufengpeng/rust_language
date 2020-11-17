@@ -20,6 +20,7 @@
 mod section01_the_stack_and_heap;
 mod section02_testing;
 mod section03_conditional_compilation;
+mod section05_iterators;
 
 pub fn show() {
     println!("ok");
