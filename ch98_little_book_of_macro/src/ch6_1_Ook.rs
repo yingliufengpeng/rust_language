@@ -170,7 +170,7 @@ macro_rules! Ook {
      // Decrement pointee
     (@e ($a:expr, $i:expr, $inc:expr, $dec:expr, $r:expr, $w:expr, $re:expr); (Ook! Ook! $($tail:tt)* ) ) => {
 
-        $inc($a, $i);
+        $dec($a, $i);
 
         Ook!(@e ($a, $i, $inc, $dec, $r, $w, $re); ($($tail)*) );
     };
@@ -188,7 +188,7 @@ macro_rules! Ook {
         match $r.read(&mut $a[$i..$i + 1]) {
             Ok(0) => Err($re()),
             ok @ Ok(..) => ok,
-            err @ Err(..) => err,
+            err @ Err(..) => er r,
         }?;
 
         Ook!(@e ($a, $i, $inc, $dec, $r, $w, $re); ($($tail)*) );
@@ -258,14 +258,14 @@ mod tests {
     fn test_002() {
 
         let a = Ook!(
-            Ook. Ook?
+            Ook. Ook. Ook! Ook!
         );
         println!("{:?}", a);
     }
 
     #[test]
     fn test_001() {
-        let v = Ook!(
+        let _ = Ook!(
             Ook. Ook?  Ook. Ook.  Ook. Ook.  Ook. Ook.
             Ook. Ook.  Ook. Ook.  Ook. Ook.  Ook. Ook.
             Ook. Ook.  Ook. Ook.  Ook! Ook?  Ook? Ook.
@@ -308,25 +308,25 @@ mod tests {
         );
 
 
-
-        if let Result::Ok(x) = v {
-            println!("{:?}", x);
-
-            // let s = String::from_utf8(x).expect("Found invalid UTF-8");
-            //
-            //
-            // println!("{:?}", s);
-        }
-
-        // let r = Result::<i32, i32>::Ok(3);
         //
-        // if let Result::Ok(vv) = r {
-        //     println!("{}", vv);
+        // if let Result::Ok(x) = v {
+        //     println!("{:?}", x);
+        //
+        //     // let s = String::from_utf8(x).expect("Found invalid UTF-8");
+        //     //
+        //     //
+        //     // println!("{:?}", s);
         // }
-
-        let bytes = vec![0x41, 0x42, 0x43];
-        let s = String::from_utf8(bytes).expect("Found invalid UTF-8");
-        println!("{}", s);
+        //
+        // // let r = Result::<i32, i32>::Ok(3);
+        // //
+        // // if let Result::Ok(vv) = r {
+        // //     println!("{}", vv);
+        // // }
+        //
+        // let bytes = vec![0x41, 0x42, 0x43];
+        // let s = String::from_utf8(bytes).expect("Found invalid UTF-8");
+        // println!("{}", s);
 
 
     }
