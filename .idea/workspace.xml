@@ -33,15 +33,8 @@
     <cargoProject FILE="$PROJECT_DIR$/ch04_effective_rust/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch4.1 The Stack and the Heap">
-      <change afterPath="$PROJECT_DIR$/ch04_effective_rust/tests/test_001.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch04_effective_rust/tests/test_002.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/rust_language.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rust_language.iml" afterDir="false" />
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch4.2 Testing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section06_loops.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch03_syntax_and_semantics/src/section06_loops.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch04_effective_rust/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch04_effective_rust/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch04_effective_rust/src/main.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch04_effective_rust/src/section01_the_stack_and_heap.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch04_effective_rust/src/section01_the_stack_and_heap.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ch04_effective_rust/src/section02_testing/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch04_effective_rust/src/section02_testing/mod.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,21 +98,11 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="cmd" />
+      <command value="cargo tree" />
+      <command value="cargo test" />
     </option>
   </component>
   <component name="RunManager" selected="Cargo.test [rust_language]">
-    <configuration name="Test section01_the_stack_and_heap" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch04_effective_rust --lib section01_the_stack_and_heap" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch04_effective_rust" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Test section02_testing" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package ch04_effective_rust --lib section02_testing" />
@@ -168,6 +151,18 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="tree [rust_language]" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="tree" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -176,10 +171,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Cargo.test [rust_language]" />
-        <item itemvalue="Cargo.Test test_002" />
-        <item itemvalue="Cargo.Test test_001" />
+        <item itemvalue="Cargo.tree [rust_language]" />
         <item itemvalue="Cargo.Test section02_testing" />
-        <item itemvalue="Cargo.Test section01_the_stack_and_heap" />
+        <item itemvalue="Cargo.test [rust_language]" />
+        <item itemvalue="Cargo.Test test_002" />
       </list>
     </recent_temporary>
   </component>
@@ -231,14 +226,7 @@
       <workItem from="1605534974346" duration="51000" />
       <workItem from="1605535034187" duration="8871000" />
       <workItem from="1605575121443" duration="604000" />
-      <workItem from="1605575744911" duration="9276000" />
-    </task>
-    <task id="LOCAL-00007" summary="3.10 Lifetimes">
-      <created>1604737656860</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1604737656860</updated>
+      <workItem from="1605575744911" duration="9697000" />
     </task>
     <task id="LOCAL-00008" summary="3.11 Mutability">
       <created>1604739750057</created>
@@ -576,7 +564,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605595814290</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="ch4.2 Testing">
+      <created>1605599401081</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1605599401081</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -596,7 +591,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="3.33 Deref Coercions" />
     <MESSAGE value="3.35 Raw Pointers" />
     <MESSAGE value="3.36 Unsafe" />
     <MESSAGE value="3.34 Macros" />
@@ -621,7 +615,8 @@
     <MESSAGE value="ch6.1 Ook! 写完之后这个方法是否是需要的结果是否有待考证!!!" />
     <MESSAGE value="Ook! 这个宏大致有了一些了解,后续有时间的话,自己重新模拟写一个!!!" />
     <MESSAGE value="ch4.1 The Stack and the Heap" />
-    <option name="LAST_COMMIT_MESSAGE" value="ch4.1 The Stack and the Heap" />
+    <MESSAGE value="ch4.2 Testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch4.2 Testing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="193" key="#Notifications" timestamp="1605183419050">
@@ -649,25 +644,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="688" y="216" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605186161158" />
-    <state width="1483" height="368" key="GridCell.Tab.0.bottom" timestamp="1605599243617">
+    <state width="1483" height="397" key="GridCell.Tab.0.bottom" timestamp="1605599661247">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="368" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605599243617" />
+    <state width="1483" height="397" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605599661247" />
     <state width="1868" height="420" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605596099138" />
-    <state width="1483" height="368" key="GridCell.Tab.0.center" timestamp="1605599243616">
+    <state width="1483" height="397" key="GridCell.Tab.0.center" timestamp="1605599661246">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="368" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605599243616" />
+    <state width="1483" height="397" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605599661246" />
     <state width="1868" height="420" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605596099137" />
-    <state width="1483" height="368" key="GridCell.Tab.0.left" timestamp="1605599243616">
+    <state width="1483" height="397" key="GridCell.Tab.0.left" timestamp="1605599661246">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="368" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605599243616" />
+    <state width="1483" height="397" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605599661246" />
     <state width="1868" height="420" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605596099137" />
-    <state width="1483" height="368" key="GridCell.Tab.0.right" timestamp="1605599243616">
+    <state width="1483" height="397" key="GridCell.Tab.0.right" timestamp="1605599661246">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="368" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605599243616" />
+    <state width="1483" height="397" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605599661246" />
     <state width="1868" height="420" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605596099138" />
     <state width="1483" height="262" key="GridCell.Tab.1.bottom" timestamp="1605063585606">
       <screen x="0" y="0" width="1536" height="824" />
@@ -703,15 +698,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="734" y="415" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604737640450" />
-    <state x="535" y="174" width="704" height="650" key="find.popup" timestamp="1605598066102">
+    <state x="535" y="174" width="704" height="650" key="find.popup" timestamp="1605599436540">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="535" y="174" width="704" height="650" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1605598066102" />
+    <state x="535" y="174" width="704" height="650" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1605599436540" />
     <state x="669" y="267" width="741" height="650" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605430312027" />
-    <state x="430" y="190" width="840" height="820" key="run.anything.popup" timestamp="1605599243508">
+    <state x="430" y="190" width="840" height="820" key="run.anything.popup" timestamp="1605599498209">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="430" y="190" width="840" height="820" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1605599243508" />
+    <state x="430" y="190" width="840" height="820" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1605599498209" />
     <state x="537" y="240" width="840" height="1034" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605506970503" />
     <state x="912" y="7" width="840" height="1034" key="search.everywhere.popup" timestamp="1605529438741">
       <screen x="0" y="0" width="1920" height="1040" />

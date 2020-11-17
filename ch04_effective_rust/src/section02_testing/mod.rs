@@ -15,3 +15,10 @@ fn test_001() {
 fn expensive_test() {
 
 }
+
+
+#[test]
+#[ignore]
+fn expensive_test2() {
+
+}
