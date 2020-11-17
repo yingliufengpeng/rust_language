@@ -24,6 +24,7 @@ mod section02_testing;
 mod section03_conditional_compilation;
 mod section05_iterators;
 mod section10_borrow_and_as_ref;
+mod section_11_release_channels;
 mod section_12_using_rust_without_the_standard_library;
 
 pub fn show() {
