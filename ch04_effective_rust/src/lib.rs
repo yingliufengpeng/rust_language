@@ -1,3 +1,5 @@
+
+
 //! The `ch04_effective_rust` crate provides functions that add numbers to other numbers.
 //!
 //! # Examples
@@ -22,6 +24,7 @@ mod section02_testing;
 mod section03_conditional_compilation;
 mod section05_iterators;
 mod section10_borrow_and_as_ref;
+mod section_12_using_rust_without_the_standard_library;
 
 pub fn show() {
     println!("ok");
