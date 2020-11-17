@@ -19,6 +19,7 @@
 
 mod section01_the_stack_and_heap;
 mod section02_testing;
+mod section03_conditional_compilation;
 
 pub fn show() {
     println!("ok");

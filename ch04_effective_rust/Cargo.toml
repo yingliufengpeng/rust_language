@@ -4,6 +4,13 @@ version = "0.1.0"
 authors = ["yingliufengpeng <2906631584@qq.com>"]
 edition = "2018"
 
+[features]
+# no features by default
+
+# Add feature "foo" here, then you can use id.
+# Our "foo" feature depends on nothing else.
+foo = []
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]

@@ -72,7 +72,7 @@ const MEM_SIZE: usize = 100;
 // First is a rule to detect when we find the matching Ook? Ook! sequence that closes the loop we're parsing.
 // In this case, we feed the accumulated loop contents to the previously defined @e rules.
 // Note that we don't do anything with the remaining input until(that will be handled by the @s rules)
-// Next, we have rulesfor entering and exiting nested loops. These adjust the counterand add the opcodes
+// Next, we have rules for entering and exiting nested loops. These adjust the counterand add the opcodes
 // to the buffer.
 // Finally, we have a rule for "everything else". Note the $op0, and $op1 captures: as far as Rust is
 // concerned, our Ook! tokens are always two Rust tokens: the identifier Ook, and another token. Thus,
