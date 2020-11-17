@@ -26,7 +26,7 @@ fn impl_hello_world(ast: &syn::DeriveInput) ->  quote::Tokens {
     let name = &ast.ident;
     // Check if derive(HelloWorld2) was specified for a struct
 
-    if let syn::Body::Struct(_) = ast.body { // body 是个结构体,模式匹配的写法
+    if let syn::Body::Struct(_) = ast.body { // body is a struct, it's applied for pattern match
         // Yes, this is a struct
         quote! {
             impl HelloWorld for #name {
