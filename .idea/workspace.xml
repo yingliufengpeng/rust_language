@@ -30,11 +30,20 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/ch98_rust_macro_02/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/ch98_little_book_of_macro/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/ch04_effective_rust/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch6.1 Ook! 写完之后这个方法是否是需要的结果是否有待考证!!!">
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="Ook! 这个宏大致有了一些了解,后续有时间的话,自己重新模拟写一个!!!">
+      <change afterPath="$PROJECT_DIR$/ch04_effective_rust/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch04_effective_rust/src/lib.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch04_effective_rust/src/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch04_effective_rust/src/section01_the_stack_and_heap.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch04_effective_rust/src/section02_testing/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch04_effective_rust/src/section02_testing/tests/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/rust_language.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rust_language.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch98_little_book_of_macro/src/ch6_1_Ook.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch98_little_book_of_macro/src/ch6_1_Ook.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +104,7 @@
       <command value="cmd" />
     </option>
   </component>
-  <component name="RunManager" selected="Cargo.Test ch6_1_Ook::tests::test_001">
+  <component name="RunManager" selected="Cargo.Test section01_the_stack_and_heap::tests::test_003">
     <configuration name="Test ch6_1_Ook::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package ch98_little_book_of_macro --lib ch6_1_Ook::tests::test_001 -- --exact" />
@@ -120,37 +129,37 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test macro_001::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test section01_the_stack_and_heap::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch99_rust_learning --lib macro_001::tests::test_001 -- --exact" />
+      <option name="command" value="test --package ch04_effective_rust --lib section01_the_stack_and_heap::tests::test_001 -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch98_little_book_of_macro" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch04_effective_rust" />
       <envs />
       <method v="2">
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test macro_002::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test section01_the_stack_and_heap::tests::test_003" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch99_rust_learning --lib macro_002::tests::test_001 -- --exact" />
+      <option name="command" value="test --package ch04_effective_rust --lib section01_the_stack_and_heap::tests::test_003 -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch98_little_book_of_macro" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch04_effective_rust" />
       <envs />
       <method v="2">
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test macro_002::tests::test_002" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test section02_testing::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch99_rust_learning --lib macro_002::tests::test_002 -- --exact" />
+      <option name="command" value="test --package ch04_effective_rust --lib section02_testing::test_001 -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch98_little_book_of_macro" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch04_effective_rust" />
       <envs />
       <method v="2">
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
@@ -163,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test section01_the_stack_and_heap::tests::test_003" />
+        <item itemvalue="Cargo.Test section01_the_stack_and_heap::tests::test_001" />
+        <item itemvalue="Cargo.Test section02_testing::test_001" />
         <item itemvalue="Cargo.Test ch6_1_Ook::tests::test_001" />
         <item itemvalue="Cargo.Test ch6_1_Ook::tests::test_002" />
-        <item itemvalue="Cargo.Test macro_002::tests::test_002" />
-        <item itemvalue="Cargo.Test macro_002::tests::test_001" />
-        <item itemvalue="Cargo.Test macro_001::tests::test_001" />
       </list>
     </recent_temporary>
   </component>
@@ -219,14 +228,7 @@
       <workItem from="1605534974346" duration="51000" />
       <workItem from="1605535034187" duration="8871000" />
       <workItem from="1605575121443" duration="604000" />
-      <workItem from="1605575744911" duration="2418000" />
-    </task>
-    <task id="LOCAL-00005" summary="3.8 Ownership">
-      <created>1604717422642</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1604717422642</updated>
+      <workItem from="1605575744911" duration="5716000" />
     </task>
     <task id="LOCAL-00006" summary="3.9 References and Borrowing">
       <created>1604736265112</created>
@@ -564,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605543792547</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Ook! 这个宏大致有了一些了解,后续有时间的话,自己重新模拟写一个!!!">
+      <created>1605580919026</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1605580919027</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -584,7 +593,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="3.31 Unsized Types" />
     <MESSAGE value="3.32 Operators And Overloading" />
     <MESSAGE value="3.33 Deref Coercions" />
     <MESSAGE value="3.35 Raw Pointers" />
@@ -609,7 +617,8 @@
     <MESSAGE value="ch5.3 Enum Parsing &#10;这个例子没有跑起来,可能需要一些rust语言本身的语法树的知识" />
     <MESSAGE value="ch5.3 Enum Parsing 初步对tt这种的类型的token树有了一些了解,了解的方法是通过Push_Down Accumulation的方式." />
     <MESSAGE value="ch6.1 Ook! 写完之后这个方法是否是需要的结果是否有待考证!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="ch6.1 Ook! 写完之后这个方法是否是需要的结果是否有待考证!!!" />
+    <MESSAGE value="Ook! 这个宏大致有了一些了解,后续有时间的话,自己重新模拟写一个!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ook! 这个宏大致有了一些了解,后续有时间的话,自己重新模拟写一个!!!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="193" key="#Notifications" timestamp="1605183419050">
@@ -637,26 +646,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="688" y="216" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605186161158" />
-    <state width="1868" height="21" key="GridCell.Tab.0.bottom" timestamp="1605580863102">
+    <state width="1868" height="220" key="GridCell.Tab.0.bottom" timestamp="1605593347663">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="158" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605536496932" />
-    <state width="1868" height="21" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605580863102" />
-    <state width="1868" height="21" key="GridCell.Tab.0.center" timestamp="1605580863102">
+    <state width="1868" height="220" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605593347663" />
+    <state width="1868" height="220" key="GridCell.Tab.0.center" timestamp="1605593347663">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="158" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605536496932" />
-    <state width="1868" height="21" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605580863102" />
-    <state width="1868" height="21" key="GridCell.Tab.0.left" timestamp="1605580863102">
+    <state width="1868" height="220" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605593347663" />
+    <state width="1868" height="220" key="GridCell.Tab.0.left" timestamp="1605593347663">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="158" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605536496931" />
-    <state width="1868" height="21" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605580863102" />
-    <state width="1868" height="21" key="GridCell.Tab.0.right" timestamp="1605580863102">
+    <state width="1868" height="220" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605593347663" />
+    <state width="1868" height="220" key="GridCell.Tab.0.right" timestamp="1605593347663">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="158" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605536496932" />
-    <state width="1868" height="21" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605580863102" />
+    <state width="1868" height="220" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605593347663" />
     <state width="1483" height="262" key="GridCell.Tab.1.bottom" timestamp="1605063585606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -682,11 +691,11 @@
     </state>
     <state x="143" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605359604002" />
     <state x="167" y="55" width="1507" height="881" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605506736900" />
-    <state x="326" y="101" key="Vcs.Push.Dialog.v2" timestamp="1605543797683">
+    <state x="326" y="101" key="Vcs.Push.Dialog.v2" timestamp="1605580923873">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="261" y="80" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604714524395" />
-    <state x="326" y="101" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605543797683" />
+    <state x="326" y="101" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605580923873" />
     <state x="734" y="415" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604737640450">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
