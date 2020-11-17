@@ -11,6 +11,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ch98_little_book_of_macro/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch98_macro_export_use/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch04_effective_rust/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch04_effective_rust/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />

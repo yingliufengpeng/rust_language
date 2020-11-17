@@ -17,7 +17,10 @@
 // outside the language itself, to drive deallocation(reference counting, as used by Rc<T> and Arc<T>, is one
 // example of this)
 
-
+#[test]
+fn test_001() {
+    println!("okkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk");
+}
 
 #[cfg(test)]
 mod tests {

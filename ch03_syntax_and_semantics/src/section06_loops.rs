@@ -10,7 +10,7 @@ mod tests {
             println!("Loop forever!!!");
 
 
-            if i == 10000 {
+            if i == 10 {
                 break;
             }
 
