@@ -23,6 +23,7 @@ mod section01_the_stack_and_heap;
 mod section02_testing;
 mod section02_testing2;
 mod section03_conditional_compilation;
+mod section04_documentation;
 mod section05_iterators;
 mod section10_borrow_and_as_ref;
 mod section_11_release_channels;
