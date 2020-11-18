@@ -13,6 +13,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ch04_effective_rust/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch04_effective_rust/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/ch04_effective_rust/hello_world_drive/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch97_rust_doc/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
