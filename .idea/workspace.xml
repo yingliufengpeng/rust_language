@@ -36,13 +36,11 @@
     <cargoProject FILE="$PROJECT_DIR$/ch05_rustonomicon/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch4.9 FFI 该功能目前没有实现,暂时看其它的相关的书籍">
-      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/lib.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section00_introduction.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/rust_language.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rust_language.iml" afterDir="false" />
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch0.0 Introduction">
+      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section1_1_how_safe_and_unsafe_interact.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch05_rustonomicon/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch05_rustonomicon/src/section00_introduction.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section0_0_introduction.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +113,7 @@
       <command value="cargo doc" />
     </option>
   </component>
-  <component name="RunManager" selected="Cargo.Test section00_introduction::tests::it_works">
+  <component name="RunManager" selected="Cargo.doc [rust_language]">
     <configuration name="Test section00_introduction::tests::it_works" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package ch05_rustonomicon --lib section00_introduction::tests::it_works -- --exact" />
@@ -183,10 +181,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.doc [rust_language]" />
         <item itemvalue="Cargo.Test section00_introduction::tests::it_works" />
         <item itemvalue="Cargo.Test section09_ffi::tests::test_002" />
         <item itemvalue="Cargo.Test section09_ffi::tests::test_001" />
-        <item itemvalue="Cargo.doc [rust_language]" />
         <item itemvalue="Cargo.Test section08_choosing_your_guarantees::tests::test_005" />
       </list>
     </recent_temporary>
@@ -243,14 +241,7 @@
       <workItem from="1605662782876" duration="637000" />
       <workItem from="1605663431589" duration="25812000" />
       <workItem from="1605749067954" duration="602000" />
-      <workItem from="1605750722071" duration="6227000" />
-    </task>
-    <task id="LOCAL-00021" summary="3.24 Universal Function Call Syntax">
-      <created>1604988409348</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1604988409348</updated>
+      <workItem from="1605750722071" duration="7446000" />
     </task>
     <task id="LOCAL-00022" summary="3.25 Creates and Modules">
       <created>1604995942439</created>
@@ -588,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605770140832</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="ch0.0 Introduction">
+      <created>1605770609242</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1605770609242</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -608,7 +606,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="ch4.6 Trailing Separators" />
     <MESSAGE value="ch4.7 TT Bundling" />
     <MESSAGE value="滑动窗口的大小,跟数据初始化的大小保持一致" />
     <MESSAGE value="ch4.8 Visibility" />
@@ -633,7 +630,8 @@
     <MESSAGE value="ch4.6 Concurrency" />
     <MESSAGE value="ch4.8 Choosing your Guarantees" />
     <MESSAGE value="ch4.9 FFI 该功能目前没有实现,暂时看其它的相关的书籍" />
-    <option name="LAST_COMMIT_MESSAGE" value="ch4.9 FFI 该功能目前没有实现,暂时看其它的相关的书籍" />
+    <MESSAGE value="ch0.0 Introduction" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch0.0 Introduction" />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="193" key="#Notifications" timestamp="1605183419050">
@@ -661,26 +659,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="688" y="216" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605763782407" />
-    <state width="1868" height="351" key="GridCell.Tab.0.bottom" timestamp="1605770521610">
+    <state width="1868" height="203" key="GridCell.Tab.0.bottom" timestamp="1605771306512">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="268" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605714261888" />
-    <state width="1868" height="351" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605770521610" />
-    <state width="1868" height="351" key="GridCell.Tab.0.center" timestamp="1605770521610">
+    <state width="1868" height="203" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605771306512" />
+    <state width="1868" height="203" key="GridCell.Tab.0.center" timestamp="1605771306510">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="268" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605714261888" />
-    <state width="1868" height="351" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605770521610" />
-    <state width="1868" height="351" key="GridCell.Tab.0.left" timestamp="1605770521610">
+    <state width="1868" height="203" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605771306510" />
+    <state width="1868" height="203" key="GridCell.Tab.0.left" timestamp="1605771306508">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="268" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605714261888" />
-    <state width="1868" height="351" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605770521610" />
-    <state width="1868" height="351" key="GridCell.Tab.0.right" timestamp="1605770521610">
+    <state width="1868" height="203" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605771306508" />
+    <state width="1868" height="203" key="GridCell.Tab.0.right" timestamp="1605771306511">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="268" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605714261888" />
-    <state width="1868" height="351" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605770521610" />
+    <state width="1868" height="203" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605771306511" />
     <state width="1868" height="353" key="GridCell.Tab.1.bottom" timestamp="1605755163402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
