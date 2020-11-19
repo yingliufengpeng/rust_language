@@ -5,6 +5,7 @@ members = [
     "ch02_guessing_game",
     "ch03_syntax_and_semantics",
     "ch04_effective_rust",
+    "ch05_rustonomicon",
     "ch97_rust_doc",
     "ch98_rust_macro_01",
     "ch98_rust_macro_02",
