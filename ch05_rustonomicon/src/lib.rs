@@ -8,6 +8,7 @@
 pub mod section0_0_introduction;
 pub mod section1_1_how_safe_and_unsafe_interact;
 pub mod section1_2_what_unsafe_can_do;
+pub mod section1_3_working_with_unsafe;
 
 
 #[cfg(test)]
