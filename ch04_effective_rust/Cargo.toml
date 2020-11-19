@@ -15,3 +15,5 @@ foo = []
 
 [dependencies]
 hello_world_drive = { path = "./hello_world_drive" }
+libc = "0.2.0"
+snap = "1"

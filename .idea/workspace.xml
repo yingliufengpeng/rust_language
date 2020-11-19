@@ -35,9 +35,12 @@
     <cargoProject FILE="$PROJECT_DIR$/ch97_rust_doc/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch4.6 Concurrency">
-      <change afterPath="$PROJECT_DIR$/ch04_effective_rust/src/section08_choosing_your_guarantees.rs" afterDir="false" />
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch4.8 Choosing your Guarantees">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch04_effective_rust/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch04_effective_rust/src/section09_ffi.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch04_effective_rust/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/ch04_effective_rust/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ch04_effective_rust/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch04_effective_rust/src/lib.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +76,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -81,13 +86,13 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ch04_effective_rust/src" />
+    <property name="last_opened_file_path" value="D:/Clion_repo/cpython-3.9" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
     <property name="org.rust.disableDetachedFileInspectionC:/Users/Abner/CLionProjects/rust_language/ch03_syntax_and_semantics/src/section11_mutablity.rs" value="true" />
     <property name="org.rust.disableDetachedFileInspectionC:/Users/Abner/CLionProjects/rust_language/ch99_rust_learning/src/mod1/lib.rs" value="true" />
     <property name="org.rust.disableDetachedFileInspectionC:/Users/Abner/CLionProjects/rust_language/ch99_rust_learning/src/mod2/mod2.rs" value="true" />
-    <property name="settings.editor.selected.configurable" value="language.rust" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -109,31 +114,7 @@
       <command value="cargo doc" />
     </option>
   </component>
-  <component name="RunManager" selected="Cargo.doc [rust_language]">
-    <configuration name="Test section08_choosing_your_guarantees::tests::test_002" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch04_effective_rust --lib section08_choosing_your_guarantees::tests::test_002 -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch97_rust_doc" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test section08_choosing_your_guarantees::tests::test_003" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch04_effective_rust --lib section08_choosing_your_guarantees::tests::test_003 -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch97_rust_doc" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Cargo.Test section09_ffi::tests::test_002">
     <configuration name="Test section08_choosing_your_guarantees::tests::test_004" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package ch04_effective_rust --lib section08_choosing_your_guarantees::tests::test_004 -- --exact" />
@@ -149,6 +130,30 @@
     <configuration name="Test section08_choosing_your_guarantees::tests::test_005" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package ch04_effective_rust --lib section08_choosing_your_guarantees::tests::test_005 -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch97_rust_doc" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test section09_ffi::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ch04_effective_rust --lib section09_ffi::tests::test_001 -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch97_rust_doc" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test section09_ffi::tests::test_002" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ch04_effective_rust --lib section09_ffi::tests::test_002 -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -177,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test section09_ffi::tests::test_002" />
+        <item itemvalue="Cargo.Test section09_ffi::tests::test_001" />
         <item itemvalue="Cargo.doc [rust_language]" />
         <item itemvalue="Cargo.Test section08_choosing_your_guarantees::tests::test_005" />
         <item itemvalue="Cargo.Test section08_choosing_your_guarantees::tests::test_004" />
-        <item itemvalue="Cargo.Test section08_choosing_your_guarantees::tests::test_003" />
-        <item itemvalue="Cargo.Test section08_choosing_your_guarantees::tests::test_002" />
       </list>
     </recent_temporary>
   </component>
@@ -235,14 +240,9 @@
       <workItem from="1605575121443" duration="604000" />
       <workItem from="1605575744911" duration="20209000" />
       <workItem from="1605662782876" duration="637000" />
-      <workItem from="1605663431589" duration="25503000" />
-    </task>
-    <task id="LOCAL-00019" summary="3.22 Trait Objects">
-      <created>1604927810526</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1604927810527</updated>
+      <workItem from="1605663431589" duration="25812000" />
+      <workItem from="1605749067954" duration="602000" />
+      <workItem from="1605750722071" duration="5522000" />
     </task>
     <task id="LOCAL-00020" summary="3.23  Closures">
       <created>1604932758586</created>
@@ -580,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605708646281</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="ch4.8 Choosing your Guarantees">
+      <created>1605715636591</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1605715636591</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -600,7 +607,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="ch4.4 Push-Down Accumulation" />
     <MESSAGE value="ch4.5 Repetition Replacement" />
     <MESSAGE value="ch4.6 Trailing Separators" />
     <MESSAGE value="ch4.7 TT Bundling" />
@@ -625,7 +631,8 @@
     <MESSAGE value="ch4.4 Documentation 暂时看完, 有时间看看 What's the rustdoc?" />
     <MESSAGE value="ch97_rust doc What is rustdoc? 还是需要勤加练习" />
     <MESSAGE value="ch4.6 Concurrency" />
-    <option name="LAST_COMMIT_MESSAGE" value="ch4.6 Concurrency" />
+    <MESSAGE value="ch4.8 Choosing your Guarantees" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch4.8 Choosing your Guarantees" />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="193" key="#Notifications" timestamp="1605183419050">
@@ -649,50 +656,50 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="132" y="335" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605235026525" />
-    <state x="688" y="216" key="FileChooserDialogImpl" timestamp="1605186161158">
+    <state x="688" y="216" key="FileChooserDialogImpl" timestamp="1605763782407">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="688" y="216" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605186161158" />
-    <state width="1868" height="203" key="GridCell.Tab.0.bottom" timestamp="1605715398384">
+    <state x="688" y="216" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605763782407" />
+    <state width="1868" height="173" key="GridCell.Tab.0.bottom" timestamp="1605769810380">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="268" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605714261888" />
-    <state width="1868" height="203" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605715398384" />
-    <state width="1868" height="203" key="GridCell.Tab.0.center" timestamp="1605715398384">
+    <state width="1868" height="173" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605769810380" />
+    <state width="1868" height="173" key="GridCell.Tab.0.center" timestamp="1605769810380">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="268" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605714261888" />
-    <state width="1868" height="203" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605715398384" />
-    <state width="1868" height="203" key="GridCell.Tab.0.left" timestamp="1605715398383">
+    <state width="1868" height="173" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605769810380" />
+    <state width="1868" height="173" key="GridCell.Tab.0.left" timestamp="1605769810380">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="268" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605714261888" />
-    <state width="1868" height="203" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605715398383" />
-    <state width="1868" height="203" key="GridCell.Tab.0.right" timestamp="1605715398384">
+    <state width="1868" height="173" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605769810380" />
+    <state width="1868" height="173" key="GridCell.Tab.0.right" timestamp="1605769810380">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="268" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605714261888" />
-    <state width="1868" height="203" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605715398384" />
-    <state width="1868" height="353" key="GridCell.Tab.1.bottom" timestamp="1605667699806">
+    <state width="1868" height="173" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605769810380" />
+    <state width="1868" height="353" key="GridCell.Tab.1.bottom" timestamp="1605755163402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="262" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605063585606" />
-    <state width="1868" height="353" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605667699806" />
-    <state width="1868" height="353" key="GridCell.Tab.1.center" timestamp="1605667699806">
+    <state width="1868" height="353" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605755163402" />
+    <state width="1868" height="353" key="GridCell.Tab.1.center" timestamp="1605755163402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="262" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605063585605" />
-    <state width="1868" height="353" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605667699806" />
-    <state width="1868" height="353" key="GridCell.Tab.1.left" timestamp="1605667699806">
+    <state width="1868" height="353" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605755163402" />
+    <state width="1868" height="353" key="GridCell.Tab.1.left" timestamp="1605755163402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="262" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605063585605" />
-    <state width="1868" height="353" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605667699806" />
-    <state width="1868" height="353" key="GridCell.Tab.1.right" timestamp="1605667699806">
+    <state width="1868" height="353" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605755163402" />
+    <state width="1868" height="353" key="GridCell.Tab.1.right" timestamp="1605755163402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="262" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605063585605" />
-    <state width="1868" height="353" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605667699806" />
+    <state width="1868" height="353" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605755163402" />
     <state x="551" y="207" key="IDE.errors.dialog" timestamp="1605619491016">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -701,16 +708,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="700" y="174" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605506676286" />
-    <state x="167" y="55" width="1507" height="881" key="SettingsEditor" timestamp="1605619581031">
+    <state x="167" y="55" width="1507" height="881" key="SettingsEditor" timestamp="1605754607265">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="143" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605597598715" />
-    <state x="167" y="55" width="1507" height="881" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605619581031" />
-    <state x="326" y="101" key="Vcs.Push.Dialog.v2" timestamp="1605628316177">
+    <state x="167" y="55" width="1507" height="881" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605754607265" />
+    <state x="326" y="101" key="Vcs.Push.Dialog.v2" timestamp="1605715640535">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="261" y="80" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604714524395" />
-    <state x="326" y="101" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605628316177" />
+    <state x="326" y="101" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605715640535" />
     <state x="734" y="415" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604737640450">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -720,11 +727,11 @@
     </state>
     <state x="535" y="174" width="704" height="650" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1605599436540" />
     <state x="391" y="358" width="1110" height="682" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605665991763" />
-    <state x="494" y="88" width="840" height="1034" key="run.anything.popup" timestamp="1605706370215">
+    <state x="495" y="89" width="840" height="1034" key="run.anything.popup" timestamp="1605715565173">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="430" y="190" width="840" height="820" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1605683024898" />
-    <state x="494" y="88" width="840" height="1034" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605706370215" />
+    <state x="495" y="89" width="840" height="1034" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605715565173" />
     <state x="914" y="7" width="840" height="1034" key="search.everywhere.popup" timestamp="1605686448885">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
