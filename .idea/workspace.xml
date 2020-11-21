@@ -36,9 +36,8 @@
     <cargoProject FILE="$PROJECT_DIR$/ch05_rustonomicon/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch1.3 Working with Unsafe">
-      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section2_2_exotically_sized_types.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch2.2 Exotically Sized Types">
+      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section2_3_other_reprs.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ch05_rustonomicon/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/lib.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -242,14 +241,7 @@
       <workItem from="1605749067954" duration="602000" />
       <workItem from="1605750722071" duration="11590000" />
       <workItem from="1605935115222" duration="15000" />
-      <workItem from="1605935141219" duration="1058000" />
-    </task>
-    <task id="LOCAL-00026" summary="3.29 Casting Between Types">
-      <created>1605014845024</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1605014845024</updated>
+      <workItem from="1605935141219" duration="1779000" />
     </task>
     <task id="LOCAL-00027" summary="测试对rust包模块的使用">
       <created>1605015302400</created>
@@ -587,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605773287544</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="ch2.2 Exotically Sized Types">
+      <created>1605936402473</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1605936402473</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -607,7 +606,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="ch5.2 Counting" />
     <MESSAGE value="ch5.3 Enum Parsing &#10;这个例子没有跑起来,可能需要一些rust语言本身的语法树的知识" />
     <MESSAGE value="ch5.3 Enum Parsing 初步对tt这种的类型的token树有了一些了解,了解的方法是通过Push_Down Accumulation的方式." />
     <MESSAGE value="ch6.1 Ook! 写完之后这个方法是否是需要的结果是否有待考证!!!" />
@@ -632,7 +630,8 @@
     <MESSAGE value="ch1.1 how_safe_and_unsafe_interact" />
     <MESSAGE value="ch1.2 What Unsafe Can Do" />
     <MESSAGE value="ch1.3 Working with Unsafe" />
-    <option name="LAST_COMMIT_MESSAGE" value="ch1.3 Working with Unsafe" />
+    <MESSAGE value="ch2.2 Exotically Sized Types" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch2.2 Exotically Sized Types" />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="193" key="#Notifications" timestamp="1605183419050">
