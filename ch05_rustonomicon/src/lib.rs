@@ -1,3 +1,4 @@
+#![feature(label_break_value)]
 //!
 //! # The Dark Arts of Unsafe Rust.
 //!
@@ -24,6 +25,7 @@ pub mod section2_2_exotically_sized_types;
 pub mod section2_3_other_reprs;
 pub mod section3_1_reference;
 pub mod section3_2_aliasing;
+pub mod section3_3_lifetimes;
 
 
 #[cfg(test)]

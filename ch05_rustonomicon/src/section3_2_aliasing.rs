@@ -17,7 +17,7 @@
 #[cfg(test)]
 mod tests {
 
-    fn compute2(input: &u32, output: &mut u32) {
+    fn compute3(input: &u32, output: &mut u32) {
         let mut temp = *output;
         if *input > 10 {
             temp = 1;
