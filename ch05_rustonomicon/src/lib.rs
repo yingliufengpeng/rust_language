@@ -34,6 +34,7 @@ pub mod section3_6_unbounded_lifetimes;
 pub mod section3_7_higher_rank_trait_bounds;
 pub mod section3_8_subtyping_and_variance;
 pub mod section3_9_drop_check;
+pub mod section3_10_phantomdata;
 
 
 
