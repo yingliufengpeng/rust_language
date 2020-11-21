@@ -26,6 +26,8 @@ pub mod section2_3_other_reprs;
 pub mod section3_1_reference;
 pub mod section3_2_aliasing;
 pub mod section3_3_lifetimes;
+pub mod section3_4_limits_of_lifetimes;
+pub mod section3_5_lifetime_elision;
 
 
 #[cfg(test)]

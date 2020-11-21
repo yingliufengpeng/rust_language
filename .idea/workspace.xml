@@ -36,11 +36,9 @@
     <cargoProject FILE="$PROJECT_DIR$/ch05_rustonomicon/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch3.2 Aliasing">
-      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section3_3_lifetimes.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch3.3 Lifetimes">
+      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section3_4_limits_of_lifetimes.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ch05_rustonomicon/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch05_rustonomicon/src/section3_2_aliasing.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section3_2_aliasing.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,19 +111,7 @@
       <command value="cargo doc" />
     </option>
   </component>
-  <component name="RunManager" selected="Cargo.Test section3_3_lifetimes::tests::test_004">
-    <configuration name="Test section3_2_aliasing::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch05_rustonomicon --lib section3_2_aliasing::tests::test_001 -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch05_rustonomicon" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Cargo.Test section3_4_limits_of_lifetimes::tests::test_001">
     <configuration name="Test section3_3_lifetimes::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package ch05_rustonomicon --lib section3_3_lifetimes::tests" />
@@ -174,6 +160,18 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test section3_4_limits_of_lifetimes::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ch05_rustonomicon --lib section3_4_limits_of_lifetimes::tests::test_001 -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch05_rustonomicon" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -181,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test section3_4_limits_of_lifetimes::tests::test_001" />
         <item itemvalue="Cargo.Test section3_3_lifetimes::tests::test_004" />
         <item itemvalue="Cargo.Test section3_3_lifetimes::tests::test_002" />
         <item itemvalue="Cargo.Test section3_3_lifetimes::tests" />
         <item itemvalue="Cargo.Test section3_3_lifetimes::tests::it_works" />
-        <item itemvalue="Cargo.Test section3_2_aliasing::tests::test_001" />
       </list>
     </recent_temporary>
   </component>
@@ -243,14 +241,7 @@
       <workItem from="1605749067954" duration="602000" />
       <workItem from="1605750722071" duration="11590000" />
       <workItem from="1605935115222" duration="15000" />
-      <workItem from="1605935141219" duration="6299000" />
-    </task>
-    <task id="LOCAL-00030" summary="3.32 Operators And Overloading">
-      <created>1605018212362</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1605018212362</updated>
+      <workItem from="1605935141219" duration="6966000" />
     </task>
     <task id="LOCAL-00031" summary="3.33 Deref Coercions">
       <created>1605019111078</created>
@@ -588,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605939840092</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="ch3.3 Lifetimes">
+      <created>1605941857474</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1605941857474</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -608,7 +606,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Ook! 这个宏大致有了一些了解,后续有时间的话,自己重新模拟写一个!!!" />
     <MESSAGE value="ch4.1 The Stack and the Heap" />
     <MESSAGE value="ch4.2 Testing" />
     <MESSAGE value="ch4.2 Testing update" />
@@ -633,7 +630,8 @@
     <MESSAGE value="ch2.3 Other reprs&#10;该文档以后补上" />
     <MESSAGE value="ch3.1 References" />
     <MESSAGE value="ch3.2 Aliasing" />
-    <option name="LAST_COMMIT_MESSAGE" value="ch3.2 Aliasing" />
+    <MESSAGE value="ch3.3 Lifetimes" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch3.3 Lifetimes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="193" key="#Notifications" timestamp="1605183419050">
@@ -665,26 +663,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="402" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605773329997" />
-    <state width="903" height="160" key="GridCell.Tab.0.bottom" timestamp="1605941314912">
+    <state width="1868" height="160" key="GridCell.Tab.0.bottom" timestamp="1605941831338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="268" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605714261888" />
-    <state width="903" height="160" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605941314912" />
-    <state width="903" height="160" key="GridCell.Tab.0.center" timestamp="1605941314912">
+    <state width="1868" height="160" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605941831338" />
+    <state width="1868" height="160" key="GridCell.Tab.0.center" timestamp="1605941831338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="268" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605714261888" />
-    <state width="903" height="160" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605941314912" />
-    <state width="903" height="160" key="GridCell.Tab.0.left" timestamp="1605941314912">
+    <state width="1868" height="160" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605941831338" />
+    <state width="1868" height="160" key="GridCell.Tab.0.left" timestamp="1605941831338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="268" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605714261888" />
-    <state width="903" height="160" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605941314912" />
-    <state width="903" height="160" key="GridCell.Tab.0.right" timestamp="1605941314912">
+    <state width="1868" height="160" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605941831338" />
+    <state width="1868" height="160" key="GridCell.Tab.0.right" timestamp="1605941831338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="268" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605714261888" />
-    <state width="903" height="160" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605941314912" />
+    <state width="1868" height="160" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605941831338" />
     <state width="1868" height="353" key="GridCell.Tab.1.bottom" timestamp="1605755163402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
