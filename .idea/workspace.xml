@@ -36,8 +36,8 @@
     <cargoProject FILE="$PROJECT_DIR$/ch05_rustonomicon/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch3.6 Unbounded Lifetimes">
-      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section3_7_higher_rank_trait_bounds.rs" afterDir="false" />
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch3.7 Higher-Rank Trait Bounds">
+      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section3_8_subtyping_and_variance.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ch05_rustonomicon/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/lib.rs" afterDir="false" />
     </list>
@@ -242,14 +242,7 @@
       <workItem from="1605749067954" duration="602000" />
       <workItem from="1605750722071" duration="11590000" />
       <workItem from="1605935115222" duration="15000" />
-      <workItem from="1605935141219" duration="9050000" />
-    </task>
-    <task id="LOCAL-00034" summary="3.34 Macros">
-      <created>1605078602211</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1605078602211</updated>
+      <workItem from="1605935141219" duration="12061000" />
     </task>
     <task id="LOCAL-00035" summary="3.34 Macros  &#10;关于rust 宏这块的知识的确是有些吃力,需要大量的实践">
       <created>1605078719367</created>
@@ -587,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605944411627</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="ch3.7 Higher-Rank Trait Bounds">
+      <created>1605944773981</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1605944773981</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -607,7 +607,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="ch4.3 Conditional Compilation" />
     <MESSAGE value="ch4.5 Iterators" />
     <MESSAGE value="ch4.10 Borrow and AsRef" />
     <MESSAGE value="ch4.12 Using Rust without the standard library" />
@@ -632,7 +631,8 @@
     <MESSAGE value="ch3.4 Limits of Lifetimes" />
     <MESSAGE value="ch3.5 Lifetime Elision" />
     <MESSAGE value="ch3.6 Unbounded Lifetimes" />
-    <option name="LAST_COMMIT_MESSAGE" value="ch3.6 Unbounded Lifetimes" />
+    <MESSAGE value="ch3.7 Higher-Rank Trait Bounds" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch3.7 Higher-Rank Trait Bounds" />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="193" key="#Notifications" timestamp="1605183419050">
@@ -664,26 +664,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="402" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605773329997" />
-    <state width="1868" height="335" key="GridCell.Tab.0.bottom" timestamp="1605944658556">
+    <state width="1113" height="3" key="GridCell.Tab.0.bottom" timestamp="1605962617659">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="268" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605714261888" />
-    <state width="1868" height="335" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605944658556" />
-    <state width="1868" height="335" key="GridCell.Tab.0.center" timestamp="1605944658556">
+    <state width="1113" height="3" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605962617659" />
+    <state width="1113" height="3" key="GridCell.Tab.0.center" timestamp="1605962617658">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="268" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605714261888" />
-    <state width="1868" height="335" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605944658556" />
-    <state width="1868" height="335" key="GridCell.Tab.0.left" timestamp="1605944658555">
+    <state width="1113" height="3" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605962617658" />
+    <state width="1113" height="3" key="GridCell.Tab.0.left" timestamp="1605962617656">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="268" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605714261888" />
-    <state width="1868" height="335" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605944658555" />
-    <state width="1868" height="335" key="GridCell.Tab.0.right" timestamp="1605944658556">
+    <state width="1113" height="3" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605962617656" />
+    <state width="1113" height="3" key="GridCell.Tab.0.right" timestamp="1605962617658">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="268" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605714261888" />
-    <state width="1868" height="335" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605944658556" />
+    <state width="1113" height="3" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605962617658" />
     <state width="1868" height="353" key="GridCell.Tab.1.bottom" timestamp="1605755163402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
