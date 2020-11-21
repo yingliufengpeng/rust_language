@@ -36,10 +36,10 @@
     <cargoProject FILE="$PROJECT_DIR$/ch05_rustonomicon/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch3.10 PhantomData 一知半解">
-      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section3_11_splitting_borrows.rs" afterDir="false" />
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch3.11 Splitting Borrows 需要实践">
+      <change afterPath="$PROJECT_DIR$/ch99_rust_learning/src/phantomdata.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch05_rustonomicon/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch99_rust_learning/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch99_rust_learning/src/lib.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,14 +242,7 @@
       <workItem from="1605749067954" duration="602000" />
       <workItem from="1605750722071" duration="11590000" />
       <workItem from="1605935115222" duration="15000" />
-      <workItem from="1605935141219" duration="19992000" />
-    </task>
-    <task id="LOCAL-00038" summary="ch3 macro practical introduction complete!">
-      <created>1605239965677</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1605239965677</updated>
+      <workItem from="1605935141219" duration="20727000" />
     </task>
     <task id="LOCAL-00039" summary="初始化 ch4">
       <created>1605244056261</created>
@@ -587,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605969476924</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="ch3.11 Splitting Borrows 需要实践">
+      <created>1605971675533</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1605971675533</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -607,7 +607,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="ch4.11 Release Channels" />
     <MESSAGE value="ch4.13 Procedural Macros (and custom Derive)" />
     <MESSAGE value="ch4.13 Procedural Macros (and custom Derive) update" />
     <MESSAGE value="ch4.4 Documentation 暂时看完, 有时间看看 What's the rustdoc?" />
@@ -632,7 +631,8 @@
     <MESSAGE value="ch3.8 Subtyping and Variance" />
     <MESSAGE value="ch3.9 Drop Check &#10;这个章节 需要思考,思考" />
     <MESSAGE value="ch3.10 PhantomData 一知半解" />
-    <option name="LAST_COMMIT_MESSAGE" value="ch3.10 PhantomData 一知半解" />
+    <MESSAGE value="ch3.11 Splitting Borrows 需要实践" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch3.11 Splitting Borrows 需要实践" />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="193" key="#Notifications" timestamp="1605183419050">
@@ -668,25 +668,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="402" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605773329997" />
-    <state width="1483" height="106" key="GridCell.Tab.0.bottom" timestamp="1605971427535">
+    <state width="1483" height="168" key="GridCell.Tab.0.bottom" timestamp="1605971981161">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="106" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605971427535" />
+    <state width="1483" height="168" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605971981161" />
     <state width="1113" height="100" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605967738120" />
-    <state width="1483" height="106" key="GridCell.Tab.0.center" timestamp="1605971427535">
+    <state width="1483" height="168" key="GridCell.Tab.0.center" timestamp="1605971981160">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="106" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605971427535" />
+    <state width="1483" height="168" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605971981160" />
     <state width="1113" height="100" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605967738120" />
-    <state width="1483" height="106" key="GridCell.Tab.0.left" timestamp="1605971427535">
+    <state width="1483" height="168" key="GridCell.Tab.0.left" timestamp="1605971981160">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="106" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605971427535" />
+    <state width="1483" height="168" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605971981160" />
     <state width="1113" height="100" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605967738119" />
-    <state width="1483" height="106" key="GridCell.Tab.0.right" timestamp="1605971427535">
+    <state width="1483" height="168" key="GridCell.Tab.0.right" timestamp="1605971981161">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="106" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605971427535" />
+    <state width="1483" height="168" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605971981161" />
     <state width="1113" height="100" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605967738120" />
     <state width="1868" height="353" key="GridCell.Tab.1.bottom" timestamp="1605755163402">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -721,10 +721,10 @@
     </state>
     <state x="143" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605597598715" />
     <state x="167" y="55" width="1507" height="881" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605754607265" />
-    <state x="326" y="101" key="Vcs.Push.Dialog.v2" timestamp="1605715640535">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="261" y="80" key="Vcs.Push.Dialog.v2" timestamp="1605971636322">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="261" y="80" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604714524395" />
+    <state x="261" y="80" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605971636322" />
     <state x="326" y="101" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605715640535" />
     <state x="734" y="415" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604737640450">
       <screen x="0" y="0" width="1920" height="1040" />

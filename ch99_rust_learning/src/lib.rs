@@ -4,3 +4,4 @@ mod mod2;
 mod tools;
 mod macro_001;
 mod macro_002;
+mod phantomdata;
