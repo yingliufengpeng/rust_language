@@ -29,6 +29,7 @@ pub mod section3_3_lifetimes;
 pub mod section3_4_limits_of_lifetimes;
 pub mod section3_5_lifetime_elision;
 pub mod section3_6_unbounded_lifetimes;
+pub mod section3_7_higher_rank_trait_bounds;
 
 
 #[cfg(test)]
