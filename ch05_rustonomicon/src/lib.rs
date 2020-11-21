@@ -28,6 +28,7 @@ pub mod section3_2_aliasing;
 pub mod section3_3_lifetimes;
 pub mod section3_4_limits_of_lifetimes;
 pub mod section3_5_lifetime_elision;
+pub mod section3_6_unbounded_lifetimes;
 
 
 #[cfg(test)]
