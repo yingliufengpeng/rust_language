@@ -22,6 +22,7 @@ pub mod section1_3_working_with_unsafe;
 pub mod section2_1_data_layout;
 pub mod section2_2_exotically_sized_types;
 pub mod section2_3_other_reprs;
+pub mod section3_1_reference;
 
 
 #[cfg(test)]

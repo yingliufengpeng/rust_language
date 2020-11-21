@@ -36,8 +36,9 @@
     <cargoProject FILE="$PROJECT_DIR$/ch05_rustonomicon/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch2.2 Exotically Sized Types">
-      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section2_3_other_reprs.rs" afterDir="false" />
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch2.3 Other reprs&#10;该文档以后补上">
+      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section3_1_reference.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ch05_rustonomicon/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/lib.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,19 +112,7 @@
       <command value="cargo doc" />
     </option>
   </component>
-  <component name="RunManager" selected="Cargo.Test section2_2_exotically_sized_types::tests::it_works">
-    <configuration name="Test section00_introduction::tests::it_works" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch05_rustonomicon --lib section00_introduction::tests::it_works -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch05_rustonomicon" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Cargo.Test section3_1_reference::tests::it_works">
     <configuration name="Test section1_3_working_with_unsafe::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package ch05_rustonomicon --lib section1_3_working_with_unsafe::tests::test_001 -- --exact" />
@@ -160,6 +149,18 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test section3_1_reference::tests::it_works" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ch05_rustonomicon --lib section3_1_reference::tests::it_works -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch05_rustonomicon" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="doc [rust_language]" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="doc" />
@@ -179,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test section3_1_reference::tests::it_works" />
         <item itemvalue="Cargo.Test section2_2_exotically_sized_types::tests::it_works" />
         <item itemvalue="Cargo.Test section2_2_exotically_sized_types::tests" />
         <item itemvalue="Cargo.doc [rust_language]" />
         <item itemvalue="Cargo.Test section1_3_working_with_unsafe::tests::test_001" />
-        <item itemvalue="Cargo.Test section00_introduction::tests::it_works" />
       </list>
     </recent_temporary>
   </component>
@@ -241,14 +242,7 @@
       <workItem from="1605749067954" duration="602000" />
       <workItem from="1605750722071" duration="11590000" />
       <workItem from="1605935115222" duration="15000" />
-      <workItem from="1605935141219" duration="1779000" />
-    </task>
-    <task id="LOCAL-00027" summary="测试对rust包模块的使用">
-      <created>1605015302400</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1605015302401</updated>
+      <workItem from="1605935141219" duration="2959000" />
     </task>
     <task id="LOCAL-00028" summary="3.30 Associated Types">
       <created>1605016918417</created>
@@ -586,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605936402473</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="ch2.3 Other reprs&#10;该文档以后补上">
+      <created>1605937038171</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1605937038171</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -606,7 +607,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="ch5.3 Enum Parsing &#10;这个例子没有跑起来,可能需要一些rust语言本身的语法树的知识" />
     <MESSAGE value="ch5.3 Enum Parsing 初步对tt这种的类型的token树有了一些了解,了解的方法是通过Push_Down Accumulation的方式." />
     <MESSAGE value="ch6.1 Ook! 写完之后这个方法是否是需要的结果是否有待考证!!!" />
     <MESSAGE value="Ook! 这个宏大致有了一些了解,后续有时间的话,自己重新模拟写一个!!!" />
@@ -631,7 +631,8 @@
     <MESSAGE value="ch1.2 What Unsafe Can Do" />
     <MESSAGE value="ch1.3 Working with Unsafe" />
     <MESSAGE value="ch2.2 Exotically Sized Types" />
-    <option name="LAST_COMMIT_MESSAGE" value="ch2.2 Exotically Sized Types" />
+    <MESSAGE value="ch2.3 Other reprs&#10;该文档以后补上" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch2.3 Other reprs&#10;该文档以后补上" />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="193" key="#Notifications" timestamp="1605183419050">
@@ -663,26 +664,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="402" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605773329997" />
-    <state width="903" height="58" key="GridCell.Tab.0.bottom" timestamp="1605936165341">
+    <state width="903" height="100" key="GridCell.Tab.0.bottom" timestamp="1605938105658">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="268" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605714261888" />
-    <state width="903" height="58" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605936165341" />
-    <state width="903" height="58" key="GridCell.Tab.0.center" timestamp="1605936165341">
+    <state width="903" height="100" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605938105658" />
+    <state width="903" height="100" key="GridCell.Tab.0.center" timestamp="1605938105658">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="268" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605714261888" />
-    <state width="903" height="58" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605936165341" />
-    <state width="903" height="58" key="GridCell.Tab.0.left" timestamp="1605936165341">
+    <state width="903" height="100" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605938105658" />
+    <state width="903" height="100" key="GridCell.Tab.0.left" timestamp="1605938105657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="268" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605714261888" />
-    <state width="903" height="58" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605936165341" />
-    <state width="903" height="58" key="GridCell.Tab.0.right" timestamp="1605936165341">
+    <state width="903" height="100" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605938105657" />
+    <state width="903" height="100" key="GridCell.Tab.0.right" timestamp="1605938105658">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="268" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605714261888" />
-    <state width="903" height="58" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605936165341" />
+    <state width="903" height="100" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605938105658" />
     <state width="1868" height="353" key="GridCell.Tab.1.bottom" timestamp="1605755163402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
