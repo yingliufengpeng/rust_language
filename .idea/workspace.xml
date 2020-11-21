@@ -37,7 +37,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch1.3 Working with Unsafe">
-      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section2_1_data_layout.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section2_2_exotically_sized_types.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ch05_rustonomicon/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/lib.rs" afterDir="false" />
     </list>
@@ -112,7 +112,7 @@
       <command value="cargo doc" />
     </option>
   </component>
-  <component name="RunManager" selected="Cargo.doc [rust_language]">
+  <component name="RunManager" selected="Cargo.Test section2_2_exotically_sized_types::tests::it_works">
     <configuration name="Test section00_introduction::tests::it_works" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package ch05_rustonomicon --lib section00_introduction::tests::it_works -- --exact" />
@@ -125,33 +125,33 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test section09_ffi::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch04_effective_rust --lib section09_ffi::tests::test_001 -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch97_rust_doc" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test section09_ffi::tests::test_002" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch04_effective_rust --lib section09_ffi::tests::test_002 -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch97_rust_doc" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Test section1_3_working_with_unsafe::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package ch05_rustonomicon --lib section1_3_working_with_unsafe::tests::test_001 -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch05_rustonomicon" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test section2_2_exotically_sized_types::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ch05_rustonomicon --lib section2_2_exotically_sized_types::tests" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch05_rustonomicon" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test section2_2_exotically_sized_types::tests::it_works" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ch05_rustonomicon --lib section2_2_exotically_sized_types::tests::it_works -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -180,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test section2_2_exotically_sized_types::tests::it_works" />
+        <item itemvalue="Cargo.Test section2_2_exotically_sized_types::tests" />
         <item itemvalue="Cargo.doc [rust_language]" />
         <item itemvalue="Cargo.Test section1_3_working_with_unsafe::tests::test_001" />
         <item itemvalue="Cargo.Test section00_introduction::tests::it_works" />
-        <item itemvalue="Cargo.Test section09_ffi::tests::test_002" />
-        <item itemvalue="Cargo.Test section09_ffi::tests::test_001" />
       </list>
     </recent_temporary>
   </component>
@@ -241,6 +241,8 @@
       <workItem from="1605663431589" duration="25812000" />
       <workItem from="1605749067954" duration="602000" />
       <workItem from="1605750722071" duration="11590000" />
+      <workItem from="1605935115222" duration="15000" />
+      <workItem from="1605935141219" duration="1058000" />
     </task>
     <task id="LOCAL-00026" summary="3.29 Casting Between Types">
       <created>1605014845024</created>
@@ -662,26 +664,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="402" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605773329997" />
-    <state width="1868" height="277" key="GridCell.Tab.0.bottom" timestamp="1605774265869">
+    <state width="903" height="58" key="GridCell.Tab.0.bottom" timestamp="1605936165341">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="268" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605714261888" />
-    <state width="1868" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605774265869" />
-    <state width="1868" height="277" key="GridCell.Tab.0.center" timestamp="1605774265869">
+    <state width="903" height="58" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605936165341" />
+    <state width="903" height="58" key="GridCell.Tab.0.center" timestamp="1605936165341">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="268" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605714261888" />
-    <state width="1868" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605774265869" />
-    <state width="1868" height="277" key="GridCell.Tab.0.left" timestamp="1605774265869">
+    <state width="903" height="58" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605936165341" />
+    <state width="903" height="58" key="GridCell.Tab.0.left" timestamp="1605936165341">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="268" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605714261888" />
-    <state width="1868" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605774265869" />
-    <state width="1868" height="277" key="GridCell.Tab.0.right" timestamp="1605774265869">
+    <state width="903" height="58" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605936165341" />
+    <state width="903" height="58" key="GridCell.Tab.0.right" timestamp="1605936165341">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="268" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605714261888" />
-    <state width="1868" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605774265869" />
+    <state width="903" height="58" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605936165341" />
     <state width="1868" height="353" key="GridCell.Tab.1.bottom" timestamp="1605755163402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
