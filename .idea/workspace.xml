@@ -39,9 +39,10 @@
     <cargoProject FILE="$PROJECT_DIR$/ch05_rustonomicon/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch5.1 Checked">
-      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section5_unintialized_memeory/section5_2_drop_flags.rs" afterDir="false" />
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch5.2 Drop Flags">
+      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section5_unintialized_memeory/section5_3_unchecked.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch05_rustonomicon/src/section3_10_phantomdata.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section3_10_phantomdata.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ch05_rustonomicon/src/section5_unintialized_memeory/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section5_unintialized_memeory/mod.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,19 +116,7 @@
       <command value="cargo doc" />
     </option>
   </component>
-  <component name="RunManager" selected="Cargo.Test section5_unintialized_memeory::section5_2_drop_flags::tests::test_001">
-    <configuration name="Test section5_unintialized_memeory::section5_1_checked::tests::test_002" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch05_rustonomicon --lib section5_unintialized_memeory::section5_1_checked::tests::test_002 -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch05_rustonomicon" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Cargo.Test section5_unintialized_memeory::section5_3_unchecked::tests::test_001">
     <configuration name="Test section5_unintialized_memeory::section5_1_checked::tests::test_003" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package ch05_rustonomicon --lib section5_unintialized_memeory::section5_1_checked::tests::test_003 -- --exact" />
@@ -176,6 +165,18 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test section5_unintialized_memeory::section5_3_unchecked::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ch05_rustonomicon --lib section5_unintialized_memeory::section5_3_unchecked::tests::test_001 -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch05_rustonomicon" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -183,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test section5_unintialized_memeory::section5_3_unchecked::tests::test_001" />
         <item itemvalue="Cargo.Test section5_unintialized_memeory::section5_2_drop_flags::tests::test_001" />
         <item itemvalue="Cargo.Test section5_unintialized_memeory::section5_1_checked::tests::test_005" />
         <item itemvalue="Cargo.Test section5_unintialized_memeory::section5_1_checked::tests::test_004" />
         <item itemvalue="Cargo.Test section5_unintialized_memeory::section5_1_checked::tests::test_003" />
-        <item itemvalue="Cargo.Test section5_unintialized_memeory::section5_1_checked::tests::test_002" />
       </list>
     </recent_temporary>
   </component>
@@ -247,14 +248,7 @@
       <workItem from="1605935115222" duration="15000" />
       <workItem from="1605935141219" duration="20727000" />
       <workItem from="1606008286252" duration="33000" />
-      <workItem from="1606008324839" duration="6907000" />
-    </task>
-    <task id="LOCAL-00044" summary="ch4.5 Repetition Replacement">
-      <created>1605281359609</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1605281359609</updated>
+      <workItem from="1606008324839" duration="8865000" />
     </task>
     <task id="LOCAL-00045" summary="ch4.6 Trailing Separators">
       <created>1605319638489</created>
@@ -592,7 +586,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606024573513</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="ch5.2 Drop Flags">
+      <created>1606026516923</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1606026516923</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -612,7 +613,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="ch4.8 Choosing your Guarantees" />
     <MESSAGE value="ch4.9 FFI 该功能目前没有实现,暂时看其它的相关的书籍" />
     <MESSAGE value="ch0.0 Introduction" />
     <MESSAGE value="ch0.1 What Unsafe Can Do" />
@@ -637,7 +637,8 @@
     <MESSAGE value="ch4.3 Casts" />
     <MESSAGE value="ch4.4 Transmutes 实践为主" />
     <MESSAGE value="ch5.1 Checked" />
-    <option name="LAST_COMMIT_MESSAGE" value="ch5.1 Checked" />
+    <MESSAGE value="ch5.2 Drop Flags" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch5.2 Drop Flags" />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="193" key="#Notifications" timestamp="1605183419050">
@@ -673,26 +674,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="402" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605773329997" />
-    <state width="1275" height="158" key="GridCell.Tab.0.bottom" timestamp="1606026252137">
+    <state width="1868" height="373" key="GridCell.Tab.0.bottom" timestamp="1606027541623">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="168" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605971981161" />
-    <state width="1275" height="158" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606026252137" />
-    <state width="1275" height="158" key="GridCell.Tab.0.center" timestamp="1606026252137">
+    <state width="1868" height="373" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606027541623" />
+    <state width="1868" height="373" key="GridCell.Tab.0.center" timestamp="1606027541622">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="168" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605971981160" />
-    <state width="1275" height="158" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606026252137" />
-    <state width="1275" height="158" key="GridCell.Tab.0.left" timestamp="1606026252136">
+    <state width="1868" height="373" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606027541622" />
+    <state width="1868" height="373" key="GridCell.Tab.0.left" timestamp="1606027541622">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="168" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605971981160" />
-    <state width="1275" height="158" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606026252136" />
-    <state width="1275" height="158" key="GridCell.Tab.0.right" timestamp="1606026252137">
+    <state width="1868" height="373" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606027541622" />
+    <state width="1868" height="373" key="GridCell.Tab.0.right" timestamp="1606027541623">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="168" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605971981161" />
-    <state width="1275" height="158" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606026252137" />
+    <state width="1868" height="373" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606027541623" />
     <state width="1868" height="353" key="GridCell.Tab.1.bottom" timestamp="1605755163402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

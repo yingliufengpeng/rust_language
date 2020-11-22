@@ -11,7 +11,6 @@
 #[cfg(test)]
 mod tests {
 
-    use super::*;
     use std::marker;
 
     struct Iter<'a, T: 'a> {
