@@ -39,10 +39,13 @@
     <cargoProject FILE="$PROJECT_DIR$/ch05_rustonomicon/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch5.2 Drop Flags">
-      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section5_unintialized_memeory/section5_3_unchecked.rs" afterDir="false" />
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch5.3 Unchecked">
+      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section6_ownership_based_resource_management/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section6_ownership_based_resource_management/section6_1_constructors.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section6_ownership_based_resource_management/section6_2_Destructors.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section6_ownership_based_resource_management/section6_3_Leaking.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch05_rustonomicon/src/section3_10_phantomdata.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section3_10_phantomdata.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch05_rustonomicon/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/lib.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ch05_rustonomicon/src/section5_unintialized_memeory/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section5_unintialized_memeory/mod.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,31 +119,7 @@
       <command value="cargo doc" />
     </option>
   </component>
-  <component name="RunManager" selected="Cargo.Test section5_unintialized_memeory::section5_3_unchecked::tests::test_001">
-    <configuration name="Test section5_unintialized_memeory::section5_1_checked::tests::test_003" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch05_rustonomicon --lib section5_unintialized_memeory::section5_1_checked::tests::test_003 -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch05_rustonomicon" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test section5_unintialized_memeory::section5_1_checked::tests::test_004" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch05_rustonomicon --lib section5_unintialized_memeory::section5_1_checked::tests::test_004 -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch05_rustonomicon" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Cargo.Test section6_ownership_based_resource_management::section6_1_constructors::tests::test_001">
     <configuration name="Test section5_unintialized_memeory::section5_1_checked::tests::test_005" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package ch05_rustonomicon --lib section5_unintialized_memeory::section5_1_checked::tests::test_005 -- --exact" />
@@ -177,6 +156,30 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test section6_ownership_based_resource_management::section6_1_constructors::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ch05_rustonomicon --lib section6_ownership_based_resource_management::section6_1_constructors::tests::test_001 -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch05_rustonomicon" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test section6_ownership_based_resource_management::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ch05_rustonomicon --lib section6_ownership_based_resource_management::tests::test_001 -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch05_rustonomicon" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -184,11 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test section6_ownership_based_resource_management::section6_1_constructors::tests::test_001" />
+        <item itemvalue="Cargo.Test section6_ownership_based_resource_management::tests::test_001" />
         <item itemvalue="Cargo.Test section5_unintialized_memeory::section5_3_unchecked::tests::test_001" />
         <item itemvalue="Cargo.Test section5_unintialized_memeory::section5_2_drop_flags::tests::test_001" />
         <item itemvalue="Cargo.Test section5_unintialized_memeory::section5_1_checked::tests::test_005" />
-        <item itemvalue="Cargo.Test section5_unintialized_memeory::section5_1_checked::tests::test_004" />
-        <item itemvalue="Cargo.Test section5_unintialized_memeory::section5_1_checked::tests::test_003" />
       </list>
     </recent_temporary>
   </component>
@@ -248,14 +251,7 @@
       <workItem from="1605935115222" duration="15000" />
       <workItem from="1605935141219" duration="20727000" />
       <workItem from="1606008286252" duration="33000" />
-      <workItem from="1606008324839" duration="8865000" />
-    </task>
-    <task id="LOCAL-00045" summary="ch4.6 Trailing Separators">
-      <created>1605319638489</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1605319638489</updated>
+      <workItem from="1606008324839" duration="9774000" />
     </task>
     <task id="LOCAL-00046" summary="ch4.7 TT Bundling">
       <created>1605322006424</created>
@@ -593,7 +589,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606026516923</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="ch5.3 Unchecked">
+      <created>1606028663676</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1606028663676</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -613,7 +616,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="ch4.9 FFI 该功能目前没有实现,暂时看其它的相关的书籍" />
     <MESSAGE value="ch0.0 Introduction" />
     <MESSAGE value="ch0.1 What Unsafe Can Do" />
     <MESSAGE value="ch1.1 how_safe_and_unsafe_interact" />
@@ -638,7 +640,8 @@
     <MESSAGE value="ch4.4 Transmutes 实践为主" />
     <MESSAGE value="ch5.1 Checked" />
     <MESSAGE value="ch5.2 Drop Flags" />
-    <option name="LAST_COMMIT_MESSAGE" value="ch5.2 Drop Flags" />
+    <MESSAGE value="ch5.3 Unchecked" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch5.3 Unchecked" />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="193" key="#Notifications" timestamp="1605183419050">
@@ -674,26 +677,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="402" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605773329997" />
-    <state width="1868" height="373" key="GridCell.Tab.0.bottom" timestamp="1606027541623">
+    <state width="1868" height="286" key="GridCell.Tab.0.bottom" timestamp="1606029152122">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="168" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605971981161" />
-    <state width="1868" height="373" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606027541623" />
-    <state width="1868" height="373" key="GridCell.Tab.0.center" timestamp="1606027541622">
+    <state width="1868" height="286" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606029152122" />
+    <state width="1868" height="286" key="GridCell.Tab.0.center" timestamp="1606029152122">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="168" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605971981160" />
-    <state width="1868" height="373" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606027541622" />
-    <state width="1868" height="373" key="GridCell.Tab.0.left" timestamp="1606027541622">
+    <state width="1868" height="286" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606029152122" />
+    <state width="1868" height="286" key="GridCell.Tab.0.left" timestamp="1606029152122">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="168" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605971981160" />
-    <state width="1868" height="373" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606027541622" />
-    <state width="1868" height="373" key="GridCell.Tab.0.right" timestamp="1606027541623">
+    <state width="1868" height="286" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606029152122" />
+    <state width="1868" height="286" key="GridCell.Tab.0.right" timestamp="1606029152122">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="168" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605971981161" />
-    <state width="1868" height="373" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606027541623" />
+    <state width="1868" height="286" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606029152122" />
     <state width="1868" height="353" key="GridCell.Tab.1.bottom" timestamp="1605755163402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
