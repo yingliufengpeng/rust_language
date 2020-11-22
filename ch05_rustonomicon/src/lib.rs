@@ -1,5 +1,6 @@
 #![feature(label_break_value)]
 #![feature(dropck_eyepatch)]
+#![feature(allocator_api, ptr_internals)]
 
 //!
 //! # The Dark Arts of Unsafe Rust.
