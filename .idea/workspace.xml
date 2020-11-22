@@ -39,10 +39,9 @@
     <cargoProject FILE="$PROJECT_DIR$/ch05_rustonomicon/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch8.1 Races">
-      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section8_concurrency/section8_2_send_and_sync.rs" afterDir="false" />
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch8.2 Send and Sync">
+      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section8_concurrency/section8_3_atomics.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch05_rustonomicon/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/lib.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ch05_rustonomicon/src/section8_concurrency/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section8_concurrency/mod.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,19 +115,7 @@
       <command value="cargo doc" />
     </option>
   </component>
-  <component name="RunManager" selected="Cargo.Test section8_concurrency::section8_2_send_and_sync::tests::test_001">
-    <configuration name="Test section6_ownership_based_resource_management::section6_3_Leaking::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch05_rustonomicon --lib section6_ownership_based_resource_management::section6_3_Leaking::test_001 -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch05_rustonomicon" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Cargo.Test section8_concurrency::section8_3_atomics::tests::test_002">
     <configuration name="Test section6_ownership_based_resource_management::section6_3_Leaking::test_002" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package ch05_rustonomicon --lib section6_ownership_based_resource_management::section6_3_Leaking::test_002 -- --exact" />
@@ -177,6 +164,18 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test section8_concurrency::section8_3_atomics::tests::test_002" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ch05_rustonomicon --lib section8_concurrency::section8_3_atomics::tests::test_002 -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch05_rustonomicon" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -184,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test section8_concurrency::section8_3_atomics::tests::test_002" />
         <item itemvalue="Cargo.Test section8_concurrency::section8_2_send_and_sync::tests::test_001" />
         <item itemvalue="Cargo.Test section8_concurrency::section8_1_races::tests::test_002" />
         <item itemvalue="Cargo.Test section8_concurrency::section8_1_races::tests::test_001" />
         <item itemvalue="Cargo.Test section6_ownership_based_resource_management::section6_3_Leaking::test_002" />
-        <item itemvalue="Cargo.Test section6_ownership_based_resource_management::section6_3_Leaking::test_001" />
       </list>
     </recent_temporary>
   </component>
@@ -248,14 +247,7 @@
       <workItem from="1605935115222" duration="15000" />
       <workItem from="1605935141219" duration="20727000" />
       <workItem from="1606008286252" duration="33000" />
-      <workItem from="1606008324839" duration="18190000" />
-    </task>
-    <task id="LOCAL-00052" summary="ch5.3 Enum Parsing 初步对tt这种的类型的token树有了一些了解,了解的方法是通过Push_Down Accumulation的方式.">
-      <created>1605506366724</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1605506366724</updated>
+      <workItem from="1606008324839" duration="19152000" />
     </task>
     <task id="LOCAL-00053" summary="ch6.1 Ook! 写完之后这个方法是否是需要的结果是否有待考证!!!">
       <created>1605543792547</created>
@@ -593,7 +585,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606055280306</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="ch8.2 Send and Sync">
+      <created>1606056044142</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1606056044142</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -613,7 +612,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="ch2.3 Other reprs&#10;该文档以后补上" />
     <MESSAGE value="ch3.1 References" />
     <MESSAGE value="ch3.2 Aliasing" />
     <MESSAGE value="ch3.3 Lifetimes" />
@@ -638,7 +636,8 @@
     <MESSAGE value="ch7.1 Exception Safety" />
     <MESSAGE value="ch7.2 Poisoning" />
     <MESSAGE value="ch8.1 Races" />
-    <option name="LAST_COMMIT_MESSAGE" value="ch8.1 Races" />
+    <MESSAGE value="ch8.2 Send and Sync" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch8.2 Send and Sync" />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="193" key="#Notifications" timestamp="1605183419050">
@@ -674,26 +673,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="402" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605773329997" />
-    <state width="1482" height="135" key="GridCell.Tab.0.bottom" timestamp="1606055360083">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1868" height="296" key="GridCell.Tab.0.bottom" timestamp="1606058466152">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1482" height="135" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606055360083" />
-    <state width="1868" height="439" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606050517617" />
-    <state width="1482" height="135" key="GridCell.Tab.0.center" timestamp="1606055360083">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1868" height="296" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606058466152" />
+    <state width="1868" height="296" key="GridCell.Tab.0.center" timestamp="1606058466152">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1482" height="135" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606055360083" />
-    <state width="1868" height="439" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606050517613" />
-    <state width="1482" height="135" key="GridCell.Tab.0.left" timestamp="1606055360083">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1868" height="296" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606058466152" />
+    <state width="1868" height="296" key="GridCell.Tab.0.left" timestamp="1606058466152">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1482" height="135" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606055360083" />
-    <state width="1868" height="439" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606050517612" />
-    <state width="1482" height="135" key="GridCell.Tab.0.right" timestamp="1606055360083">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1868" height="296" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606058466152" />
+    <state width="1868" height="296" key="GridCell.Tab.0.right" timestamp="1606058466152">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1482" height="135" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606055360083" />
-    <state width="1868" height="439" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606050517616" />
+    <state width="1868" height="296" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606058466152" />
     <state width="1868" height="353" key="GridCell.Tab.1.bottom" timestamp="1605755163402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

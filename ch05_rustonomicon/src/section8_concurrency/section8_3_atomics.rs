@@ -1,0 +1,46 @@
+
+//!
+//! # Atomics
+//!
+//! # Compiler Reordering
+//!
+//! # Hardware Reordering
+//!
+//! # Data Accesses
+//!
+//!     # Sequentially Consistent(SeqCst)
+//!     # Release
+//!     # Acquire
+//!     # Relaxed
+
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn test_001() {
+
+    }
+
+
+    use std::sync::Arc;
+    use std::sync::atomic::{AtomicBool, Ordering};
+    use std::thread;
+
+    #[test]
+    fn test_002() {
+        let lock = Arc::new(AtomicBool::new(false)); // value answers "am I locked?"
+
+        // ... distribute lock to threads somehow ...
+
+        // Try to acquire the lock by setting it to true
+        while lock.compare_and_swap(false, true, Ordering::Acquire) { }
+        // broke out of the loop, so we successfully acquired the lock!
+
+        // ... scary data accesses ...
+
+        // ok we're done, release the lock
+        lock.store(false, Ordering::Release);
+        println!("Ok");
+    }
+
+
+}
