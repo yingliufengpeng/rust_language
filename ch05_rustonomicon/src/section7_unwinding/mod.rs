@@ -11,6 +11,7 @@
 //!
 
 pub mod section7_1_exception_safety;
+pub mod section7_2_poisoning;
 
 #[cfg(test)]
 mod tests {
