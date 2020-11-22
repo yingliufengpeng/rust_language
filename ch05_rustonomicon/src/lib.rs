@@ -36,6 +36,7 @@ pub mod section3_8_subtyping_and_variance;
 pub mod section3_9_drop_check;
 pub mod section3_10_phantomdata;
 pub mod section3_11_splitting_borrows;
+pub mod type_conversions4;
 
 
 

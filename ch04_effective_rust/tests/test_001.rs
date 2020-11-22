@@ -1,5 +1,5 @@
 //! Cargo will ignore files in subdirectories of the tests/ directory. Therefore shared
-//! modules in integrations tests are possible. For example tests/common/mod.rs is not
+//! modules in integrations tests are possible. For example tests/common/type_conversions4 is not
 //! separately compiled by cargo can be imported in every test with mod common;
 //!
 //! Note, when building integration tests, cargo will not pass test attribute to the compiler.
