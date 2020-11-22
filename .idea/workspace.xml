@@ -39,10 +39,17 @@
     <cargoProject FILE="$PROJECT_DIR$/ch05_rustonomicon/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch4.3 Casts">
-      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/type_conversions4/section4_3_transmutes.rs" afterDir="false" />
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch4.4 Transmutes 实践为主">
+      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section5_unintialized_memeory/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section5_unintialized_memeory/section5_1_checked.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch05_rustonomicon/src/type_conversions4/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/type_conversions4/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch04_effective_rust/tests/test_001.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch04_effective_rust/tests/test_001.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch05_rustonomicon/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch05_rustonomicon/src/type_conversions4/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section4_type_conversions4/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch05_rustonomicon/src/type_conversions4/section4_1_coercions.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section4_type_conversions4/section4_1_coercions.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch05_rustonomicon/src/type_conversions4/section4_2_the_dot_operator.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section4_type_conversions4/section4_2_the_dot_operator.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch05_rustonomicon/src/type_conversions4/section4_3_casts.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section4_type_conversions4/section4_3_casts.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch05_rustonomicon/src/type_conversions4/section4_3_transmutes.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section4_type_conversions4/section4_3_transmutes.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,10 +122,10 @@
       <command value="cargo doc" />
     </option>
   </component>
-  <component name="RunManager" selected="Cargo.Test type_conversions4::section4_3_casts::tests::test_001">
-    <configuration name="Test section3_10_phantomdata::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+  <component name="RunManager" selected="Cargo.Test section5_unintialized_memeory::section5_1_checked::tests::test_005">
+    <configuration name="Test section5_unintialized_memeory::section5_1_checked::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch05_rustonomicon --lib section3_10_phantomdata::tests::test_001 -- --exact" />
+      <option name="command" value="test --package ch05_rustonomicon --lib section5_unintialized_memeory::section5_1_checked::tests::test_001 -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -128,9 +135,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test section3_11_splitting_borrows::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test section5_unintialized_memeory::section5_1_checked::tests::test_002" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch05_rustonomicon --lib section3_11_splitting_borrows::tests::test_001 -- --exact" />
+      <option name="command" value="test --package ch05_rustonomicon --lib section5_unintialized_memeory::section5_1_checked::tests::test_002 -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -140,9 +147,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test section3_9_drop_check::tests::test_003" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test section5_unintialized_memeory::section5_1_checked::tests::test_003" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch05_rustonomicon --lib section3_9_drop_check::tests::test_003 -- --exact" />
+      <option name="command" value="test --package ch05_rustonomicon --lib section5_unintialized_memeory::section5_1_checked::tests::test_003 -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -152,9 +159,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test type_conversions4::section4_2_the_dot_operator::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test section5_unintialized_memeory::section5_1_checked::tests::test_004" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch05_rustonomicon --lib type_conversions4::section4_2_the_dot_operator::tests::test_001 -- --exact" />
+      <option name="command" value="test --package ch05_rustonomicon --lib section5_unintialized_memeory::section5_1_checked::tests::test_004 -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -164,9 +171,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test type_conversions4::section4_3_casts::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test section5_unintialized_memeory::section5_1_checked::tests::test_005" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch05_rustonomicon --lib type_conversions4::section4_3_casts::tests::test_001 -- --exact" />
+      <option name="command" value="test --package ch05_rustonomicon --lib section5_unintialized_memeory::section5_1_checked::tests::test_005 -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -183,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo.Test type_conversions4::section4_3_casts::tests::test_001" />
-        <item itemvalue="Cargo.Test type_conversions4::section4_2_the_dot_operator::tests::test_001" />
-        <item itemvalue="Cargo.Test section3_11_splitting_borrows::tests::test_001" />
-        <item itemvalue="Cargo.Test section3_10_phantomdata::tests::test_001" />
-        <item itemvalue="Cargo.Test section3_9_drop_check::tests::test_003" />
+        <item itemvalue="Cargo.Test section5_unintialized_memeory::section5_1_checked::tests::test_005" />
+        <item itemvalue="Cargo.Test section5_unintialized_memeory::section5_1_checked::tests::test_004" />
+        <item itemvalue="Cargo.Test section5_unintialized_memeory::section5_1_checked::tests::test_003" />
+        <item itemvalue="Cargo.Test section5_unintialized_memeory::section5_1_checked::tests::test_002" />
+        <item itemvalue="Cargo.Test section5_unintialized_memeory::section5_1_checked::tests::test_001" />
       </list>
     </recent_temporary>
   </component>
@@ -247,14 +254,7 @@
       <workItem from="1605935115222" duration="15000" />
       <workItem from="1605935141219" duration="20727000" />
       <workItem from="1606008286252" duration="33000" />
-      <workItem from="1606008324839" duration="2853000" />
-    </task>
-    <task id="LOCAL-00042" summary="ch4.3 Internal Rules">
-      <created>1605255536984</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1605255536984</updated>
+      <workItem from="1606008324839" duration="5451000" />
     </task>
     <task id="LOCAL-00043" summary="ch4.4 Push-Down Accumulation">
       <created>1605278239125</created>
@@ -592,7 +592,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606011977830</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="ch4.4 Transmutes 实践为主">
+      <created>1606012475368</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1606012475368</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -612,7 +619,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="ch97_rust doc What is rustdoc? 还是需要勤加练习" />
     <MESSAGE value="ch4.6 Concurrency" />
     <MESSAGE value="ch4.8 Choosing your Guarantees" />
     <MESSAGE value="ch4.9 FFI 该功能目前没有实现,暂时看其它的相关的书籍" />
@@ -637,7 +643,8 @@
     <MESSAGE value="ch4.1 Coercions 以时间为主" />
     <MESSAGE value="ch4.2 The Dot Operator Todo" />
     <MESSAGE value="ch4.3 Casts" />
-    <option name="LAST_COMMIT_MESSAGE" value="ch4.3 Casts" />
+    <MESSAGE value="ch4.4 Transmutes 实践为主" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch4.4 Transmutes 实践为主" />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="193" key="#Notifications" timestamp="1605183419050">
@@ -673,26 +680,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="402" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605773329997" />
-    <state width="903" height="95" key="GridCell.Tab.0.bottom" timestamp="1606011920708">
+    <state width="1275" height="170" key="GridCell.Tab.0.bottom" timestamp="1606024511707">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="168" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605971981161" />
-    <state width="903" height="95" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606011920708" />
-    <state width="903" height="95" key="GridCell.Tab.0.center" timestamp="1606011920708">
+    <state width="1275" height="170" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606024511707" />
+    <state width="1275" height="170" key="GridCell.Tab.0.center" timestamp="1606024511707">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="168" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605971981160" />
-    <state width="903" height="95" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606011920708" />
-    <state width="903" height="95" key="GridCell.Tab.0.left" timestamp="1606011920708">
+    <state width="1275" height="170" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606024511707" />
+    <state width="1275" height="170" key="GridCell.Tab.0.left" timestamp="1606024511707">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="168" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605971981160" />
-    <state width="903" height="95" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606011920708" />
-    <state width="903" height="95" key="GridCell.Tab.0.right" timestamp="1606011920708">
+    <state width="1275" height="170" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606024511707" />
+    <state width="1275" height="170" key="GridCell.Tab.0.right" timestamp="1606024511707">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="168" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605971981161" />
-    <state width="903" height="95" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606011920708" />
+    <state width="1275" height="170" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606024511707" />
     <state width="1868" height="353" key="GridCell.Tab.1.bottom" timestamp="1605755163402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
