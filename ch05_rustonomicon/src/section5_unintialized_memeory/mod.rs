@@ -7,6 +7,7 @@
 //!
 
 pub mod section5_1_checked;
+pub mod section5_2_drop_flags;
 
 
 
