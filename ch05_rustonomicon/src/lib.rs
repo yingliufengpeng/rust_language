@@ -41,6 +41,7 @@ pub mod section4_type_conversions4;
 pub mod section5_unintialized_memeory;
 pub mod section6_ownership_based_resource_management;
 pub mod section7_unwinding;
+pub mod section8_concurrency;
 
 
 

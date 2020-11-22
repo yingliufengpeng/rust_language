@@ -39,9 +39,9 @@
     <cargoProject FILE="$PROJECT_DIR$/ch05_rustonomicon/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch6.3 Leaking">
-      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section7_unwinding/mod.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section7_unwinding/section7_1_exception_safety.rs" afterDir="false" />
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch7.2 Poisoning">
+      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section8_concurrency/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section8_concurrency/section8_1_races.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ch05_rustonomicon/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/lib.rs" afterDir="false" />
     </list>
@@ -116,19 +116,7 @@
       <command value="cargo doc" />
     </option>
   </component>
-  <component name="RunManager" selected="Cargo.Test section6_ownership_based_resource_management::section6_3_Leaking::test_002">
-    <configuration name="Test section6_ownership_based_resource_management::section6_1_constructors::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch05_rustonomicon --lib section6_ownership_based_resource_management::section6_1_constructors::tests::test_001 -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch05_rustonomicon" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Cargo.Test section8_concurrency::section8_1_races::tests::test_002">
     <configuration name="Test section6_ownership_based_resource_management::section6_2_Destructors::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package ch05_rustonomicon --lib section6_ownership_based_resource_management::section6_2_Destructors::test_001 -- --exact" />
@@ -165,9 +153,21 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test section6_ownership_based_resource_management::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test section8_concurrency::section8_1_races::tests::test_001" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package ch05_rustonomicon --lib section6_ownership_based_resource_management::tests::test_001 -- --exact" />
+      <option name="command" value="test --package ch05_rustonomicon --lib section8_concurrency::section8_1_races::tests::test_001 -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/ch05_rustonomicon" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test section8_concurrency::section8_1_races::tests::test_002" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ch05_rustonomicon --lib section8_concurrency::section8_1_races::tests::test_002 -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -184,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test section8_concurrency::section8_1_races::tests::test_002" />
+        <item itemvalue="Cargo.Test section8_concurrency::section8_1_races::tests::test_001" />
         <item itemvalue="Cargo.Test section6_ownership_based_resource_management::section6_3_Leaking::test_002" />
         <item itemvalue="Cargo.Test section6_ownership_based_resource_management::section6_3_Leaking::test_001" />
         <item itemvalue="Cargo.Test section6_ownership_based_resource_management::section6_2_Destructors::test_001" />
-        <item itemvalue="Cargo.Test section6_ownership_based_resource_management::section6_1_constructors::tests::test_001" />
-        <item itemvalue="Cargo.Test section6_ownership_based_resource_management::tests::test_001" />
       </list>
     </recent_temporary>
   </component>
@@ -248,21 +248,7 @@
       <workItem from="1605935115222" duration="15000" />
       <workItem from="1605935141219" duration="20727000" />
       <workItem from="1606008286252" duration="33000" />
-      <workItem from="1606008324839" duration="16156000" />
-    </task>
-    <task id="LOCAL-00049" summary="ch5.1 AST Coercion">
-      <created>1605409072549</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1605409072549</updated>
-    </task>
-    <task id="LOCAL-00050" summary="ch5.2 Counting">
-      <created>1605424313960</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1605424313960</updated>
+      <workItem from="1606008324839" duration="17407000" />
     </task>
     <task id="LOCAL-00051" summary="ch5.3 Enum Parsing &#10;这个例子没有跑起来,可能需要一些rust语言本身的语法树的知识">
       <created>1605495810035</created>
@@ -593,7 +579,21 @@
       <option name="project" value="LOCAL" />
       <updated>1606052495984</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="ch7.1 Exception Safety">
+      <created>1606053850360</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1606053850360</updated>
+    </task>
+    <task id="LOCAL-00099" summary="ch7.2 Poisoning">
+      <created>1606054349643</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1606054349643</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -613,8 +613,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="ch1.2 What Unsafe Can Do" />
-    <MESSAGE value="ch1.3 Working with Unsafe" />
     <MESSAGE value="ch2.2 Exotically Sized Types" />
     <MESSAGE value="ch2.3 Other reprs&#10;该文档以后补上" />
     <MESSAGE value="ch3.1 References" />
@@ -638,7 +636,9 @@
     <MESSAGE value="ch6.1 Constructors" />
     <MESSAGE value="ch6.2 Destructors" />
     <MESSAGE value="ch6.3 Leaking" />
-    <option name="LAST_COMMIT_MESSAGE" value="ch6.3 Leaking" />
+    <MESSAGE value="ch7.1 Exception Safety" />
+    <MESSAGE value="ch7.2 Poisoning" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch7.2 Poisoning" />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="193" key="#Notifications" timestamp="1605183419050">
