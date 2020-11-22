@@ -7,6 +7,7 @@
 //!
 
 pub mod section4_1_coercions;
+pub mod section4_2_the_dot_operator;
 
 #[cfg(test)]
 mod tests {
