@@ -55,6 +55,7 @@ use std::alloc::{
     handle_alloc_error
 };
 
+#[derive(Debug)]
 struct RawVec<T> {
     ptr: Unique<T>,
     cap: usize,
@@ -117,6 +118,7 @@ impl<T> Drop for RawVec<T> {
     }
 }
 
+#[derive(Debug)]
 pub struct Vec<T> {
     buf: RawVec<T>,
     len: usize,
@@ -356,5 +358,17 @@ mod tests {
     #[test]
     fn test_001() {
 
+        let mut v = Vec::new();
+        v.push(3);
+        v.push(4);
+        println!("{:?}", v);
+        //
+        // for vv in v.into_iter() {
+        //     println!("{}", vv);
+        // }
+
+        for vv in v.iter() {
+            println!("{}", vv);
+        }
     }
 }

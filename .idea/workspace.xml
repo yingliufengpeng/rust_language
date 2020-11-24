@@ -39,10 +39,8 @@
     <cargoProject FILE="$PROJECT_DIR$/ch05_rustonomicon/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch8.3 Atomics">
-      <change afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section9_implementing_vec/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch05_rustonomicon/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/lib.rs" afterDir="false" />
+    <list default="true" id="058d5a74-e49b-49a4-a10d-204c9003c807" name="Default Changelist" comment="ch9 Implementing Vec!!! 该代码需要消化!!!">
+      <change beforePath="$PROJECT_DIR$/ch05_rustonomicon/src/section9_implementing_vec/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ch05_rustonomicon/src/section9_implementing_vec/mod.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,14 +249,7 @@
       <workItem from="1606097076725" duration="9000" />
       <workItem from="1606097092601" duration="9275000" />
       <workItem from="1606185084163" duration="97000" />
-      <workItem from="1606185190756" duration="3571000" />
-    </task>
-    <task id="LOCAL-00054" summary="Ook! 这个宏大致有了一些了解,后续有时间的话,自己重新模拟写一个!!!">
-      <created>1605580919026</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1605580919027</updated>
+      <workItem from="1606185190756" duration="3934000" />
     </task>
     <task id="LOCAL-00055" summary="ch4.1 The Stack and the Heap">
       <created>1605595814290</created>
@@ -596,7 +587,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606058740851</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="ch9 Implementing Vec!!! 改代码需要消化!!!">
+      <created>1606223574762</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1606223574762</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -616,7 +614,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="ch3.2 Aliasing" />
     <MESSAGE value="ch3.3 Lifetimes" />
     <MESSAGE value="ch3.4 Limits of Lifetimes" />
     <MESSAGE value="ch3.5 Lifetime Elision" />
@@ -641,7 +638,8 @@
     <MESSAGE value="ch8.1 Races" />
     <MESSAGE value="ch8.2 Send and Sync" />
     <MESSAGE value="ch8.3 Atomics" />
-    <option name="LAST_COMMIT_MESSAGE" value="ch8.3 Atomics" />
+    <MESSAGE value="ch9 Implementing Vec!!! 该代码需要消化!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch9 Implementing Vec!!! 该代码需要消化!!!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="193" key="#Notifications" timestamp="1605183419050">
@@ -673,30 +671,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="688" y="216" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605763782407" />
-    <state x="759" y="402" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1605773329997">
+    <state x="759" y="402" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1606223587990">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="759" y="402" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605773329997" />
-    <state width="1868" height="149" key="GridCell.Tab.0.bottom" timestamp="1606223361222">
+    <state x="759" y="402" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606223587990" />
+    <state width="1868" height="306" key="GridCell.Tab.0.bottom" timestamp="1606223884637">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1868" height="441" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606146375111" />
-    <state width="1868" height="149" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606223361222" />
-    <state width="1868" height="149" key="GridCell.Tab.0.center" timestamp="1606223361222">
+    <state width="1868" height="306" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606223884637" />
+    <state width="1868" height="306" key="GridCell.Tab.0.center" timestamp="1606223884637">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1868" height="441" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606146375111" />
-    <state width="1868" height="149" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606223361222" />
-    <state width="1868" height="149" key="GridCell.Tab.0.left" timestamp="1606223361222">
+    <state width="1868" height="306" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606223884637" />
+    <state width="1868" height="306" key="GridCell.Tab.0.left" timestamp="1606223884637">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1868" height="441" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606146375110" />
-    <state width="1868" height="149" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606223361222" />
-    <state width="1868" height="149" key="GridCell.Tab.0.right" timestamp="1606223361222">
+    <state width="1868" height="306" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606223884637" />
+    <state width="1868" height="306" key="GridCell.Tab.0.right" timestamp="1606223884637">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1868" height="441" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606146375111" />
-    <state width="1868" height="149" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606223361222" />
+    <state width="1868" height="306" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606223884637" />
     <state width="1868" height="353" key="GridCell.Tab.1.bottom" timestamp="1605755163402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
