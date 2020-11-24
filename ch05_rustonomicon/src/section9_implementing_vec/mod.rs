@@ -350,6 +350,9 @@ impl<'a, T> Drop for Drain<'a, T> {
         for _ in &mut self.iter {}
     }
 }
+
+
+
 #[cfg(test)]
 mod tests {
     use super::*;
