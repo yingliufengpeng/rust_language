@@ -1,7 +1,9 @@
+#![feature(ptr_internals)]
+#![feature(allocator_api)]
+#![feature(alloc_layout_extra)]
+#![feature(negative_impls)]
 #![feature(label_break_value)]
 #![feature(dropck_eyepatch)]
-#![feature(allocator_api, ptr_internals)]
-#![feature(negative_impls)]
 
 
 //!
@@ -44,6 +46,7 @@ pub mod section5_unintialized_memeory;
 pub mod section6_ownership_based_resource_management;
 pub mod section7_unwinding;
 pub mod section8_concurrency;
+pub mod section9_implementing_vec;
 
 
 
